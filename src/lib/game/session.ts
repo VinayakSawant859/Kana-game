@@ -237,20 +237,3 @@ export function finalize(state: SessionState): CardRecord[] {
     return { ...card, status: "not-reached" as const };
   });
 }
-
-export function finalize(state: SessionState): CardRecord[] {
-  return state.cards.map((card, i) => {
-    if (["correct-first-try", "correct-after-retry", "skipped"].includes(card.status)) {
-      return card;
-    }
-    if (state.endedEarly || i <= state.index) {
-      if (i === state.index) {
-        return { ...card, status: "unfinished" as const };
-      }
-      if (i < state.index) {
-        return card.status === "pending" ? { ...card, status: "unfinished" as const } : card;
-      }
-    }
-    return { ...card, status: "not-reached" as const };
-  });
-}
