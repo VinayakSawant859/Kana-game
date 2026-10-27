@@ -40,5 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# personal-use demo fonts
-/src/fonts/helvetica-now/
+# personal-use demo font files
+**/HelveticaNow*.ttf
+**/HelveticaNow*.otf
+**/Befonts-License.txt

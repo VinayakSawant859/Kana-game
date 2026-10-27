@@ -3,7 +3,8 @@
 @custom-variant dark (&:where([data-theme="dark"] *));
 
 :root {
-  --font-body: "Helvetica Neue", Helvetica, "Nimbus Sans", Arial, "Noto Sans JP", sans-serif;
+  --font-ui: "Helvetica Neue", Helvetica, var(--font-inter), Arial, "Noto Sans JP", sans-serif;
+  --font-body: var(--font-ui);
   --bg: #fbf6f1;
   --surface: #fff9f4;
   --ink: #231a1c;
@@ -69,7 +70,7 @@ html[data-theme="dark"] body::before {
 }
 
 .font-japanese { font-family: var(--font-japanese), sans-serif; }
-h1, h2, h3, button, input, label, legend, .font-kana { font-family: var(--font-ui), var(--font-body); }
+h1, h2, h3, button, input, label, legend, .font-kana { font-family: var(--font-ui); }
 .font-kana { font-family: var(--font-kana), "Noto Serif JP", serif; }
 .font-japanese { font-family: var(--font-japanese), "Noto Serif JP", serif; }
 

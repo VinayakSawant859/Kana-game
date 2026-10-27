@@ -1,10 +1,22 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { appFontVariables } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kana Practice",
-  description: "Practice hiragana and katakana.",
+  title: "Kana Practice — Japanese Kana Flashcards",
+  description: "Learn hiragana and katakana with focused, interactive flashcard practice.",
+  openGraph: {
+    title: "Kana Practice — Japanese Kana Flashcards",
+    description: "Learn hiragana and katakana with focused, interactive flashcard practice.",
+    type: "website",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fbf6f1" },
+    { media: "(prefers-color-scheme: dark)", color: "#150a0e" },
+  ],
 };
 
 const themeScript = `
