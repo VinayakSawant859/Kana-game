@@ -2,8 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowRight, Check, RotateCcw, Settings2 } from "lucide-react";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { ArrowRight, Check, RotateCcw } from "lucide-react";
+import { GameLayout } from "@/lib/game-core/layout";
+import { saveGameSession } from "@/lib/game-core/storage";
 import { createKanaSession } from "@/lib/game/session";
 import { countCharacters, groupRows, type KanaGroup, type ScriptSelection } from "@/data/kana";
 
@@ -72,23 +73,12 @@ export default function Home() {
         questionCount: session.settings.questionCount,
       })
     );
-    sessionStorage.setItem(`kana-session:${session.sessionId}`, JSON.stringify(session));
+    saveGameSession("kana", session.sessionId, session);
     router.push(`/games/kana/play/${session.sessionId}`);
   }
 
   return (
-    <main className="relative flex min-h-dvh flex-col bg-[var(--bg)] text-[var(--ink)]">
-      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8 sm:py-6">
-        <button className="flex items-center gap-2.5" aria-label="Kana Practice home">
-          <span className="grid size-9 place-items-center rounded-full bg-[var(--primary)] font-japanese text-xl text-white">あ</span>
-          <span className="text-sm font-bold tracking-[0.18em]">KANA</span>
-        </button>
-        <div className="flex items-center gap-2">
-          <ThemeToggle />
-          <button className="grid size-10 place-items-center rounded-full border border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] transition-colors hover:text-[var(--primary)]" aria-label="Settings"><Settings2 size={18} /></button>
-        </div>
-      </nav>
-
+    <GameLayout label="KANA" glyph="あ">
       <section className="mx-auto flex w-full max-w-6xl flex-1 items-center justify-center px-5 pb-6 sm:px-8 sm:pb-8">
         <div className="grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
         <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7">
@@ -157,6 +147,6 @@ export default function Home() {
         </aside>
         </div>
       </section>
-    </main>
+    </GameLayout>
   );
 }

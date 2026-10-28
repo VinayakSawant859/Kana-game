@@ -12,7 +12,9 @@ import {
   type StoredKanaSession,
 } from "@/lib/game/session";
 import { localStorageAdapter } from "@/lib/storage/kana";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { GameLayout } from "@/lib/game-core/layout";
+import { getGameSession } from "@/lib/game-core/storage";
+import { QuitSessionDialog, useQuitSessionGuard } from "@/lib/game-core/quit-session";
 
 export default function KanaPlayPage() {
   return (
@@ -36,20 +38,19 @@ function KanaPlayContent() {
 
   useEffect(() => {
     try {
-      const value = sessionStorage.getItem(`kana-session:${sessionId}`);
-      if (!value) {
-        router.replace("/");
+      const parsed = getGameSession<StoredKanaSession>("kana", sessionId);
+      if (!parsed) {
+        router.replace("/games/kana");
         return;
       }
-      const parsed = JSON.parse(value) as StoredKanaSession;
       if (!parsed || !Array.isArray(parsed.deckIds) || parsed.deckIds.length === 0) {
-        router.replace("/");
+        router.replace("/games/kana");
         return;
       }
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setStoredSession(parsed);
     } catch {
-      router.replace("/");
+      router.replace("/games/kana");
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sessionId]);
@@ -80,6 +81,7 @@ function KanaGame({
     () => createSessionState(session.deckIds, Date.now())
   );
   const [answer, setAnswer] = useState("");
+  const { quitDialogOpen, cancelQuit, confirmQuit } = useQuitSessionGuard(true);
 
   const clearTimers = useCallback(() => {
     timers.current.forEach((timer) => window.clearTimeout(timer));
@@ -166,6 +168,13 @@ function KanaGame({
     timers.current.push(revealTimer);
   }
 
+  function quitSession() {
+    confirmQuit();
+    clearTimers();
+    sessionStorage.removeItem(`kana-session:${session.sessionId}`);
+    router.replace("/games/kana");
+  }
+
   function handleKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
     if (event.key !== "Enter") return;
     event.preventDefault();
@@ -204,25 +213,14 @@ function KanaGame({
   const done = state.cards.filter((card) => card.status !== "pending").length;
 
   return (
-    <main
-      className="relative flex min-h-dvh flex-col bg-[var(--bg)] text-[var(--ink)]"
-      onPointerDown={(event) => {
-        if ((event.target as HTMLElement).tagName !== "BUTTON") focusInput();
-      }}
+    <>
+    <GameLayout
+    label="KANA"
+    glyph="あ"
+    onPointerDown={(event) => {
+      if ((event.target as HTMLElement).tagName !== "BUTTON") focusInput();
+    }}
     >
-      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8 sm:py-6">
-        <button
-          className="flex items-center gap-2.5"
-          onClick={() => router.push("/")}
-          aria-label="Kana Practice home"
-        >
-          <span className="grid size-9 place-items-center rounded-full bg-[var(--primary)] font-japanese text-xl text-white">
-            あ
-          </span>
-          <span className="text-sm font-bold tracking-[0.18em]">KANA</span>
-        </button>
-        <ThemeToggle />
-      </nav>
 
       <section className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-5 pb-6 sm:px-8 sm:pb-8">
         <div className="grid grid-cols-[1fr_auto] items-center gap-4 border-b border-[var(--line)] pb-4">
@@ -335,6 +333,8 @@ function KanaGame({
           </div>
         </div>
       </section>
-    </main>
+    </GameLayout>
+    <QuitSessionDialog open={quitDialogOpen} onCancel={cancelQuit} onConfirm={quitSession} />
+    </>
   );
 }

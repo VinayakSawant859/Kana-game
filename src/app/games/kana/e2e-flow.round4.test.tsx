@@ -1,7 +1,7 @@
 import { describe, expect, it, vi, beforeEach, afterEach } from "vitest";
 import { render, screen, cleanup, fireEvent } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Home from "@/app/page";
+import Home from "@/app/games/kana/page";
 import KanaPlayPage from "@/app/games/kana/play/[sessionId]/page";
 import KanaResultPage from "@/app/games/kana/result/[sessionId]/page";
 
@@ -67,7 +67,7 @@ describe("Full lifecycle flow: Hiragana -> Start -> End session -> Change settin
     const { unmount: unmountResult } = render(<KanaResultPage />);
     const changeSettingsBtn = screen.getByRole("button", { name: /change settings/i });
     fireEvent.click(changeSettingsBtn);
-    expect(mockPush).toHaveBeenCalledWith("/");
+    expect(mockPush).toHaveBeenCalledWith("/games/kana");
     unmountResult();
 
     // Step 4: Back on Home -> Change settings to Katakana -> Start

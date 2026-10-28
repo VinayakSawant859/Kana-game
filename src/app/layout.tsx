@@ -3,11 +3,11 @@ import { appFontVariables } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kana Practice — Japanese Kana Flashcards",
-  description: "Learn hiragana and katakana with focused, interactive flashcard practice.",
+  title: "Japanese Practice — Kana and Kanji Games",
+  description: "Practice Japanese kana and kanji with focused, interactive games.",
   openGraph: {
-    title: "Kana Practice — Japanese Kana Flashcards",
-    description: "Learn hiragana and katakana with focused, interactive flashcard practice.",
+    title: "Japanese Practice — Kana and Kanji Games",
+    description: "Practice Japanese kana and kanji with focused, interactive games.",
     type: "website",
   },
 };

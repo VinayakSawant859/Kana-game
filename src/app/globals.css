@@ -73,6 +73,20 @@ html[data-theme="dark"] body::before {
 h1, h2, h3, button, input, label, legend, .font-kana { font-family: var(--font-ui); }
 .font-kana { font-family: var(--font-kana), "Noto Serif JP", serif; }
 .font-japanese { font-family: var(--font-japanese), "Noto Serif JP", serif; }
+.font-kanji { font-family: var(--font-kana), "Yu Mincho", "Noto Serif JP", var(--font-mincho), "Hiragino Mincho ProN", var(--font-japanese), serif; }
+
+.kanji-card-shell { width: clamp(250px, 34vw, 390px); }
+.kanji-card { animation-fill-mode: both; }
+.kanji-card-glyph {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-kana), "Yu Mincho", "Noto Serif JP", var(--font-mincho), "Hiragino Mincho ProN", var(--font-japanese), serif;
+  font-size: clamp(9rem, 24vw, 13rem);
+  line-height: 1;
+  filter: drop-shadow(.4px .5px 0 rgba(35,26,28,.12));
+}
+.kanji-leave { animation: kanji-leave 360ms ease-out both; }
+@keyframes kanji-leave { to { transform: translateX(-110px) scale(.92); opacity: 0; } }
 
 .theme-icon-button { position: relative; overflow: hidden; }
 .theme-icon-button svg { animation: theme-icon-in 180ms ease-out; }
@@ -175,6 +189,6 @@ html[data-theme="dark"] .kana-card {
 .result-badge { display:inline-flex; width:max-content; max-width:100%; align-items:center; font-size:12px; font-weight:800; }
 .result-table { border:1px solid var(--line); border-radius:6px; }
 @media (max-width:640px) { .result-table { max-height:50vh; } .result-grid { column-gap:8px; min-width:620px; } }
-@media (max-width: 1023px) { .kana-card-shell { width: clamp(220px, min(62vw, 44dvh), 350px); } }
+@media (max-width: 1023px) { .kana-card-shell { width: clamp(220px, min(62vw, 44dvh), 350px); } .kanji-card-shell { width: clamp(220px, min(62vw, 44dvh), 350px); } }
 @media (max-height: 700px) { .kana-card-shell { width: min(220px, 54vw, 38dvh); } .kana-card-glyph { font-size: clamp(6rem, 18vw, 8rem); } .answer-field, .answer-input { height: 50px; } }
-@media (prefers-reduced-motion: reduce) { body::before { animation: none; } .theme-icon-button svg, .kana-card-shell, .kana-card, .kana-wrong, .kana-correct, .kana-leave { animation-duration: 1ms !important; transition-duration: 1ms !important; } .kana-leave { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { body::before { animation: none; } .theme-icon-button svg, .kana-card-shell, .kana-card, .kana-wrong, .kana-correct, .kana-leave, .kanji-leave { animation-duration: 1ms !important; transition-duration: 1ms !important; } .kana-leave, .kanji-leave { opacity: 0; } }

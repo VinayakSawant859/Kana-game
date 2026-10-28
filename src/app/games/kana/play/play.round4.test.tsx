@@ -42,6 +42,26 @@ describe("Play Page integration test", () => {
     expect(screen.queryByText(/finished/i)).toBeNull();
   });
 
+  it("shows a quit warning on browser back and discards the session when confirmed", () => {
+    mockSessionId = "session-quit-warning";
+    const session = createKanaSession(
+      { sessionId: mockSessionId, script: "hiragana", rowKeys: ["basic:vowel"], questionCount: 5 },
+      () => 0.1
+    );
+    sessionStorage.setItem(`kana-session:${mockSessionId}`, JSON.stringify(session));
+
+    render(<KanaPlayPage />);
+    act(() => {
+      window.dispatchEvent(new PopStateEvent("popstate"));
+    });
+
+    expect(screen.getByRole("dialog", { name: /quit this game/i })).toBeDefined();
+    fireEvent.click(screen.getByRole("button", { name: /quit game/i }));
+
+    expect(sessionStorage.getItem(`kana-session:${mockSessionId}`)).toBeNull();
+    expect(mockReplace).toHaveBeenCalledWith("/games/kana");
+  });
+
   it("Hiragana, Katakana, and Both sessions show the right script glyph on card 1", () => {
     // Katakana session
     const kataSession = createKanaSession(

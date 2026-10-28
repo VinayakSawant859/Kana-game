@@ -1,7 +1,7 @@
 import { describe, expect, it, vi, beforeEach, afterEach } from "vitest";
 import { render, screen, cleanup } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Home from "./page";
+import Home from "./games/kana/page";
 
 const mockPush = vi.fn();
 vi.mock("next/navigation", () => ({
