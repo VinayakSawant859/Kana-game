@@ -20,4 +20,11 @@
 - © Electronic Dictionary Research and Development Group (EDRDG), CC BY-SA.
 - JLPT levels are unofficial community lists and may vary by source.
 
+## Vocabulary and kanji dataset
+
+- Vocabulary Meaning includes the level-specific JSON files from [OpenJLPT](https://github.com/evanclan/OpenJLPT), pinned to commit `0d1d3410bec90bd4098a7c72de820543cb4f707c`.
+- OpenJLPT is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The original license and source notice are included in `src/data/openjlpt/`; adaptations of this dataset are distributed under the same license.
+- Attribution: OpenJLPT, which uses JMdict and KANJIDIC2 (Electronic Dictionary Research and Development Group), Jonathan Waller's JLPT lists, and Tatoeba. See `src/data/openjlpt/NOTICE.md` for source-specific licensing and credits.
+- JLPT levels are community approximations because the JLPT does not publish official vocabulary or kanji lists.
+
 Google fonts are self-hosted in the generated app assets by `next/font`; visitors' browsers do not request fonts from Google.

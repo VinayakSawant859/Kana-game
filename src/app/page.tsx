@@ -17,7 +17,7 @@ export default function GamesHub() {
             const card = (
               <>
                 <span className="mb-5 grid size-12 place-items-center rounded-full bg-[var(--sakura-light)] font-japanese text-2xl text-[var(--primary-fg)]">
-                  {game.id === "kana" ? "あ" : "漢"}
+                  {game.id === "kana" ? "あ" : game.id === "vocabulary" ? "語" : "漢"}
                 </span>
                 <div className="flex items-start justify-between gap-4">
                   <div>

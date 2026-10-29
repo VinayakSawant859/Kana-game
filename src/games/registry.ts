@@ -21,4 +21,11 @@ export const games: GameEntry[] = [
     href: "/games/kanji",
     status: "live",
   },
+  {
+    id: "vocabulary",
+    title: "Vocabulary Meaning",
+    description: "Type the English meaning of Japanese words.",
+    href: "/games/vocabulary",
+    status: "live",
+  },
 ];

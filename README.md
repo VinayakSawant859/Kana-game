@@ -1,6 +1,8 @@
-# Kana Practice
+# Kana-Play
 
-Kana Practice is a flashcard app for learning Japanese hiragana and katakana.
+Kana-Play is a Japanese-learning app with games for practicing kana, kanji meanings, and vocabulary meanings.
+
+Vocabulary and kanji data are bundled from OpenJLPT. See [ASSETS.md](./ASSETS.md) and the included [OpenJLPT notice](./src/data/openjlpt/NOTICE.md) for attribution and licensing.
 
 ## Getting Started
 
