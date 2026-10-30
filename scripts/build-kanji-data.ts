@@ -101,11 +101,6 @@ async function main(): Promise<void> {
   await mkdir(outputDirectory, { recursive: true });
   await mkdir(publicKanjiDirectory, { recursive: true });
 
-  await writeFile(
-    resolve(outputDirectory, "kanji.generated.json"),
-    `${JSON.stringify(records)}\n`
-  );
-
   const levels = [5, 4, 3, 2, 1] as const;
   const grades = [1, 2, 3, 4, 5, 6, 8, 9] as const;
 
