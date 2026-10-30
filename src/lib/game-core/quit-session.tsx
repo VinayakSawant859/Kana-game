@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useQuitSessionGuard } from "@/hooks/use-quit-session-guard";
 
 type QuitSessionDialogProps = {
   open: boolean;
@@ -34,10 +35,18 @@ export function QuitSessionDialog({ open, onCancel, onConfirm }: QuitSessionDial
           Your progress in this session will be discarded and you will return to the game settings.
         </p>
         <div className="mt-6 flex justify-end gap-3">
-          <button type="button" onClick={onCancel} className="secondary-button rounded-md border px-4 py-2 text-sm font-bold">
+          <button
+            type="button"
+            onClick={onCancel}
+            className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
+          >
             Stay
           </button>
-          <button type="button" onClick={onConfirm} className="primary-button rounded-md px-4 py-2 text-sm font-bold">
+          <button
+            type="button"
+            onClick={onConfirm}
+            className="primary-button min-h-11 rounded-md px-4 py-2 text-sm font-bold"
+          >
             Quit game
           </button>
         </div>
@@ -46,26 +55,4 @@ export function QuitSessionDialog({ open, onCancel, onConfirm }: QuitSessionDial
   );
 }
 
-export function useQuitSessionGuard(enabled: boolean) {
-  const [quitDialogOpen, setQuitDialogOpen] = useState(false);
-
-  useEffect(() => {
-    if (!enabled) return;
-
-    window.history.pushState({ ...window.history.state, __kanaGameQuitGuard: true }, "", window.location.href);
-
-    function onPopState() {
-      setQuitDialogOpen(true);
-      window.history.pushState({ ...window.history.state, __kanaGameQuitGuard: true }, "", window.location.href);
-    }
-
-    window.addEventListener("popstate", onPopState);
-    return () => window.removeEventListener("popstate", onPopState);
-  }, [enabled]);
-
-  return {
-    quitDialogOpen,
-    cancelQuit: () => setQuitDialogOpen(false),
-    confirmQuit: () => setQuitDialogOpen(false),
-  };
-}
+export { useQuitSessionGuard };

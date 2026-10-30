@@ -54,6 +54,11 @@ export default function VocabularySetupPage() {
       setError("Saved settings could not be loaded. Choose settings and continue.");
     }
     setReady(true);
+    function onPageShow() {
+      setStarting(false);
+    }
+    window.addEventListener("pageshow", onPageShow);
+    return () => window.removeEventListener("pageshow", onPageShow);
   }, []);
 
   useEffect(() => {
@@ -129,6 +134,7 @@ export default function VocabularySetupPage() {
       const session = createVocabularySession({ levels, grades, size }, data);
       saveGameSession("vocabulary", session.sessionId, session);
       localStorage.setItem("vocabulary-last-setup", JSON.stringify({ levels, grades, size }));
+      setStarting(false);
       router.push(`/games/vocabulary/play/${session.sessionId}`);
     } catch (startError) {
       console.error("Could not start vocabulary practice.", startError);

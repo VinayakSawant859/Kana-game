@@ -46,12 +46,20 @@ html[data-theme="dark"] { color-scheme: dark; }
 
 body {
   margin: 0;
-  min-height: 100vh;
+  min-height: 100dvh;
   overflow-x: hidden;
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
   transition: background-color 220ms ease, color 220ms ease;
+}
+
+.pt-safe {
+  padding-top: max(1rem, env(safe-area-inset-top));
+}
+
+.pb-safe {
+  padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
 }
 
 body::before {
@@ -75,8 +83,14 @@ h1, h2, h3, button, input, label, legend, .font-kana { font-family: var(--font-u
 .font-japanese { font-family: var(--font-japanese), "Noto Serif JP", serif; }
 .font-kanji { font-family: var(--font-kana), "Yu Mincho", "Noto Serif JP", var(--font-mincho), "Hiragino Mincho ProN", var(--font-japanese), serif; }
 
-.kanji-card-shell { width: clamp(250px, 34vw, 390px); }
-.kanji-card { animation-fill-mode: both; }
+.kanji-card-shell {
+  width: clamp(250px, 34vw, 390px);
+  will-change: transform, opacity;
+}
+.kanji-card {
+  animation-fill-mode: both;
+  will-change: transform, opacity;
+}
 .kanji-card-glyph {
   position: relative;
   z-index: 1;
@@ -86,7 +100,7 @@ h1, h2, h3, button, input, label, legend, .font-kana { font-family: var(--font-u
   filter: drop-shadow(.4px .5px 0 rgba(35,26,28,.12));
 }
 .kanji-leave { animation: kanji-leave 360ms ease-out both; }
-@keyframes kanji-leave { to { transform: translateX(-110px) scale(.92); opacity: 0; } }
+@keyframes kanji-leave { to { transform: translate3d(-110px, 0, 0) scale(.92); opacity: 0; } }
 
 .theme-icon-button { position: relative; overflow: hidden; }
 .theme-icon-button svg { animation: theme-icon-in 180ms ease-out; }
@@ -108,10 +122,10 @@ h1, h2, h3, button, input, label, legend, .font-kana { font-family: var(--font-u
 }
 
 .kana-card-stack { position: absolute; inset: 0; pointer-events: none; }
-.kana-card-stack .paper-layer { position: absolute; inset: 0; border-radius: 5px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 10px 24px rgba(70, 35, 44, .08); }
-.kana-card-stack .paper-layer:nth-child(1) { transform: translate(12px, 9px) rotate(2deg); }
-.kana-card-stack .paper-layer:nth-child(2) { transform: translate(-9px, 13px) rotate(-3deg); }
-.kana-card-stack .paper-layer:nth-child(3) { transform: translate(16px, -7px) rotate(1deg); }
+.kana-card-stack .paper-layer { position: absolute; inset: 0; border-radius: 5px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 10px 24px rgba(70, 35, 44, .08); will-change: transform; }
+.kana-card-stack .paper-layer:nth-child(1) { transform: translate3d(12px, 9px, 0) rotate(2deg); }
+.kana-card-stack .paper-layer:nth-child(2) { transform: translate3d(-9px, 13px, 0) rotate(-3deg); }
+.kana-card-stack .paper-layer:nth-child(3) { transform: translate3d(16px, -7px, 0) rotate(1deg); }
 
 .kana-card {
   position: absolute;
@@ -126,6 +140,7 @@ h1, h2, h3, button, input, label, legend, .font-kana { font-family: var(--font-u
     var(--card-texture),
     linear-gradient(135deg, rgba(188,0,45,.025), transparent 42%, rgba(249,201,212,.09));
   box-shadow: 0 24px 55px rgba(70, 35, 44, .16), inset 0 0 0 7px color-mix(in srgb, var(--sakura-light) 55%, transparent);
+  will-change: transform, opacity;
 }
 
 .kana-card::before {
@@ -169,9 +184,21 @@ html[data-theme="dark"] .kana-card {
   box-shadow: 0 24px 55px rgba(0, 0, 0, .38), inset 0 0 0 7px color-mix(in srgb, var(--sakura-light) 55%, transparent);
 }
 
-@keyframes kana-shake { 0%,100% { transform: translateX(0); } 20% { transform: translateX(-12px); } 40% { transform: translateX(10px); } 60% { transform: translateX(-7px); } 80% { transform: translateX(5px); } }
-@keyframes kana-nod { 0% { transform: translateY(0) scale(1); } 45% { transform: translateY(-7px) scale(1.025); } 100% { transform: translateY(0) scale(1); } }
-@keyframes kana-leave { to { transform: translateX(-110px) scale(.92); opacity: 0; } }
+@keyframes kana-shake {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  20% { transform: translate3d(-12px, 0, 0); }
+  40% { transform: translate3d(10px, 0, 0); }
+  60% { transform: translate3d(-7px, 0, 0); }
+  80% { transform: translate3d(5px, 0, 0); }
+}
+@keyframes kana-nod {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  45% { transform: translate3d(0, -7px, 0) scale(1.025); }
+  100% { transform: translate3d(0, 0, 0) scale(1); }
+}
+@keyframes kana-leave {
+  to { transform: translate3d(-110px, 0, 0) scale(.92); opacity: 0; }
+}
 
 .answer-field { height: 58px; border-bottom: 1px solid var(--sakura); transition: border-color 180ms ease, box-shadow 180ms ease; }
 .answer-field:focus-within { border-bottom-color: var(--primary-fg); box-shadow: 0 8px 18px -16px var(--primary-fg); }
@@ -179,7 +206,7 @@ html[data-theme="dark"] .kana-card {
 .answer-field.answer-correct { border-bottom-color: var(--correct); box-shadow: 0 8px 18px -16px var(--correct); }
 .answer-input { width: 100%; height: 58px; border: 0; background: transparent; color: var(--ink); caret-color: var(--primary-fg); text-align: center; font-family: var(--font-ui); font-size: clamp(1.75rem, 5vw, 2.25rem); font-weight: 600; letter-spacing: .02em; outline: none; padding: 0 48px; }
 .answer-input::placeholder { color: var(--muted); opacity: .58; text-align: center; }
-.answer-submit { position: absolute; right: 4px; top: 50%; display: grid; width: 36px; height: 36px; place-items: center; transform: translateY(-50%); border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--primary-fg); transition: background-color 180ms ease, color 180ms ease; }
+.answer-submit { position: absolute; right: 4px; top: 50%; display: grid; width: 44px; height: 44px; place-items: center; transform: translateY(-50%); border-radius: 999px; background: var(--surface); border: 1px solid var(--line); color: var(--primary-fg); transition: background-color 180ms ease, color 180ms ease; }
 .answer-submit:hover { background: var(--primary); color: white; }
 .answer-hint { margin-top: 8px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .04em; }
 
@@ -191,4 +218,14 @@ html[data-theme="dark"] .kana-card {
 @media (max-width:640px) { .result-table { max-height:50vh; } .result-grid { column-gap:8px; min-width:620px; } }
 @media (max-width: 1023px) { .kana-card-shell { width: clamp(220px, min(62vw, 44dvh), 350px); } .kanji-card-shell { width: clamp(220px, min(62vw, 44dvh), 350px); } }
 @media (max-height: 700px) { .kana-card-shell { width: min(220px, 54vw, 38dvh); } .kana-card-glyph { font-size: clamp(6rem, 18vw, 8rem); } .answer-field, .answer-input { height: 50px; } }
-@media (prefers-reduced-motion: reduce) { body::before { animation: none; } .theme-icon-button svg, .kana-card-shell, .kana-card, .kana-wrong, .kana-correct, .kana-leave, .kanji-leave { animation-duration: 1ms !important; transition-duration: 1ms !important; } .kana-leave, .kanji-leave { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+  .kana-leave, .kanji-leave {
+    opacity: 0;
+  }
+}

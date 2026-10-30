@@ -99,7 +99,7 @@ function VocabularyGame({
   const [answerError, setAnswerError] = useState("");
   const [selectedKanji, setSelectedKanji] = useState("");
   const answerInput = useRef<HTMLInputElement>(null);
-  const { quitDialogOpen, cancelQuit, confirmQuit } = useQuitSessionGuard(true);
+  const { quitDialogOpen, requestQuit, cancelQuit, confirmQuit } = useQuitSessionGuard(true);
   const question = state.questions[state.index];
   const result = state.results[state.index];
   const accumulatedScore = state.results.reduce((sum, item) => sum + item.pointsEarned, 0);
@@ -208,7 +208,17 @@ function VocabularyGame({
 
   return (
     <>
-    <GameLayout label="VOCABULARY" glyph="語">
+    <GameLayout
+      label="VOCABULARY"
+      glyph="語"
+      onNavigateHome={requestQuit}
+      onPointerDown={(event) => {
+        const tag = (event.target as HTMLElement).tagName;
+        if (tag !== "BUTTON" && tag !== "SELECT" && tag !== "OPTION" && tag !== "A" && tag !== "INPUT") {
+          window.requestAnimationFrame(() => answerInput.current?.focus());
+        }
+      }}
+    >
       <section className="mx-auto flex w-full max-w-6xl flex-1 flex-col px-5 pb-7 sm:px-8">
         <div className="grid grid-cols-[1fr_auto] items-center gap-4 border-b border-[var(--line)] pb-4">
           <div>
@@ -228,7 +238,7 @@ function VocabularyGame({
             </div>
             <p className="mt-1 text-right text-xs text-[var(--muted)]">{completed} completed</p>
           </div>
-          <button type="button" onClick={() => finish(state, true)} className="secondary-button rounded-md border px-4 py-2 text-sm font-bold">
+          <button type="button" onClick={() => finish(state, true)} className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold">
             End session
           </button>
         </div>
@@ -332,7 +342,12 @@ function VocabularyGame({
               onChange={(event) => setAnswer(event.target.value)}
               onKeyDown={handleAnswerKeyDown}
               placeholder="English meaning"
+              enterKeyHint="go"
+              inputMode="text"
               autoComplete="off"
+              autoCapitalize="none"
+              autoCorrect="off"
+              spellCheck={false}
               readOnly={resolved}
               className="answer-field w-full rounded-md border border-[var(--line)] bg-[var(--surface)] px-4 text-center text-lg text-[var(--ink)] outline-none focus:border-[var(--primary)] read-only:opacity-65"
             />

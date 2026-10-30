@@ -84,7 +84,7 @@ export default function Home() {
         <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7">
           <div className="mb-7 flex items-end justify-between gap-4">
             <div><p className="mb-1 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">New session</p><h1 className="text-2xl font-bold sm:text-3xl">Practice setup</h1></div>
-            <button type="button" onClick={() => { setScript("hiragana"); setGroups(["basic"]); setSelectedRows([...groupRows.basic.map((row) => row.key)]); setQuestionMode("all"); setCustomCount(20); }} className="flex items-center gap-2 rounded-md px-2 py-2 text-sm font-semibold text-[var(--muted)] transition-colors hover:bg-[var(--sakura-light)] hover:text-[var(--primary-fg)]">
+            <button type="button" onClick={() => { setScript("hiragana"); setGroups(["basic"]); setSelectedRows([...groupRows.basic.map((row) => row.key)]); setQuestionMode("all"); setCustomCount(20); }} className="flex min-h-11 items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold text-[var(--muted)] transition-colors hover:bg-[var(--sakura-light)] hover:text-[var(--primary-fg)]">
               <RotateCcw size={15} /> Reset
             </button>
           </div>
@@ -94,7 +94,7 @@ export default function Home() {
               <legend className="mb-3 text-sm font-bold">Script</legend>
               <div className="grid grid-cols-3 rounded-md bg-[var(--sakura-light)] p-1">
                 {["hiragana", "katakana", "both"].map((option) => (
-                  <button key={option} type="button" onClick={() => setScript(option as ScriptSelection)} className={`rounded-md px-2 py-2.5 text-sm font-semibold capitalize transition-colors ${script === option ? "bg-[var(--surface)] text-[var(--primary-fg)] shadow-sm" : "text-[var(--muted)]"}`}>{option}</button>
+                  <button key={option} type="button" onClick={() => setScript(option as ScriptSelection)} className={`min-h-11 rounded-md px-2 py-2.5 text-sm font-semibold capitalize transition-colors ${script === option ? "bg-[var(--surface)] text-[var(--primary-fg)] shadow-sm" : "text-[var(--muted)]"}`}>{option}</button>
                 ))}
               </div>
             </fieldset>

@@ -81,7 +81,7 @@ function KanaGame({
     () => createSessionState(session.deckIds, Date.now())
   );
   const [answer, setAnswer] = useState("");
-  const { quitDialogOpen, cancelQuit, confirmQuit } = useQuitSessionGuard(true);
+  const { quitDialogOpen, requestQuit, cancelQuit, confirmQuit } = useQuitSessionGuard(true);
 
   const clearTimers = useCallback(() => {
     timers.current.forEach((timer) => window.clearTimeout(timer));
@@ -217,8 +217,10 @@ function KanaGame({
     <GameLayout
     label="KANA"
     glyph="あ"
+    onNavigateHome={requestQuit}
     onPointerDown={(event) => {
-      if ((event.target as HTMLElement).tagName !== "BUTTON") focusInput();
+      const tag = (event.target as HTMLElement).tagName;
+      if (tag !== "BUTTON" && tag !== "A" && tag !== "INPUT") focusInput();
     }}
     >
 
@@ -241,7 +243,7 @@ function KanaGame({
           <button
             type="button"
             onClick={() => finish(true)}
-            className="secondary-button rounded-md border px-4 py-2 text-sm font-bold"
+            className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold"
           >
             End session
           </button>
@@ -298,6 +300,8 @@ function KanaGame({
                 onChange={(event) => setAnswer(event.target.value)}
                 onKeyDown={handleKeyDown}
                 readOnly={state.phase !== "idle" && state.phase !== "wrong"}
+                enterKeyHint="go"
+                inputMode="text"
                 autoComplete="off"
                 autoCapitalize="none"
                 autoCorrect="off"

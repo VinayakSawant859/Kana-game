@@ -63,6 +63,11 @@ export default function KanjiMeaningSetupPage() {
       setHasSavedSetup(false);
     }
     setReady(true);
+    function onPageShow() {
+      setStarting(false);
+    }
+    window.addEventListener("pageshow", onPageShow);
+    return () => window.removeEventListener("pageshow", onPageShow);
   }, []);
   /* eslint-enable react-hooks/set-state-in-effect */
 
@@ -135,7 +140,7 @@ export default function KanjiMeaningSetupPage() {
               <div className="flex flex-wrap gap-2">
                 {levelOptions.map((level) => (
                   <button key={level.value} type="button" aria-pressed={levels.includes(level.value)} onClick={() => toggleValue(level.value, levels, setLevels)}
-                    className={`rounded-full border px-4 py-2 text-sm font-bold ${levels.includes(level.value) ? "border-[var(--primary)] bg-[var(--primary)] text-white" : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)]"}`}>
+                    className={`min-h-11 rounded-full border px-4 py-2 text-sm font-bold ${levels.includes(level.value) ? "border-[var(--primary)] bg-[var(--primary)] text-white" : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)]"}`}>
                     {level.label} <span className="ml-1 text-xs opacity-80">({levelCounts[level.value] ?? 0})</span>
                   </button>
                 ))}

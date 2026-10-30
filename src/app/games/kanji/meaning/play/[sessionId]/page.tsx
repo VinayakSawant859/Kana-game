@@ -32,7 +32,7 @@ function KanjiMeaningPlayContent() {
         router.replace("/games/kanji/meaning");
         return;
       }
-      const records = await loadKanjiData();
+      const records = await loadKanjiData(session.settings.levels);
       if (active) setGame({ session, records, initial: createKanjiMeaningState(session, records) });
     }).catch((error: unknown) => {
       if (!active) return;
@@ -63,7 +63,7 @@ function KanjiMeaningGame({
   const stateRef = useRef(state);
   const timerRef = useRef<{ id: number; index: number } | null>(null);
   const [leaving, setLeaving] = useState(false);
-  const { quitDialogOpen, cancelQuit, confirmQuit } = useQuitSessionGuard(true);
+  const { quitDialogOpen, requestQuit, cancelQuit, confirmQuit } = useQuitSessionGuard(true);
   const recordByCharacter = new Map(records.map((record) => [record.c, record]));
   const question = state.questions[state.index];
   const result = state.results[state.index];
@@ -147,7 +147,7 @@ function KanjiMeaningGame({
 
   return (
     <>
-    <GameLayout label="KANJI" glyph="漢">
+    <GameLayout label="KANJI" glyph="漢" onNavigateHome={requestQuit}>
       <section className="mx-auto flex w-full max-w-5xl flex-1 flex-col px-5 pb-7 sm:px-8">
         <div className="grid grid-cols-[1fr_auto] items-center gap-4 border-b border-[var(--line)] pb-4">
           <div>
@@ -159,7 +159,7 @@ function KanjiMeaningGame({
               <div className="h-full rounded-full bg-[var(--primary)] transition-[width] duration-300" style={{ width: `${progress}%` }} />
             </div>
           </div>
-          <button type="button" onClick={() => finish(state, true)} className="secondary-button rounded-md border px-4 py-2 text-sm font-bold">End session</button>
+          <button type="button" onClick={() => finish(state, true)} className="secondary-button min-h-11 rounded-md border px-4 py-2 text-sm font-bold">End session</button>
         </div>
 
         <div className="flex flex-col items-center py-5">
