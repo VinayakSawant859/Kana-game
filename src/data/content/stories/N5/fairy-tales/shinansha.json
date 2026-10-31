@@ -1,0 +1,64 @@
+{
+  "id": "n5-the-shinansha",
+  "title": "指南車",
+  "titleRomaji": "Shinansha",
+  "titleEn": "The South Pointing Carriage",
+  "level": "N5",
+  "category": "Legend",
+  "tags": [
+    "history",
+    "magic",
+    "invention",
+    "china"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、中国に「こうてい」という偉い王様がいました。 ある日、「しゆう」という悪い男が、自分が王様になりたくて、戦いを始めました。 しゆうは頭が鉄でできていて、とても強い魔法使いでした。",
+      "en": "Long, long ago, in China, there was a great king named Kotei. One day, a bad man named Shiyu wanted to become king himself and started a fight. Shiyu's head was made of iron, and he was a very strong wizard."
+    },
+    {
+      "ja": "王様と兵士たちは、しゆうと戦うために広い野原へ行きました。 しかし、しゆうが魔法の言葉を言うと、空が暗くなって、前が全然見えなくなりました。 兵士たちは道がわからなくて、とても困りました。 しゆうは笑って逃げました。",
+      "en": "The king and his soldiers went to a wide field to fight Shiyu. However, when Shiyu said magic words, the sky became dark and they could not see the front at all. The soldiers did not know the way and were very troubled. Shiyu laughed and ran away."
+    },
+    {
+      "ja": "そこで、王様は「指南車（しなんしゃ）」という特別な車を作りました。 車の上には男の人形が立っていました。 その人形は、いつでも南の方向を指しました。 だから、暗い所でも道がわかりました。 王様は指南車を使って正しい道を歩き、ついに悪いしゆうに勝ちました。",
+      "en": "So, the king made a special carriage called \"Shinansha\". On top of the carriage, a man doll was standing. That doll always pointed in the direction of South. Therefore, they knew the way even in dark places. The king used the Shinansha, walked the correct path, and finally won against the bad Shiyu."
+    },
+    {
+      "ja": "王様は池の上のクモを見て、船も作りました。 彼は国を長く平和にしました。 王様が百歳になった時、空から金の龍が来ました。 王様はその金の龍に乗って、空の上の天へ行きました。",
+      "en": "The king saw a spider on a pond and also made boats. He made the country peaceful for a long time. When the king became a hundred years old, a gold dragon came from the sky. The king rode on that gold dragon and went to heaven above the sky."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "王様が作った特別な車の上には何がありましたか？",
+      "options": [
+        "動物",
+        "金の龍",
+        "人形",
+        "船"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "その車の上にある物は、いつでもどこを指しましたか？",
+      "options": [
+        "北",
+        "南",
+        "東",
+        "西"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "王様は最後に何に乗って空へ行きましたか？",
+      "options": [
+        "金の龍",
+        "指南車",
+        "白い馬",
+        "大きなくも"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

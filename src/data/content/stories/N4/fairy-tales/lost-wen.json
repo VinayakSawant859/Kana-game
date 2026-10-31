@@ -1,0 +1,64 @@
+{
+  "id": "n4-how-an-old-man-lost-his-wen",
+  "title": "こぶとり爺さん",
+  "titleRomaji": "Kobutori Jiisan",
+  "titleEn": "How an Old Man Lost His Wen",
+  "level": "N4",
+  "category": "Fairy Tale",
+  "tags": [
+    "ogres",
+    "dance",
+    "wen",
+    "fairy tale"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、右の頬（ほほ）にテニスボールのような大きなこぶがある優しいおじいさんがいました。おじいさんはそのこぶをずっと治したいと思っていましたが、どんな薬も効果がありませんでした。ある日、山で木を切っていると急に雨が降ってきたため、おじいさんは大きな木の洞（ほら）に入って雨宿りをしました。",
+      "en": "Long, long ago, there was a kind old man who had a large wen like a tennis ball on his right cheek. The old man had wanted to cure that wen for a long time, but no medicine was effective. One day, while cutting wood in the mountain, it suddenly started to rain, so the old man entered a large hollow tree to shelter from the rain."
+    },
+    {
+      "ja": "雨が上がった夕方、突然たくさんの鬼たちが現れ、近くで酒を飲みながら歌って踊り始めました。おじいさんは面白そうだなと思って見ているうちに、いてもたってもられず、つい自分も前に出て上手に踊りました。鬼の親分は大変喜び、「お前は踊りが上手だな。明日もまた来て踊ってくれ」と言いました。そして、「約束の証拠（しょうこ）だ」と言って、おじいさんの頬からその大きなこぶを簡単に取ってしまいました。",
+      "en": "In the evening after the rain stopped, suddenly many ogres appeared and started singing and dancing while drinking sake nearby. As the old man watched, thinking it looked interesting, he couldn't help himself and stepped out to dance skillfully as well. The ogre boss was very pleased and said, \"You dance well. Come again tomorrow and dance.\" Then, saying, \"This is proof of our promise,\" he easily removed that large wen from the old man's cheek."
+    },
+    {
+      "ja": "おじいさんが喜んで家に帰ると、頬にあったはずのこぶが綺麗になくなっていました。隣の家には、同じように頬にこぶがあって性格の悪い意地悪なおじいさんが住んでいました。その隣のおじいさんは話を聞くと、「自分もこぶを取ってもらおう」と急いで山の木の洞へ行きました。",
+      "en": "When the old man happily returned home, the wen that should have been on his cheek was cleanly gone. In the neighboring house lived a mean-spirited bad old man who likewise had a wen on his cheek. Hearing the story, that neighboring old man hurried to the mountain's tree hollow, saying, \"I'll have my wen removed too.\""
+    },
+    {
+      "ja": "夕方になると鬼たちが現れ、意地悪なおじいさんに踊るように言いました。しかし、彼はダンスを習ったことがなかったので、ただめちゃくちゃに踊りました。それを見た鬼たちは怒り、「下手な踊りだ！明日の約束の証拠に、昨日あいつにあげたこぶを返してやる！」と言って、もう一つのこぶを彼の左の頬に投げつけました。意地悪なおじいさんは、両方の頬にこぶをつけたまま、泣きながら家に帰りました。",
+      "en": "When evening came, the ogres appeared and told the bad old man to dance. However, because he had never learned to dance, he just danced haphazardly. The ogres, seeing that, got angry and said, \"What a poor dance! As proof of tomorrow's promise, I'll return the wen we gave that fellow yesterday!\" and threw another wen onto his left cheek. The bad old man returned home crying, with wens attached to both of his cheeks."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "優しいおじいさんはどうやってこぶを取りましたか？",
+      "options": [
+        "お医者さんに薬をもらった",
+        "鬼の前で上手に踊って、鬼に取ってもらった",
+        "特別な水で顔を洗った",
+        "自分で切って取った"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "意地悪なおじいさんが鬼の前で踊った時、どうなりましたか？",
+      "options": [
+        "鬼がとても褒めてくれた",
+        "こぶが両方とも消えた",
+        "踊りが下手で怒られ、もう一つのこぶをつけられた",
+        "お金をたくさんもらった"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "最終的に、意地悪なおじいさんはどうなりましたか？",
+      "options": [
+        "両方の頬にこぶがついた",
+        "こぶが全部なくなった",
+        "鬼の親分になった",
+        "村から引っ越した"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

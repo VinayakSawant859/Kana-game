@@ -1,0 +1,44 @@
+{
+  "id": "n5-going-to-school",
+  "title": "学校へ行く",
+  "titleRomaji": "Gakkō e iku",
+  "titleEn": "Going to School",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": ["school", "daily", "routine", "study"],
+  "paragraphs": [
+    {
+      "ja": "月曜日の朝、けんたさんは七時に起きました。顔を洗って、朝ごはんを食べました。",
+      "en": "On Monday morning, Kenta woke up at seven o'clock. He washed his face and ate breakfast."
+    },
+    {
+      "ja": "八時に青いかばんを持って、歩いて学校へ行きました。家から学校まで十五分かかりました。",
+      "en": "At eight o'clock, he took his blue bag and walked to school. It took fifteen minutes from home to school."
+    },
+    {
+      "ja": "学校の門の前で友だちの山下さんに会いました。「おはようございます」とあいさつをしました。",
+      "en": "In front of the school gate, he met his friend Yamashita. They greeted each other with \"Good morning.\""
+    },
+    {
+      "ja": "二人は一緒に教室へ入りました。楽しい一週間が始まりました。",
+      "en": "The two entered the classroom together. A fun week began."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "けんたさんは何時に起きましたか？",
+      "options": ["六時", "七時", "八時", "九時"],
+      "answerIndex": 1
+    },
+    {
+      "question": "けんたさんはどうやって学校へ行きましたか？",
+      "options": ["バスで", "電車で", "自転車で", "歩いて"],
+      "answerIndex": 3
+    },
+    {
+      "question": "学校の門の前でだれに会いましたか？",
+      "options": ["先生", "山下さん", "お母さん", "田中さん"],
+      "answerIndex": 1
+    }
+  ]
+}

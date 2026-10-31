@@ -1,0 +1,64 @@
+{
+  "id": "n4-monkey-and-crab",
+  "title": "さるかに合戦",
+  "titleRomaji": "Saru Kani Gassen",
+  "titleEn": "The Quarrel of the Monkey and the Crab",
+  "level": "N4",
+  "category": "Fairy Tale",
+  "tags": [
+    "monkey",
+    "crab",
+    "revenge",
+    "friends"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、ある秋の日に、猿とカニが川のそばで遊んでいました。カニはおいしいおにぎりを見つけ、猿は柿（かき）の種（たね）を見つけました。ずるい猿は「そのおにぎりと、この種を交換しよう。種を土に植えれば、毎年たくさんのおいしい柿が食べられるよ」と言いました。カニはそれを信じて交換し、家に帰って種を植えました。",
+      "en": "Long, long ago, on a bright autumn day, a monkey and a crab were playing by a river. The crab found a delicious rice-dumpling, and the monkey found a persimmon seed. The cunning monkey said, \"Let's exchange that rice-dumpling for this seed. If you plant the seed in the ground, you will be able to eat many delicious persimmons every year.\" The crab believed that, made the exchange, and went home and planted the seed."
+    },
+    {
+      "ja": "数年が過ぎて、種は大きな木になり、秋には甘そうな柿がたくさんなりました。しかし、カニは木に登ることができません。そこで、木登りが上手な猿に柿を取ってもらうよう頼みました。猿は喜んで木に登りましたが、自分だけでおいしい柿を全部食べてしまいました。カニが怒って文句を言うと、猿は硬くて青い柿をカニに投げつけ、カニを殺して逃げてしまいました。",
+      "en": "Several years passed, the seed became a big tree, and in autumn it bore many sweet-looking persimmons. However, the crab could not climb the tree. So, he asked the monkey, who was good at climbing trees, to pick the persimmons for him. The monkey happily climbed the tree, but ate all the delicious persimmons by himself. When the crab got angry and complained, the monkey threw hard, unripe persimmons at the crab, killed him, and ran away."
+    },
+    {
+      "ja": "死んだお父さんを見つけた子どものカニは、とても悲しんで泣きました。しかし、すぐにお父さんの敵（かたき）を討つ（うつ）ことを決めました。自分の力だけでは強い猿に勝てないので、お父さんの友達だった臼（うす）とハチと栗（くり）に相談しました。三人は子どものカニをかわいそうに思い、喜んで助ける約束をしました。",
+      "en": "The young crab who found his dead father was very sad and cried. However, he soon decided to avenge his father. Because he could not defeat the strong monkey by his own strength alone, he consulted his father's friends: the mortar, the bee, and the chestnut. The three felt sorry for the young crab and gladly promised to help him."
+    },
+    {
+      "ja": "子どものカニは、何も知らないふりをして猿を家に招待し、ごちそうを出しました。その後、猿が一人でお茶の部屋の火に近づくと、隠れていた熱い栗が飛び出して猿の首に当たりました。びっくりして逃げようとした猿の顔を、今度はハチが刺しました。猿が泣きながら門の下を走ると、上から重い臼が落ちてきて猿を潰しました。最後に子どものカニがはさみで猿の首を切り、無事にお父さんの敵を討ちました。",
+      "en": "The young crab pretended to know nothing, invited the monkey to his house, and served a feast. After that, when the monkey approached the fire in the tea room alone, the hidden hot chestnut popped out and hit the monkey's neck. Next, the bee stung the face of the monkey as he was surprised and tried to run away. When the monkey ran under the gate crying, the heavy mortar fell from above and crushed the monkey. Finally, the young crab cut off the monkey's head with his claws, and safely avenged his father."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "猿とカニは最初に何を交換しましたか？",
+      "options": [
+        "おにぎりと柿の種",
+        "栗とハチ",
+        "お金と赤い服",
+        "お茶と甘いお菓子"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "お父さんのカニはどうして死にましたか？",
+      "options": [
+        "木から落ちたから",
+        "猿が硬い柿を投げつけたから",
+        "川に落ちて溺れたから",
+        "重い臼が落ちてきたから"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "子どものカニを助けた友達は誰ですか？",
+      "options": [
+        "犬と猿とキジ",
+        "亀と魚",
+        "臼とハチと栗",
+        "熊と鹿とうさぎ"
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

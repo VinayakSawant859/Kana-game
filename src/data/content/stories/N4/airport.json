@@ -1,0 +1,59 @@
+{
+  "id": "n4-airport-departure",
+  "title": "空港での出発",
+  "titleRomaji": "Kūkō de no shuppatsu",
+  "titleEn": "Departure at the Airport",
+  "level": "N4",
+  "category": "Travel",
+  "tags": ["airport", "airplane", "travel", "work"],
+  "paragraphs": [
+    {
+      "ja": "先週の土曜日、佐藤さんは初めて一人で空港へ行きました。来週から東京の会社で働く予定ですから、飛行機に乗ることにしたのです。",
+      "en": "Last Saturday, Mr. Sato went to the airport alone for the first time. Because he is scheduled to work at a company in Tokyo starting next week, he decided to take an airplane."
+    },
+    {
+      "ja": "空港に着くと、人が大勢いてとても混んでいました。まず、航空会社のカウンターで重いスーツケースを預けて、搭乗券をもらいました。",
+      "en": "When he arrived at the airport, there were a lot of people and it was very crowded. First, he checked in his heavy suitcase at the airline counter and received his boarding pass."
+    },
+    {
+      "ja": "それから、保安検査場を通って出発ロビーへ向かいました。売店で家族へのお土産を買った後で、カフェで冷たいコーヒーを飲みながら本を読みました。",
+      "en": "After that, he passed through the security checkpoint and headed to the departure lobby. After buying souvenirs for his family at a shop, he read a book while drinking cold coffee at a cafe."
+    },
+    {
+      "ja": "一時半になると、「搭乗が始まります」という案内が聞こえました。佐藤さんは荷物を持って、急いで搭乗口へ歩いて行きました。少し緊張しましたが、無事に出発することができました。",
+      "en": "At 1:30, he heard an announcement saying, \"Boarding will begin.\" Mr. Sato grabbed his luggage and walked hurriedly to the boarding gate. Although he was a bit nervous, he was able to depart safely."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "佐藤さんはどうして空港へ行きましたか？",
+      "options": [
+        "友達を迎えに行くため",
+        "旅行のお土産を買うため",
+        "東京で働くために飛行機に乗るため",
+        "空港のカフェで働くため"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "佐藤さんはカウンターで何をしましたか？",
+      "options": [
+        "コーヒーを注文しました",
+        "スーツケースを預けました",
+        "お土産を買いました",
+        "本を読みました"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "案内が聞こえた後で、佐藤さんは何をしましたか？",
+      "options": [
+        "急いで搭乗口へ行きました",
+        "カフェへコーヒーを飲みに行きました",
+        "家族に電話をかけました",
+        "売店で買い物をしました"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

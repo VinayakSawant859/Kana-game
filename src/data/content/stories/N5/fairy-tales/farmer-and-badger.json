@@ -1,0 +1,64 @@
+{
+  "id": "n5-farmer-and-badger",
+  "title": "おじいさんとタヌキ",
+  "titleRomaji": "Ojiisan to Tanuki",
+  "titleEn": "The Farmer and the Badger",
+  "level": "N5",
+  "category": "Fairy Tale",
+  "tags": [
+    "animals",
+    "revenge",
+    "rabbit",
+    "badger"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、山にいいおじいさんとおばあさんがいました。 近くに悪いタヌキがいました。 タヌキは毎日、おじいさんの作った野菜を全部食べました。 おじいさんは怒って、タヌキを捕まえました。 そして、家の木に縛りました。おじいさんは仕事に出かけました。",
+      "en": "Long, long ago, there was a good old man and an old woman in the mountain. There was a bad badger nearby. Every day, the badger ate all the vegetables the old man had grown. The old man got angry and caught the badger. Then, he tied it to a tree at the house. The old man went out to work."
+    },
+    {
+      "ja": "おばあさんが家で仕事をしていると、タヌキは言いました。 「おばあさん、私は手伝いたいです。ひもを解いてください。」 おばあさんはタヌキをかわいそうに思って、ひもを解きました。 すると、タヌキはおばあさんを殺して、山へ走って行きました。 おじいさんは帰って、とても悲しくて泣きました。",
+      "en": "While the old woman was working at home, the badger said: \"Old woman, I want to help. Please untie the string.\" The old woman felt sorry for the badger and untied the string. Then, the badger killed the old woman and ran away to the mountain. The old man returned and was very sad and cried."
+    },
+    {
+      "ja": "おじいさんの友達のウサギが来て、「泣かないでください。私が悪いタヌキをやっつけます」と言いました。 ウサギはタヌキと山へ行きました。 二人は草をたくさん切って、背中に乗せました。 ウサギは後ろから、タヌキの背中の草に火をつけました。 タヌキは背中がとても熱くて、泣きました。",
+      "en": "The old man's friend, the rabbit, came and said, \"Please don't cry. I will defeat the bad badger.\" The rabbit went to the mountain with the badger. The two cut a lot of grass and put it on their backs. The rabbit, from behind, set fire to the grass on the badger's back. The badger's back was very hot, and he cried."
+    },
+    {
+      "ja": "少し後で、ウサギはタヌキと海へ行きました。 ウサギは木の船に乗りました。タヌキは土の船に乗りました。 二人が船に乗って海へ行くと、タヌキの土の船は水で壊れました。 タヌキは海の中に入って、死にました。 ウサギはおじいさんの家へ帰りました。 おじいさんはウサギに「ありがとう」と言って、一緒に楽しく住みました。",
+      "en": "A little later, the rabbit went to the sea with the badger. The rabbit rode a wooden boat. The badger rode a dirt boat. When the two rode the boats and went to the sea, the badger's dirt boat broke from the water. The badger went into the sea and died. The rabbit returned to the old man's house. The old man said \"Thank you\" to the rabbit, and they lived happily together."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "タヌキはどうしておばあさんに「ひもを解いてください」と言いましたか？",
+      "options": [
+        "仕事を手伝いたいから",
+        "ご飯を食べたいから",
+        "おじいさんが呼んだから",
+        "海に行きたいから"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "ウサギはタヌキの背中の草をどうしましたか？",
+      "options": [
+        "全部食べました",
+        "火をつけました",
+        "水に入れました",
+        "土をかけました"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "タヌキが海で乗った船は何の船でしたか？",
+      "options": [
+        "木の船",
+        "大きい船",
+        "土の船",
+        "赤い船"
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

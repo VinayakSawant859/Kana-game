@@ -1,0 +1,59 @@
+{
+  "id": "n4-baseball-stadium",
+  "title": "野球場での応援",
+  "titleRomaji": "Yakyūjō de no ōen",
+  "titleEn": "Cheering at the Baseball Stadium",
+  "level": "N4",
+  "category": "Sports",
+  "tags": ["baseball", "stadium", "sports", "weekend"],
+  "paragraphs": [
+    {
+      "ja": "先週の日曜日の午後、山田さんは会社の同僚と一緒に野球場へ試合を見に行きました。駅を出ると、同じ色のユニフォームを着た大勢の人が球場へ向かって歩いていました。",
+      "en": "Last Sunday afternoon, Mr. Yamada went to the baseball stadium with his coworkers to watch a match. When they exited the station, a large crowd of people wearing uniforms of the same color was walking toward the ballpark."
+    },
+    {
+      "ja": "山田さんたちも急いで入場券を見せて、球場の中に入りました。スタンドはとても広くて、大勢のファンの声でにぎやかでした。席に着いた後、売店でお弁当と冷たい飲み物を買いました。",
+      "en": "Mr. Yamada and his colleagues hurried to show their tickets and entered the stadium. The stands were very wide, bustling with the voices of many fans. After finding their seats, they bought boxed lunches and cold drinks at the concession stand."
+    },
+    {
+      "ja": "試合が始まると、選手たちが一生懸命走ったりボールを遠くまで打ったりして、とても迫力がありました。七回に応援しているチームがホームランを打った時、みんなで立ち上がって大きな声で喜びました。",
+      "en": "When the game began, the players ran hard and hit balls far, which was very thrilling. In the seventh inning, when their supported team hit a home run, everyone stood up and cheered loudly with joy."
+    },
+    {
+      "ja": "応援していたチームが無事に勝って、素晴らしい思い出になりました。",
+      "en": "The team they were rooting for won safely, making it a wonderful memory."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "山田さんはだれと一緒に野球場へ行きましたか？",
+      "options": [
+        "家族",
+        "高校の先生",
+        "会社の同僚",
+        "一人"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "山田さんたちは席に着いた後で何をしましたか？",
+      "options": [
+        "選手にサインをもらいました",
+        "お弁当と飲み物を買いました",
+        "すぐに写真を撮りました",
+        "家に帰る準備をしました"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "七回に何がありましたか？",
+      "options": [
+        "雨が降って試合が止まりました",
+        "電車の時間になったので帰りました",
+        "応援しているチームがホームランを打ちました",
+        "試合に負けてしまいました"
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

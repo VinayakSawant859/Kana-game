@@ -1,0 +1,64 @@
+{
+  "id": "n4-old-man-withered-trees",
+  "title": "花咲か爺さん",
+  "titleRomaji": "Hanasaka Jiisan",
+  "titleEn": "The Old Man Who Made Withered Trees to Blossom",
+  "level": "N4",
+  "category": "Fairy Tale",
+  "tags": [
+    "dog",
+    "magic",
+    "flowers",
+    "justice"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、優しいおじいさんとおばあさんが、シロという犬を大切に飼っていました。 ある日、シロが畑で土を掘ると、たくさんの小判（お金）が出てきました。 それを見た隣の悪いおじいさんは、シロを借りて山へ行きました。 しかし、お金が出なかったので、怒ってシロを殺してしまいました。",
+      "en": "Long, long ago, a kind old man and woman carefully kept a dog named Shiro. One day, when Shiro dug the dirt in the field, a lot of gold coins came out. The bad old man next door saw this, borrowed Shiro, and went to the mountain. However, because no money came out, he got angry and killed Shiro."
+    },
+    {
+      "ja": "優しいおじいさんはとても悲しんで、シロのお墓の木で臼（うす）を作りました。 その臼で餅（もち）をつくと、たくさんのおいしい餅が出てきました。 隣の悪いおじいさんはその臼を借りましたが、汚い物が出たので、怒って臼を燃やしてしまいました。",
+      "en": "The kind old man was very sad and made a mortar from the tree at Shiro's grave. When he pounded rice cakes in that mortar, a lot of delicious rice cakes came out. The bad old man next door borrowed the mortar, but because dirty things came out, he got angry and burned the mortar."
+    },
+    {
+      "ja": "優しいおじいさんがその灰（はい）をもらって、枯れた（かれた）木にまくと、美しい花が咲きました。 その話を聞いたお殿様（おとのさま）が、「私の枯れた桜の木にも花を咲かせてくれ」と頼みました。 おじいさんが灰をまくと、見事に桜が咲きました。 お殿様はとても喜んで、おじいさんにたくさんのご褒美（ごほうび）をあげました。",
+      "en": "When the kind old man received the ashes and scattered them on a withered tree, beautiful flowers bloomed. The lord who heard that story requested, \"Please make flowers bloom on my withered cherry tree too.\" When the old man scattered the ashes, cherry blossoms bloomed splendidly. The lord was very happy and gave the old man many rewards."
+    },
+    {
+      "ja": "悪いおじいさんも同じように灰を集めて、お殿様の前でまきました。 しかし、花は咲かず、灰がお殿様の目に入ってしまいました。 悪いおじいさんは捕まって、牢屋（ろうや）に入れられました。 優しいおじいさんは、おばあさんと一緒にいつまでも幸せに暮らしました。",
+      "en": "The bad old man also gathered ashes in the same way and scattered them in front of the lord. However, flowers did not bloom, and the ashes entered the lord's eyes. The bad old man was caught and put in prison. The kind old man lived happily forever with the old woman."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "どうして悪いおじいさんはシロを殺しましたか？",
+      "options": [
+        "お金が出なかったから",
+        "シロが噛んだから",
+        "シロが逃げたから",
+        "餅を食べたから"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "優しいおじいさんが枯れた木に灰をまくと、どうなりましたか？",
+      "options": [
+        "お金が出ました",
+        "美味しい餅が出ました",
+        "美しい花が咲きました",
+        "木が倒れました"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "悪いおじいさんがまいた灰はどうなりましたか？",
+      "options": [
+        "きれいな花になりました",
+        "風で飛んでいきました",
+        "美味しいご飯になりました",
+        "お殿様の目に入りました"
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

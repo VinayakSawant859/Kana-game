@@ -1,0 +1,64 @@
+{
+  "id": "n5-mirror-of-matsuyama",
+  "title": "松山の鏡",
+  "titleRomaji": "Matsuyama no Kagami",
+  "titleEn": "The Mirror of Matsuyama",
+  "level": "N5",
+  "category": "Fairy Tale",
+  "tags": [
+    "mirror",
+    "family",
+    "mother",
+    "lesson"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、ある所に、お父さんとお母さんと女の子がいました。 ある日、お父さんは遠い町へ行って、お母さんに鏡（かがみ）を買いました。 お母さんは初めて鏡を見て、とても喜びました。",
+      "en": "Long, long ago, in a certain place, there was a father, a mother, and a girl. One day, the father went to a distant town and bought a mirror for the mother. The mother saw a mirror for the first time and was very happy."
+    },
+    {
+      "ja": "少し後で、お母さんは重い病気になりました。 お母さんは女の子に鏡を渡して、「私が死んだ後、寂しい時、この鏡を見てください。私に会うことができますよ」と言いました。 そして、お母さんは死にました。",
+      "en": "A little later, the mother became severely ill. The mother handed the mirror to the girl and said, \"After I die, when you are lonely, please look at this mirror. You will be able to meet me.\" Then, the mother died."
+    },
+    {
+      "ja": "お父さんは新しい女の人と結婚しました。 新しいお母さんは、女の子が好きではありませんでした。 女の子は毎日部屋で鏡を見ました。 鏡の中にお母さんの顔がありました。 本当は女の子の顔でしたが、女の子は「お母さんだ」と思って、毎日話しました。",
+      "en": "The father married a new woman. The new mother did not like the girl. The girl looked at the mirror in her room every day. There was her mother's face in the mirror. In truth, it was the girl's face, but the girl thought, \"It's mother,\" and talked to it every day."
+    },
+    {
+      "ja": "新しいお母さんは「あの子は部屋で私に悪いことをしています」とお父さんに言いました。 お父さんが女の子に聞くと、女の子は「鏡のお母さんと話しています」と答えました。 お父さんは「それはあなたの顔ですよ。あなたは本当にいい子ですね」と言って泣きました。 新しいお母さんはそれを聞いて、女の子に謝りました。 その後、三人は一緒に楽しく住みました。",
+      "en": "The new mother said to the father, \"That child is doing bad things to me in her room.\" When the father asked the girl, she answered, \"I am talking with my mother in the mirror.\" The father said, \"That is your face. You are a truly good child,\" and cried. The new mother heard that and apologized to the girl. After that, the three lived happily together."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "お父さんはお母さんに何を買いましたか？",
+      "options": [
+        "服",
+        "鏡",
+        "本",
+        "花"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "女の子は毎日部屋で何をしましたか？",
+      "options": [
+        "本を読みました",
+        "歌を歌いました",
+        "鏡を見ました",
+        "寝ました"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "新しいお母さんは女の子の話を聞いて、どうしましたか？",
+      "options": [
+        "家から逃げました",
+        "女の子に謝りました",
+        "お父さんと結婚しました",
+        "鏡を捨てました"
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

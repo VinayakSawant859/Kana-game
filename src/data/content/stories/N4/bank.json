@@ -1,0 +1,59 @@
+{
+  "id": "n4-at-bank",
+  "title": "銀行での手続き",
+  "titleRomaji": "Ginkō de no tetsuzuki",
+  "titleEn": "Procedures at the Bank",
+  "level": "N4",
+  "category": "Everyday Life",
+  "tags": ["bank", "money", "procedure", "daily"],
+  "paragraphs": [
+    {
+      "ja": "先週の金曜日の午後、山田さんは新しい口座を作るために駅の近くの銀行へ行きました。",
+      "en": "Last Friday afternoon, Mr. Yamada went to the bank near the station to open a new account."
+    },
+    {
+      "ja": "銀行に入ると、案内係の人が親切に声をかけてくれて、番号札を渡してくれました。ロビーの椅子に座って、書類に名前や住所を書きながら順番を待ちました。",
+      "en": "When he entered the bank, the receptionist kindly spoke to him and handed him a numbered ticket. Sitting on a chair in the lobby, he waited for his turn while writing his name and address on the document."
+    },
+    {
+      "ja": "自分の番号が呼ばれたので、窓口へ行って書類と保険証を見せました。銀行員は笑顔で丁寧に手続きの方法を説明してくれました。",
+      "en": "Since his number was called, he went to the counter and showed the documents and his health insurance card. The bank clerk smiled and politely explained the procedure."
+    },
+    {
+      "ja": "三十分ほどで新しい通帳とカードを受け取ることができました。山田さんはお礼を言って、安心して銀行を出ました。",
+      "en": "In about thirty minutes, he was able to receive his new bankbook and card. Mr. Yamada said thank you and left the bank feeling relieved."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "山田さんはどうして銀行へ行きましたか？",
+      "options": [
+        "お金を借りるため",
+        "新しい口座を作るため",
+        "外国のお金に両替するため",
+        "水道代を払うため"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "山田さんは窓口で何を見せましたか？",
+      "options": [
+        "書類と保険証",
+        "パスポートと写真",
+        "会社の社員証",
+        "古い通帳と印鑑"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "手続きが終わるまでどのくらいかかりましたか？",
+      "options": [
+        "十分ほど",
+        "三十分ほど",
+        "一時間ほど",
+        "二時間ほど"
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

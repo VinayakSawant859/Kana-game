@@ -1,0 +1,59 @@
+{
+  "id": "n4-hanabi-festival",
+  "title": "花火大会の思い出",
+  "titleRomaji": "Hanabi taikai no omoide",
+  "titleEn": "Memories of the Fireworks Festival",
+  "level": "N4",
+  "category": "Culture",
+  "tags": ["festival", "summer", "friends", "culture"],
+  "paragraphs": [
+    {
+      "ja": "先週の土曜日の夜、田中さんは友達と一緒に川の近くで行われた花火大会へ行きました。浴衣を着て出かけたので、いつもと違う特別な気分でした。",
+      "en": "Last Saturday night, Mr. Tanaka went to a fireworks festival held near the river with his friend. Because he went out wearing a yukata, he felt a special mood different from usual."
+    },
+    {
+      "ja": "会場に着くと、道にはたくさんの屋台が並んでいて、大勢の人でにぎわっていました。二人は屋台で焼きそばと冷たい飲み物を買ってから、草の上に座りました。",
+      "en": "When they arrived at the venue, many food stalls lined the street, and it was bustling with a large crowd of people. After buying yakisoba and cold drinks at a food stall, the two sat on the grass."
+    },
+    {
+      "ja": "七時半になると、大きな音と一緒に夜空に色とりどりの花火が上がりました。赤や青やすごく明るい金色の光が広がって、とてもきれいでした。周りの人たちも「すごい」と言って拍手をしていました。",
+      "en": "At 7:30, colorful fireworks went up into the night sky along with a loud sound. Red, blue, and extremely bright golden lights spread out, and it was very beautiful. The people around them also applauded, saying, 'Amazing!'"
+    },
+    {
+      "ja": "一時間くらい花火を見て、素晴らしい夏の思い出を作ることができました。",
+      "en": "They watched the fireworks for about an hour and were able to make wonderful summer memories."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "田中さんはどんな服を着て花火大会へ行きましたか？",
+      "options": [
+        "スーツ",
+        "浴衣",
+        "シャツとズボン",
+        "制服"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "二人は屋台で何を買いましたか？",
+      "options": [
+        "うどんと果物",
+        "カレーとパン",
+        "焼きそばと飲み物",
+        "魚とお弁当"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "花火は何時に始まりましたか？",
+      "options": [
+        "六時半",
+        "七時",
+        "七時半",
+        "八時"
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

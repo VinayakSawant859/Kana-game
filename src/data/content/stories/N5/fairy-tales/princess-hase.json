@@ -1,0 +1,64 @@
+{
+  "id": "n5-princess-hase",
+  "title": "長谷姫",
+  "titleRomaji": "Hase Hime",
+  "titleEn": "The Story of Princess Hase",
+  "level": "N5",
+  "category": "Fairy Tale",
+  "tags": [
+    "princess",
+    "mountain",
+    "family",
+    "rescue"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、偉い男の人といい女の人がいました。 二人は子供がいませんでしたから、お寺で神様にたくさん祈りました。 そして、とても可愛い女の子が生まれました。 名前は長谷（はせ）です。 長谷が五歳の時、お母さんは重い病気で死にました。 お父さんは、新しい女の人と結婚しました。 新しいお母さんは、長谷が全然好きではありませんでした。 彼女はとても悪い人でした。",
+      "en": "Long, long ago, there was a great man and a good woman. Because the two had no children, they prayed a lot to the gods at the temple. Then, a very cute baby girl was born. Her name was Hase. When Hase was five years old, her mother died of a severe illness. Her father married a new woman. The new mother did not like Hase at all. She was a very bad person."
+    },
+    {
+      "ja": "ある日、お父さんが家にいない時、悪いお母さんは古い召し使いを呼びました。 「長谷を遠い山へ連れて行って、殺してください」と言いました。 召し使いは長谷と一緒に山へ行きました。 しかし、彼は長谷を殺しませんでした。 彼は山に小さい家を作って、長谷をそこに住ませました。 長谷は毎日、一人で静かに本を読んでいました。",
+      "en": "One day, when the father was not at home, the bad mother called an old servant. She said, \"Take Hase to a distant mountain and kill her.\" The servant went to the mountain with Hase. However, he did not kill Hase. He built a small house in the mountain and let Hase live there. Hase read books quietly alone every day."
+    },
+    {
+      "ja": "お父さんは家に帰って、長谷がいませんから、とても悲しかったです。 「どこにいますか」と言って、お父さんは、毎日長谷を探しました。 ある日、お父さんは馬に乗って、遠い山へ行きました。 山の中に小さい家がありました。 家の中から、きれいな声が聞こえました。 お父さんが家の中を見ると、長谷が本を読んでいました。",
+      "en": "The father returned home, and because Hase was not there, he was very sad. Saying, \"Where are you?\" the father looked for Hase every day. One day, the father rode a horse and went to a distant mountain. There was a small house in the mountain. From inside the house, a beautiful voice could be heard. When the father looked inside the house, Hase was reading a book."
+    },
+    {
+      "ja": "「長谷！ 私の可愛い子ども！」とお父さんは大きな声で言いました。 長谷はお父さんを見て、泣いて喜びました。 お父さんは長谷を連れて、自分の家へ帰りました。 悪いお母さんはお父さんが怖くて、遠くへ逃げました。 その後、お父さんと長谷はずっと一緒に楽しく住みました。",
+      "en": "\"Hase! My cute child!\" the father said with a loud voice. Hase saw her father and cried with joy. The father took Hase and returned to his own house. The bad mother was afraid of the father and ran far away. After that, the father and Hase lived happily together all the time."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "長谷の本当のお母さんはどうなりましたか？",
+      "options": [
+        "逃げました",
+        "病気で死にました",
+        "山へ行きました",
+        "新しい人と結婚しました"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "召し使いは山で長谷をどうしましたか？",
+      "options": [
+        "殺しました",
+        "一緒に逃げました",
+        "小さい家に住ませました",
+        "お寺に連れて行きました"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "お父さんはどこで長谷を見つけましたか？",
+      "options": [
+        "遠い山の中",
+        "きれいな海",
+        "大きいお寺",
+        "悪いお母さんの部屋"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

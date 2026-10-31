@@ -1,0 +1,44 @@
+{
+  "id": "n5-meeting-friend",
+  "title": "友だちに会う",
+  "titleRomaji": "Tomodachi ni au",
+  "titleEn": "Meeting a Friend",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": ["friend", "cafe", "weekend", "daily"],
+  "paragraphs": [
+    {
+      "ja": "日曜日、田中さんは駅の前で友だちの木村さんに会いました。時間は午後二時でした。",
+      "en": "On Sunday, Mr. Tanaka met his friend Mr. Kimura in front of the station. The time was 2:00 PM."
+    },
+    {
+      "ja": "二人は歩いて近くの喫茶店へ行きました。田中さんはコーヒーを飲んで、木村さんは温かいお茶を飲みました。",
+      "en": "The two walked to a nearby coffee shop. Mr. Tanaka drank coffee, and Mr. Kimura drank warm tea."
+    },
+    {
+      "ja": "それから、先週の旅行の話や大学の勉強についてたくさん話しました。とても楽しかったです。",
+      "en": "After that, they talked a lot about last week's trip and university studies. It was very fun."
+    },
+    {
+      "ja": "四時半に「また来週会いましょう」と言って、電車で家に帰りました。",
+      "en": "At 4:30, they said, \"Let's meet again next week,\" and returned home by train."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "二人は何時に駅の前で会いましたか？",
+      "options": ["午前十時", "午前十二時", "午後二時", "午後四時半"],
+      "answerIndex": 2
+    },
+    {
+      "question": "木村さんは喫茶店で何を飲みましたか？",
+      "options": ["コーヒー", "冷たい水", "ジュース", "温かいお茶"],
+      "answerIndex": 3
+    },
+    {
+      "question": "田中さんはどうやって家に帰りましたか？",
+      "options": ["歩いて", "バスで", "電車で", "自転車で"],
+      "answerIndex": 2
+    }
+  ]
+}

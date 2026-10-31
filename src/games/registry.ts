@@ -45,6 +45,15 @@ export const games: GameEntry[] = [
     status: "soon",
   },
   {
+    id: "stories",
+    title: "Reading Practice",
+    badge: "読",
+    description: "JLPT graded micro-stories and fairy tales with furigana and instant FSRS lookup.",
+    href: "/stories",
+    status: "live",
+    ctaLabel: "Read stories",
+  },
+  {
     id: "review",
     title: "FSRS Review Hub",
     description: "Adaptive spaced-repetition reviews tailored to your memory curve.",

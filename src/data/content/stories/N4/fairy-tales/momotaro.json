@@ -1,0 +1,64 @@
+{
+  "id": "n4-momotaro",
+  "title": "桃太郎",
+  "titleRomaji": "Momotarō",
+  "titleEn": "Momotaro, or the Story of the Son of a Peach",
+  "level": "N4",
+  "category": "Fairy Tale",
+  "tags": [
+    "hero",
+    "animals",
+    "ogres",
+    "adventure"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、ある所に、子どものいないおじいさんとおばあさんがいました。ある日、おばあさんが川で洗濯をしていると、大きな桃が流れてきました。家に持ち帰って割ってみると、中から元気な男の子が飛び出しました。二人は「桃から生まれたから、桃太郎（ももたろう）にしよう」と言って、大切に育てました。桃太郎はすくすく育ち、村一番の力持ちで優しい少年になりました。",
+      "en": "Long, long ago, in a certain place, there lived an old man and an old woman who had no children. One day, while the old woman was washing clothes at the river, a large peach came floating down. When she brought it home and cut it open, a lively boy jumped out from inside. The two said, \"Since he was born from a peach, let's make him Momotaro,\" and raised him with care. Momotaro grew up rapidly and became the strongest and kindest boy in the village."
+    },
+    {
+      "ja": "ある日、桃太郎は「鬼ヶ島（おにがしま）の悪い鬼が村人を困らせ、宝物を盗んでいます。退治に行ってきます」と両親に言いました。おばあさんは美味しいきびだんごを作って持たせました。出発した桃太郎の前に、犬、猿、キジが現れました。きびだんごをもらった三匹は、桃太郎の家来になって一緒に鬼ヶ島へ行くことになりました。",
+      "en": "One day, Momotaro told his parents, \"The bad ogres of Onigashima are troubling the villagers and stealing treasures. I am going to subjugate them.\" The old woman made and gave him delicious kibi dango (millet dumplings). A dog, a monkey, and a pheasant appeared before Momotaro as he set out. Having received the kibi dango, the three became Momotaro's retainers and decided to go to Onigashima together."
+    },
+    {
+      "ja": "船に乗って海を渡り、ついに鬼ヶ島に到着しました。城の門の前では、たくさんの鬼たちが待ち構えていました。キジは空から飛び回り、猿は飛びかかって引っ掻き、犬は激しく噛みつきました。桃太郎も刀を持って勇敢に戦い、大活躍しました。",
+      "en": "They boarded a boat, crossed the sea, and finally arrived at Onigashima. In front of the castle gate, many ogres were lying in wait. The pheasant flew around from the sky, the monkey jumped in and scratched, and the dog bit fiercely. Momotaro also brandished his sword and fought bravely, playing a major role."
+    },
+    {
+      "ja": "ついに鬼の親分は降参し、「二度と悪いことはしません。宝物を全部あげますから、命だけは助けてください」と言いました。桃太郎は悪事をやめるように約束させ、奪われた宝物を取り返しました。家来たちと一緒にたくさんの宝物を持ち帰り、おじいさんとおばあさんと共にいつまでも幸せに暮らしました。",
+      "en": "Finally, the ogre boss surrendered and said, \"We will never do bad things again. We will give you all our treasures, so please spare our lives.\" Momotaro made them promise to stop their wrongdoing and took back the stolen treasures. He brought back a lot of treasures along with his retainers, and lived happily ever after with the old man and the old woman."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "桃太郎は何から生まれましたか？",
+      "options": [
+        "竹",
+        "大きな桃",
+        "リンゴ",
+        "不思議な卵"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "桃太郎が道中で家来にした動物の組み合わせはどれですか？",
+      "options": [
+        "犬、猿、キジ",
+        "猫、狐、狸",
+        "熊、鹿、兎",
+        "鼠、牛、虎"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "鬼ヶ島で戦いに勝った後、桃太郎はどうしましたか？",
+      "options": [
+        "鬼の親分を家来にした",
+        "島を自分の城にした",
+        "宝物を取り返して家に帰った",
+        "鬼たちと友達になってそこに住んだ"
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

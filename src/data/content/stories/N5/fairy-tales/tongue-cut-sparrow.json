@@ -1,0 +1,59 @@
+{
+  "id": "n5-tongue-cut-sparrow",
+  "title": "舌切りすずめ",
+  "titleRomaji": "Shitakiri Suzume",
+  "titleEn": "The Tongue-Cut Sparrow",
+  "level": "N5",
+  "category": "Fairy Tale",
+  "tags": ["sparrow", "greed", "fairy tale", "animals"],
+  "paragraphs": [
+    {
+      "ja": "昔々、いいおじいさんと、悪いおばあさんがいました。おじいさんは、可愛いすずめがとても好きでした。ある日、すずめは、おばあさんが作った食べ物を食べてしまいました。おばあさんはとても怒りました。彼女はすずめの口を切って、「外へ行きなさい！」と言いました。おじいさんは家に帰って、すずめがいませんから、とても悲しかったです。",
+      "en": "Long, long ago, there was a good old man and a bad old woman. The old man liked a cute sparrow very much. One day, the sparrow ate the food the old woman had made. The old woman got very angry. She cut the sparrow's mouth and said, \"Go outside!\" The old man returned home, and because the sparrow was not there, he was very sad."
+    },
+    {
+      "ja": "次の日、おじいさんは山へすずめを見に行きました。竹がたくさんある所で、おじいさんはすずめに会いました。すずめは元気で、おじいさんを大きくてきれいな家へ連れて行きました。すずめはおじいさんにおいしいご飯を出して、一緒に楽しく遊びました。夕方、すずめは二つの箱を出して、「大きい箱と小さい箱、どちらが好きですか」と聞きました。おじいさんは「私は年を取っていますから、小さい箱がいいです」と答えました。",
+      "en": "The next day, the old man went to the mountain to look for the sparrow. At a place where there was a lot of bamboo, the old man met the sparrow. The sparrow was well, and took the old man to a big and beautiful house. The sparrow served the old man delicious food, and they played happily together. In the evening, the sparrow brought out two boxes and asked, \"The big box and the small box, which do you like?\" The old man answered, \"Because I am old, the small box is good.\""
+    },
+    {
+      "ja": "おじいさんが家に帰って小さい箱を開けると、中からたくさんのお金が出ました。おばあさんはそれを見て、「私も大きい箱が欲しい」と言いました。次の朝、おばあさんは急いで山へ行き、すずめの家を見つけました。彼女は「大きい箱をください」と言って、すずめから重い箱をもらいました。おばあさんは「ありがとう」も言わないで、すぐに帰りました。",
+      "en": "When the old man returned home and opened the small box, a lot of money came out from inside. The old woman saw that and said, \"I want the big box too.\" The next morning, the old woman hurried to the mountain and found the sparrow's house. She said, \"Please give me the big box,\" and received the heavy box from the sparrow. The old woman did not even say \"Thank you\" and returned immediately."
+    },
+    {
+      "ja": "帰り道で、おばあさんは箱の中が見たかったです。「きっと、たくさんのお金が入っていますね」と彼女は思いました。そして、道で箱を開けました。しかし、中にお金はありませんでした。箱の中から、怖くて悪いお化けがたくさん出てきました。おばあさんはとてもびっくりして、「助けて！」と言いながら、走って逃げました。",
+      "en": "On the way back, the old woman wanted to see inside the box. \"Surely, a lot of money is inside,\" she thought. And she opened the box on the road. However, there was no money inside. From inside the box, many scary and bad monsters came out. The old woman was very surprised, and saying \"Help!\" she ran away."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "どうしておばあさんはすずめに怒りましたか。",
+      "options": [
+        "すずめがうるさかったから",
+        "すずめが食べ物を食べたから",
+        "すずめが逃げたから",
+        "すずめが寝ていたから"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "おじいさんはどの箱をもらいましたか。",
+      "options": [
+        "重い箱",
+        "小さい箱",
+        "大きい箱",
+        "赤い箱"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "おばあさんの箱の中には何がありましたか。",
+      "options": [
+        "おいしいご飯",
+        "たくさんのお金",
+        "怖いお化け",
+        "きれいな服"
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

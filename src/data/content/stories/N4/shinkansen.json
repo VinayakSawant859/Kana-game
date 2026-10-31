@@ -1,0 +1,59 @@
+{
+  "id": "n4-shinkansen-station",
+  "title": "新幹線の駅で",
+  "titleRomaji": "Shinkansen no eki de",
+  "titleEn": "At the Shinkansen Station",
+  "level": "N4",
+  "category": "Travel",
+  "tags": ["shinkansen", "train", "station", "travel"],
+  "paragraphs": [
+    {
+      "ja": "先週の金曜日の朝、田中さんは仕事のために東京駅へ行きました。新幹線で大阪へ行く予定でしたから、荷物がたくさんありました。東京駅の中はとても広くて、旅行に行く大勢の人で混んでいました。",
+      "en": "Last Friday morning, Mr. Tanaka went to Tokyo Station for work. Because he planned to go to Osaka by Shinkansen, he had a lot of luggage. Inside Tokyo Station was very wide and crowded with many people going on trips."
+    },
+    {
+      "ja": "まず、切符売り場で新幹線の切符を買いました。それから、出発の時間がまだ少しあったので、駅の中にある大きな店へ行きました。そこで、電車の中で食べるためのおいしそうなお弁当と温かいお茶を買いました。",
+      "en": "First, he bought a Shinkansen ticket at the ticket counter. Then, since there was still a little time before departure, he went to a large shop inside the station. There, he bought a delicious-looking bento to eat on the train and warm tea."
+    },
+    {
+      "ja": "その後、切符を改札口の機械に入れて、ホームに上がりました。ホームにはもう長い列ができていました。田中さんも列に並んで、新幹線が来るのを静かに待ちました。周りには外国人もたくさんいました。",
+      "en": "After that, he put his ticket into the machine at the ticket gate and went up to the platform. A long line had already formed on the platform. Mr. Tanaka also lined up and quietly waited for the Shinkansen to arrive. There were also many foreigners around."
+    },
+    {
+      "ja": "九時ちょうどに、白い新幹線がホームに入ってきました。ドアが開くと、田中さんは自分の席を探して座りました。窓から外の景色を見ながら、買ったお弁当をゆっくり食べるのがとても楽しみでした。",
+      "en": "At exactly nine o'clock, the white Shinkansen entered the platform. When the doors opened, Mr. Tanaka looked for his seat and sat down. Looking at the scenery outside from the window, he was very much looking forward to slowly eating the bento he bought."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "田中さんはどこへ行く予定でしたか。",
+      "options": [
+        "東京",
+        "大阪",
+        "京都",
+        "北海道"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "田中さんは駅の中の店で何を買いましたか。",
+      "options": [
+        "お土産と冷たい水",
+        "雑誌とコーヒー",
+        "お弁当と温かいお茶",
+        "切符と新しいかばん"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "ホームで田中さんは何をしましたか。",
+      "options": [
+        "改札口の機械を探しました",
+        "列に並んで新幹線を待ちました",
+        "外国人と英語で話しました",
+        "ベンチでお弁当を食べました"
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "n4-jelly-fish-and-monkey",
+  "title": "クラゲと猿",
+  "titleRomaji": "Kurage to Saru",
+  "titleEn": "The Jelly Fish and the Monkey",
+  "level": "N4",
+  "category": "Fairy Tale",
+  "tags": [
+    "sea",
+    "monkey",
+    "jellyfish",
+    "trick"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、海の底に竜宮（りゅうぐう）という美しいお城があり、竜王が住んでいました。 ある日、王様の美しい奥さんが重い病気になりました。 医者は「生きた猿の肝臓（きも）を食べれば、病気が治るでしょう」と言いました。 そこで、王様はクラゲを呼んで、「陸へ行って、猿を連れてきなさい」と命令しました。 その頃のクラゲには、亀のように足も骨もありました。",
+      "en": "Long, long ago, at the bottom of the sea, there was a beautiful castle called Ryugu, and the Dragon King lived there. One day, the king's beautiful wife became severely ill. The doctor said, \"If she eats the liver of a live monkey, the illness will be cured.\" Therefore, the king called the jellyfish and ordered, \"Go to the land and bring a monkey.\" The jellyfish at that time had legs and bones like a turtle."
+    },
+    {
+      "ja": "クラゲは猿の島へ行き、松の木の上にいる猿を見つけました。 「猿さん、竜宮はとてもきれいで楽しい所ですよ。私の背中に乗って、一緒に遊びに行きませんか」とクラゲが言うと、猿は喜んでクラゲの背中に乗りました。 しかし海を渡る途中、クラゲは「猿さん、肝臓を持っていますか？奥さんの病気を治すために、あなたの肝臓が必要なのです」と本当のことを言ってしまいました。",
+      "en": "The jellyfish went to the monkey island and found a monkey on a pine tree. When the jellyfish said, \"Mr. Monkey, Ryugu is a very beautiful and fun place. Won't you ride on my back and go play together?\" the monkey happily rode on the jellyfish's back. However, halfway across the sea, the jellyfish accidentally told the truth, saying, \"Mr. Monkey, do you have your liver? To cure the wife's illness, your liver is necessary.\""
+    },
+    {
+      "ja": "猿はとてもびっくりして怖くなりましたが、急いで嘘をつきました。 「それは困りましたね。私は今日、肝臓を木の枝に忘れてきました。島に戻れば、すぐに取ってきますよ。」 クラゲはその言葉を信じて、猿を島へ連れて帰りました。 島に着くと、猿はすぐに木に登って、「だまされたな、馬鹿なクラゲめ！誰が自分の命をあげるものか」と笑って逃げてしまいました。",
+      "en": "The monkey was very surprised and scared, but quickly told a lie. \"That is a problem. Today, I forgot my liver on a tree branch. If we return to the island, I will get it right away.\" The jellyfish believed those words and took the monkey back to the island. When they arrived at the island, the monkey immediately climbed the tree, laughed, and ran away saying, \"You were tricked, you stupid jellyfish! Who would give up their own life!\""
+    },
+    {
+      "ja": "クラゲは仕方なく一人で竜宮に帰って、王様にすべてを話しました。 王様はひどく怒って、「この馬鹿なクラゲめ！罰として骨を全部抜いてしまえ」と家来たちに命令しました。 そして、クラゲは骨を抜かれて、叩かれました。 それから、クラゲは今のように骨がない柔らかい体になって、海を漂うようになりました。",
+      "en": "The jellyfish had no choice but to return to Ryugu alone and told the king everything. The king was terribly angry and ordered his retainers, \"You stupid jellyfish! As a punishment, pull out all his bones!\" Then, the jellyfish had his bones pulled out and was beaten. Since then, the jellyfish came to have a soft body without bones as it does today, and began drifting in the sea."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "どうして王様は猿の肝臓が欲しいと言いましたか？",
+      "options": [
+        "自分が食べたかったから",
+        "奥さんの病気を治すため",
+        "猿が嫌いだったから",
+        "クラゲを罰するため"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "海を渡る途中、猿はどうして島に戻りたいと言いましたか？",
+      "options": [
+        "海が怖かったから",
+        "クラゲが遅かったから",
+        "肝臓を木に忘れたと嘘をついたから",
+        "お腹が空いたから"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "王様に怒られた後、クラゲの体はどうなりましたか？",
+      "options": [
+        "骨がない柔らかい体になりました",
+        "猿と同じ体になりました",
+        "亀のように硬い体になりました",
+        "魚になりました"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

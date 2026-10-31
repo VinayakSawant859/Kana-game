@@ -1,0 +1,64 @@
+{
+  "id": "n5-bamboo-cutter",
+  "title": "竹を切るおじいさんと月の子供",
+  "titleRomaji": "Take o kiru ojiisan to tsuki no kodomo",
+  "titleEn": "The Bamboo-Cutter and the Moon-Child",
+  "level": "N5",
+  "category": "Fairy Tale",
+  "tags": [
+    "moon",
+    "princess",
+    "bamboo",
+    "magic"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、竹を切るおじいさんがいました。 ある日、光る竹がありました。 おじいさんが竹を切ると、中に小さい女の子がいました。 おじいさんとおばあさんは、その子を大切に育てました。",
+      "en": "Long, long ago, there was an old man who cut bamboo. One day, there was a shining bamboo. When the old man cut the bamboo, there was a small girl inside. The old man and woman raised the child carefully."
+    },
+    {
+      "ja": "女の子はすぐに大きくてきれいな女の人になりました。 彼女の体はいつも光っていました。 王様が来て「結婚してください」と言いましたが、姫は「嫌です」と言いました。",
+      "en": "The girl soon became a big and beautiful woman. Her body was always shining. The king came and said, \"Please marry me,\" but the princess said, \"No.\""
+    },
+    {
+      "ja": "夏の夜、姫は月を見て泣いていました。 おじいさんが聞くと、姫は「私は月の子供です。 ８月の十五日に月へ帰ります」と言いました。 おじいさんはとても悲しかったです。",
+      "en": "On a summer night, the princess was looking at the moon and crying. When the old man asked, the princess said, \"I am a child of the moon. I will return to the moon on the fifteenth of August.\" The old man was very sad."
+    },
+    {
+      "ja": "十五日の夜、月から人がたくさん来ました。 王様の兵士たちも、彼らを止めることができませんでした。 姫は「今までありがとうございました」と言って、空へ帰って行きました。",
+      "en": "On the night of the fifteenth, many people came from the moon. The king's soldiers also could not stop them. The princess said, \"Thank you for everything up to now,\" and returned to the sky."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "おじいさんは竹の中で何を見つけましたか？",
+      "options": [
+        "お金",
+        "小さい女の子",
+        "魚",
+        "服"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "姫はどうして泣きましたか？",
+      "options": [
+        "病気だったから",
+        "月へ帰るから",
+        "竹を切ったから",
+        "お腹が空いたから"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "姫はどこへ帰りましたか？",
+      "options": [
+        "海",
+        "山",
+        "王様の家",
+        "月"
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

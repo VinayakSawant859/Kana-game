@@ -1,0 +1,44 @@
+{
+  "id": "n5-studying-late",
+  "title": "夜遅くの勉強",
+  "titleRomaji": "Yoru osoku no benkyō",
+  "titleEn": "Studying Late and Sleeping",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": ["study", "night", "sleep", "daily"],
+  "paragraphs": [
+    {
+      "ja": "昨日の夜、田中さんは部屋で日本語を勉強しました。明日テストがありますから、たくさん本を読みました。",
+      "en": "Yesterday evening, Mr. Tanaka studied Japanese in his room. Because there is a test tomorrow, he read a lot of books."
+    },
+    {
+      "ja": "時計を見ると、もう夜の十二時半でした。少し疲れましたから、温かいお茶を飲みました。",
+      "en": "When he looked at the clock, it was already 12:30 at night. Because he was a little tired, he drank warm tea."
+    },
+    {
+      "ja": "それから、ノートをかばんに入れて、部屋の電気を消しました。",
+      "en": "After that, he put his notebook into his bag and turned off the room light."
+    },
+    {
+      "ja": "一時ごろにベッドに入って、静かに寝ました。とてもいい夢を見ました。",
+      "en": "He got into bed around one o'clock and slept quietly. He had a very good dream."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "田中さんはどうして夜遅くまで勉強しましたか？",
+      "options": ["明日テストがあるから", "本が好きだから", "眠くなかったから", "友だちと約束したから"],
+      "answerIndex": 0
+    },
+    {
+      "question": "田中さんは疲れたとき何を飲みましたか？",
+      "options": ["冷たい水", "コーヒー", "ジュース", "温かいお茶"],
+      "answerIndex": 3
+    },
+    {
+      "question": "田中さんは何時ごろに寝ましたか？",
+      "options": ["十一時ごろ", "十二時ごろ", "一時ごろ", "二時ごろ"],
+      "answerIndex": 2
+    }
+  ]
+}

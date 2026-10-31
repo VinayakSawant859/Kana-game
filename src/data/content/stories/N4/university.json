@@ -1,0 +1,59 @@
+{
+  "id": "n4-at-university",
+  "title": "大学での一日",
+  "titleRomaji": "Daigaku de no ichinichi",
+  "titleEn": "A Day at the University",
+  "level": "N4",
+  "category": "Everyday Life",
+  "tags": ["university", "study", "friends", "daily"],
+  "paragraphs": [
+    {
+      "ja": "木曜日の朝、留学生のリーさんは大学へ行きました。天気がよくて、空がとても青かったです。一時間目の授業は日本語でしたから、リーさんは図書館で少し予習をしてから教室へ向かいました。",
+      "en": "On Thursday morning, international student Lee went to the university. The weather was good, and the sky was very blue. Because the first period class was Japanese, Lee did a little preparation at the library before heading to the classroom."
+    },
+    {
+      "ja": "教室にはもう大勢の学生が座っていました。先生が部屋に入ってくると、みんな静かになりました。今日の授業では、日本の文化についてスピーチの練習をしました。リーさんは少し間違えましたが、先生は優しく教えてくれました。",
+      "en": "Many students were already sitting in the classroom. When the teacher entered the room, everyone became quiet. In today's class, they practiced speeches about Japanese culture. Lee made a few mistakes, but the teacher taught him kindly."
+    },
+    {
+      "ja": "昼休みになると、リーさんは友達の山田さんと学生食堂で昼ごはんを食べました。食堂はとても混んでいて、にぎやかでした。二人はカレーライスを食べながら、週末のアルバイトの予定について話しました。",
+      "en": "When lunch break came, Lee ate lunch with his friend Yamada at the student cafeteria. The cafeteria was very crowded and lively. While eating curry and rice, the two talked about their part-time job plans for the weekend."
+    },
+    {
+      "ja": "午後の授業が終わった後、リーさんはもう一度図書館へ行って、明日の宿題をしました。大学の生活は毎日忙しいですが、色々なことが勉強できるので、とても楽しいです。",
+      "en": "After the afternoon classes ended, Lee went to the library once more and did tomorrow's homework. University life is busy every day, but because he can study various things, it is very fun."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "リーさんは一時間目の授業の前にどこへ行きましたか。",
+      "options": [
+        "学生食堂",
+        "図書館",
+        "アルバイト",
+        "山田さんの家"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "日本語の授業で何をしましたか。",
+      "options": [
+        "漢字のテストをしました",
+        "先生のパソコンを直しました",
+        "日本の文化についてスピーチの練習をしました",
+        "友達とカレーを作りました"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "午後の授業が終わった後、リーさんは何をしましたか。",
+      "options": [
+        "山田さんとアルバイトに行きました",
+        "家に帰って寝ました",
+        "友達と食堂で話しました",
+        "図書館で明日の宿題をしました"
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

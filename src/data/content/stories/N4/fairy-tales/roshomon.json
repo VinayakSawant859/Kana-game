@@ -1,0 +1,64 @@
+{
+  "id": "n4-ogre-of-rashomon",
+  "title": "羅生門の鬼",
+  "titleRomaji": "Rashōmon no Oni",
+  "titleEn": "The Ogre of Rashomon",
+  "level": "N4",
+  "category": "Fairy Tale",
+  "tags": [
+    "ogre",
+    "samurai",
+    "bravery",
+    "kyoto"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、京都の羅生門（らしょうもん）という大きな門に、夜な夜な恐ろしい鬼が現れて人々を襲うという噂がありました。ある夜、勇敢な武士である渡辺綱（わたなべのつな）は、その噂が本当かどうか確かめるため、一人で羅生門へ向かいました。門の近くは暗く、激しい雨と風が吹いていましたが、綱は恐れることなく馬を進めました。",
+      "en": "Long, long ago, there was a rumor that a terrifying ogre appeared every night at a large gate in Kyoto called Rashomon and attacked people. One night, a brave samurai named Watanabe no Tsuna headed to Rashomon alone to find out if the rumor was true. Near the gate it was dark, and heavy rain and wind were blowing, but Tsuna advanced his horse without fear."
+    },
+    {
+      "ja": "門に到着して振り返ると、突然背後から誰かが彼の兜（かぶと）を掴みました。綱がすぐに振り返って刀で斬りつけると、それは恐ろしい鬼の腕でした。鬼はあまりの痛さに叫び声をあげましたが、そのまま闇の中へ逃げ出そうとしました。しかし、綱は逃がすまいと追いかけ、ついに鬼の巨大な片腕を切り落とすことに成功しました。",
+      "en": "Arriving at the gate and looking back, someone suddenly grabbed his helmet from behind. When Tsuna immediately turned back and slashed with his sword, it was the terrifying arm of an ogre. The ogre let out a scream of extreme pain, but tried to escape into the darkness. However, Tsuna chased it so as not to let it escape, and finally succeeded in cutting off the ogre's huge arm."
+    },
+    {
+      "ja": "手に入れた鬼の腕を、綱は固い鉄の箱に入れて自分の部屋の奥で大切に保管しました。数日後の夜、彼の家を老いた乳母（うば）が訪ねて来ました。親切だった乳母は、「お前が鬼の腕を切ったというのは本当ですか。一度だけその腕を見せてください」と頼みました。綱は少し迷いましたが、育ててくれた恩人だからと安心して箱を開けて見せました。",
+      "en": "Tsuna placed the acquired ogre arm into a hard iron box and carefully stored it deep inside his room. A few nights later, an old wet nurse visited his house. The once-kind nurse requested, \"Is it true that you cut off the ogre's arm? Please let me see that arm just once.\" Tsuna hesitated a bit, but feeling secure since she was his caregiver, opened the box to show her."
+    },
+    {
+      "ja": "その瞬間、老いた乳母は突然恐ろしい鬼の姿に変身し、「よくも私（わし）の腕を！」と叫んで自分の腕を掴み、天井を破って空へ逃げてしまいました。綱は驚きましたがすぐに刀を抜いて追いかけました。しかし、鬼は二度と京都に戻ってくることはありませんでした。綱の勇敢な戦いは、その後も人々に語り継がれました。",
+      "en": "At that moment, the old nurse suddenly transformed into the appearance of a terrifying ogre, shouted \"Give me back my arm!\", grabbed her arm, broke through the ceiling, and escaped into the sky. Tsuna was surprised but immediately drew his sword to chase after it. However, the ogre never returned to Kyoto again. Tsuna's brave battle continued to be told to people thereafter."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "渡辺綱はどうして羅生門へ行きましたか？",
+      "options": [
+        "鬼の噂が本当か確かめるため",
+        "そこで友達と待ち合わせをしたから",
+        "大切な書類を届けに行くため",
+        "雨を避けて休むため"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "綱が箱にしまっていた鬼の腕を盗みに来たのは誰（何）でしたか？",
+      "options": [
+        "門の番人",
+        "鬼に変身した老いた乳母",
+        "心配した天皇の使い",
+        "鬼の仲間である動物"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "最後にお話はどうなりましたか？",
+      "options": [
+        "鬼が綱に負けて謝った",
+        "綱が鬼の仲間になった",
+        "鬼が腕を取り返して空へ逃げた",
+        "腕が元に戻って消えてしまった"
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

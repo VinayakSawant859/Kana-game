@@ -1,0 +1,59 @@
+{
+  "id": "n4-okinawa-vacation",
+  "title": "沖縄での家族旅行",
+  "titleRomaji": "Okinawa de no kazoku ryokō",
+  "titleEn": "Family Vacation in Okinawa",
+  "level": "N4",
+  "category": "Travel",
+  "tags": ["okinawa", "vacation", "family", "travel"],
+  "paragraphs": [
+    {
+      "ja": "先月の夏休みに、田中さんは家族と一緒に飛行機で沖縄へ旅行に行きました。朝早く家を出発して、昼ごろに那覇空港に着きました。",
+      "en": "During summer vacation last month, Mr. Tanaka went on a trip to Okinawa with his family by airplane. They left home early in the morning and arrived at Naha Airport around noon."
+    },
+    {
+      "ja": "ホテルは海のすぐ近くにありました。部屋の窓からは、青くてきれいな海がよく見えました。午後、みんなで海岸へ行って、泳いだりきれいな貝を拾ったりして遊びました。",
+      "en": "The hotel was right near the sea. From the window of the room, they could see the beautiful blue sea clearly. In the afternoon, everyone went to the coast and played by swimming and picking up pretty shells."
+    },
+    {
+      "ja": "夕方、ホテルのレストランで沖縄の有名な料理をたくさん食べました。特に豚肉の料理が柔らかくて、とてもおいしかったです。",
+      "en": "In the evening, they ate a lot of famous Okinawan dishes at the hotel restaurant. The pork dish, in particular, was soft and very delicious."
+    },
+    {
+      "ja": "夜は空の星が明るくて、静かでした。田中さんは「また来年も沖縄へ来たいですね」と妻に言いました。家族みんなで素晴らしい思い出を作ることができました。",
+      "en": "At night, the stars in the sky were bright, and it was quiet. Mr. Tanaka said to his wife, \"I want to come to Okinawa again next year, don't you?\" The whole family was able to make wonderful memories."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "田中さんはいつ、どこへ旅行に行きましたか？",
+      "options": [
+        "先週の休みに東京へ",
+        "先月の夏休みに沖縄へ",
+        "昨日の休みに近くの海へ",
+        "来月の休みに沖縄へ"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "午後、家族は海岸で何をしましたか？",
+      "options": [
+        "泳いだり貝を拾ったりしました",
+        "魚を釣ったり写真を撮ったりしました",
+        "船に乗ったり寝たりしました",
+        "ホテルのレストランで料理を食べました"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "田中さんは夜、妻に何と言いましたか？",
+      "options": [
+        "「早く家に帰りましょう」",
+        "「海は冷たくて気持ちがいいですね」",
+        "「豚肉の料理がおいしかったですね」",
+        "「また来年も沖縄へ来たいですね」"
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

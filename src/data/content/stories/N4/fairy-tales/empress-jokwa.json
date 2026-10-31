@@ -1,0 +1,59 @@
+{
+  "id": "n4-stones-of-five-colors-and-empress-jokwa",
+  "title": "五色の石と女媧の物語",
+  "titleRomaji": "Goshiki no Ishi to Jōka no Monogatari",
+  "titleEn": "The Stones of Five Colors and the Empress Jokwa",
+  "level": "N4",
+  "category": "Legend",
+  "tags": ["mythology", "empress", "magic", "rescue"],
+  "paragraphs": [
+    {
+      "ja": "昔々、中国に世界を創ったとされる優しい女神「女媧（じょか）」という偉い女王がいました。ある日、突然大きな音がして天の柱が折れ、地面が大きく割れました。空に穴が開き、火が燃え広がり、洪水の水が溢れて人々は大変な恐怖に包まれました。",
+      "en": "Long, long ago, in China, there was a great queen and benevolent goddess named \"Jokwa\" who was said to have created the world. One day, suddenly a loud sound was heard, the pillar of heaven broke, and the ground cracked widely. A hole opened in the sky, fire spread, floodwaters overflowed, and people were engulfed in great terror."
+    },
+    {
+      "ja": "女媧は人々の苦しむ姿を見て深く悲しみ、「私が何とかしてこの世界を救わなければならない」と強く決意しました。彼女は川底から赤、黄、青、白、黒の五色の石をたくさん集めました。そして、それらの特別な石を大きな鍋に入れ、魔法の火で溶かして液体にしました。",
+      "en": "Jokwa felt deeply sorrowful seeing the people suffering, and strongly resolved, \"I must somehow save this world.\" She gathered many stones of five colors—red, yellow, blue, white, and black—from the riverbed. Then, she put those special stones into a large pot and melted them into a liquid with magical fire."
+    },
+    {
+      "ja": "溶けた五色の石の液体を使って、女媧は空の大きな穴をきれいに塞ぎました。これで空が落ちてくる心配はなくなりました。さらに、彼女は大きな亀の足を切って天を支える四本の新しい柱にし、荒れた土地の洪水を鎮めて世界に平和を取り戻しました。",
+      "en": "Using the liquid of the melted five-colored stones, Jokwa neatly sealed the large hole in the sky. With this, there was no longer any worry of the sky falling. Furthermore, she cut off the legs of a large turtle to make four new pillars to support the heaven, calmed the floods on the devastated land, and restored peace to the world."
+    },
+    {
+      "ja": "世界が再び美しく平和になると、女媧は疲れ果てて深く眠りにつきました。彼女の勇気ある行動と慈悲深い心は、何世代にもわたって人々に語り継がれました。今でも中国の神話の中で、世界を救った偉大な母として深く尊敬されています。",
+      "en": "When the world became beautiful and peaceful once again, Jokwa fell into a deep sleep, exhausted. Her courageous actions and compassionate heart were passed down through generations to be told to the people. Even now, in Chinese mythology, she is deeply respected as the great mother who saved the world."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "天の柱が折れ、空に穴が開いたとき、女媧はどうしましたか？",
+      "options": [
+        "何もしずに遠くへ逃げた",
+        "人々を救うために五色の石を集めて空を塞いだ",
+        "新しい別の世界へ引っ越した",
+        "動物たちに助けを求めた"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "女媧は空の穴を塞ぐために何を使いましたか？",
+      "options": [
+        "川底から集めた五色の石を溶かした液体",
+        "硬い木の枝と葉っぱ",
+        "大きなお寺の瓦とレンガ",
+        "海で拾った特別な貝殻"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "天を支える新しい柱を作るために、何が使われましたか？",
+      "options": [
+        "山の高い木",
+        "大きな亀の足",
+        "強い鉄の棒",
+        "太い竹の茎"
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "n5-at-restaurant",
+  "title": "レストランでの食事",
+  "titleRomaji": "Resutoran de no shokuji",
+  "titleEn": "Eating at a Restaurant",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": ["restaurant", "food", "lunch", "daily"],
+  "paragraphs": [
+    {
+      "ja": "日曜日、田中さんは一人で町のレストランへ行きました。十二時でしたから、店の中には人がたくさんいました。",
+      "en": "On Sunday, Mr. Tanaka went to a restaurant in town alone. Because it was twelve o'clock, there were many people inside the restaurant."
+    },
+    {
+      "ja": "田中さんは窓の近くの席に座りました。メニューを見て、カレーと温かいお茶をたのみました。",
+      "en": "Mr. Tanaka sat at a seat near the window. He looked at the menu and ordered curry and warm tea."
+    },
+    {
+      "ja": "料理はすぐ来ました。とてもおいしかったです。田中さんはゆっくりごはんを食べて、本を読みました。",
+      "en": "The food arrived quickly. It was very delicious. Mr. Tanaka ate his meal leisurely and read a book."
+    },
+    {
+      "ja": "千円を払って、「ごちそうさまでした」と言って店を出ました。歩いて家に帰りました。",
+      "en": "He paid 1,000 yen, said, \"Thank you for the meal,\" and left the shop. He walked back home."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "田中さんは何を食べましたか？",
+      "options": ["魚", "肉", "パン", "カレー"],
+      "answerIndex": 3
+    },
+    {
+      "question": "田中さんはいくら払いましたか？",
+      "options": ["八百円", "九百円", "千円", "千二百円"],
+      "answerIndex": 2
+    },
+    {
+      "question": "田中さんはどうやって家に帰りましたか？",
+      "options": ["車で", "バスで", "電車で", "歩いて"],
+      "answerIndex": 3
+    }
+  ]
+}

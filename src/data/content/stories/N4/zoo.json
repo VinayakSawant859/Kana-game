@@ -1,0 +1,59 @@
+{
+  "id": "n4-at-zoo",
+  "title": "動物園での一日",
+  "titleRomaji": "Dōbutsuen de no ichinichi",
+  "titleEn": "A Day at the Zoo",
+  "level": "N4",
+  "category": "Everyday Life",
+  "tags": ["zoo", "animals", "weekend", "family"],
+  "paragraphs": [
+    {
+      "ja": "日曜日の朝、佐藤さんは妹と一緒に市の動物園へ出かけました。天気がよくて暖かかったので、入り口の前にはたくさんの家族が並んでいました。",
+      "en": "On Sunday morning, Sato went out to the city zoo with his younger sister. Because the weather was nice and warm, many families were lined up in front of the entrance."
+    },
+    {
+      "ja": "中に入ると、まず大きな象と首の長いキリンを見に行きました。象が長い鼻を使って水を飲む姿を見て、妹はとても喜んで写真を撮りました。",
+      "en": "Once inside, they first went to see the large elephants and the long-necked giraffes. Seeing the elephant use its long trunk to drink water, his sister was delighted and took photos."
+    },
+    {
+      "ja": "お昼には、木の下のベンチでお母さんが作ってくれたお弁当を食べました。午後からはパンダやペンギンのコーナーを回り、かわいい動物の動きを楽しみました。",
+      "en": "At noon, they ate the boxed lunch their mother had made for them on a bench under a tree. In the afternoon, they walked around the panda and penguin areas and enjoyed the cute animals' movements."
+    },
+    {
+      "ja": "帰る前に売店でパンダのぬいぐるみを買いました。少し疲れましたが、二人にとって忘れられない楽しい一日になりました。",
+      "en": "Before going home, they bought a stuffed panda toy at the gift shop. Although they were a little tired, it became an unforgettable and fun day for the two of them."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "佐藤さんはだれと一緒に動物園へ行きましたか？",
+      "options": [
+        "友だち",
+        "お母さん",
+        "妹",
+        "弟"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "二人は最初になんの動物を見に行きましたか？",
+      "options": [
+        "パンダとペンギン",
+        "象とキリン",
+        "ライオンとトラ",
+        "猿と鳥"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "帰る前に売店で何を買いましたか？",
+      "options": [
+        "動物の本",
+        "お菓子",
+        "絵はがき",
+        "パンダのぬいぐるみ"
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

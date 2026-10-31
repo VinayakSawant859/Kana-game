@@ -1,0 +1,59 @@
+{
+  "id": "n4-police-station",
+  "title": "交番での出来事",
+  "titleRomaji": "Kōban de no dekigoto",
+  "titleEn": "An Incident at the Police Box",
+  "level": "N4",
+  "category": "Everyday Life",
+  "tags": ["police", "lost item", "trouble", "daily"],
+  "paragraphs": [
+    {
+      "ja": "昨日の夕方、山田さんは財布をなくしてしまいました。とても困って、駅の近くの交番へ行きました。",
+      "en": "Yesterday evening, Mr. Yamada lost his wallet. He was very troubled and went to the police box near the station."
+    },
+    {
+      "ja": "交番に入ると、親切なお巡りさんが「どんな財布ですか」と聞きました。山田さんは「黒くて、四角い財布です。中に大切なカードと一万円が入っています」と答えました。",
+      "en": "When he entered the police box, a kind police officer asked, \"What kind of wallet is it?\" Mr. Yamada answered, \"It is a black, square wallet. Inside are an important card and 10,000 yen.\""
+    },
+    {
+      "ja": "お巡りさんは紙に山田さんの名前と住所を書きました。そして、「どこで落としたと思いますか」と質問しました。山田さんは「たぶん、会社から帰る時の電車の中だと思います」と説明しました。お巡りさんはすぐに駅に電話をかけました。",
+      "en": "The police officer wrote Mr. Yamada's name and address on a piece of paper. Then, he asked, \"Where do you think you dropped it?\" Mr. Yamada explained, \"Probably inside the train when I was returning from work.\" The police officer immediately made a phone call to the station."
+    },
+    {
+      "ja": "しばらく待っていると、お巡りさんが笑顔で「駅で見つかりましたよ。誰かが駅員に渡してくれたそうです」と教えてくれました。山田さんはすっかり安心しました。「本当にありがとうございました」とお礼を言って、急いで駅へ向かいました。",
+      "en": "After waiting for a while, the police officer told him with a smile, \"It was found at the station. It seems someone handed it to the station attendant.\" Mr. Yamada was completely relieved. He said, \"Thank you very much,\" and hurriedly headed to the station."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "山田さんはどうして交番へ行きましたか。",
+      "options": [
+        "道がわからなかったから",
+        "財布をなくしたから",
+        "お金を拾ったから",
+        "お巡りさんと話したかったから"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "山田さんの財布の中には何が入っていましたか。",
+      "options": [
+        "切符と五千円",
+        "鍵と一万円",
+        "大切なカードと一万円",
+        "家族の写真"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "なくした財布はどこで見つかりましたか。",
+      "options": [
+        "交番の中",
+        "会社の中",
+        "道の上",
+        "駅の中"
+      ],
+      "answerIndex": 3
+    }
+  ]
+}

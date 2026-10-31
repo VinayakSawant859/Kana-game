@@ -1,0 +1,64 @@
+{
+  "id": "n4-sagacious-monkey-and-boar",
+  "title": "賢い猿とイノシシ",
+  "titleRomaji": "Kashikoi Saru to Inoshishi",
+  "titleEn": "The Sagacious Monkey and the Boar",
+  "level": "N4",
+  "category": "Fairy Tale",
+  "tags": [
+    "monkey",
+    "boar",
+    "trick",
+    "rescue"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、猿を連れて旅をする男がいました。 ある晩、男は家に帰ると、妻に「あの猿はもう年を取って、上手に踊ることができない。明日、肉屋に売ってしまおう」と言いました。 隣の部屋でそれを聞いた猿は、殺されると知ってとても悲しくなりました。 猿は「どうしよう」と考えて、森に住んでいる賢いイノシシに相談することにしました。",
+      "en": "Long, long ago, there was a man traveling with a monkey. One evening, when the man returned home, he said to his wife, \"That monkey is old now and cannot dance well. Tomorrow, let's sell him to the butcher.\" The monkey, hearing this in the next room, became very sad knowing he would be killed. The monkey thought \"What should I do?\" and decided to consult a wise boar living in the forest."
+    },
+    {
+      "ja": "猿は急いで森へ行き、イノシシに自分の話をしました。 イノシシはしばらく考えてから、こう言いました。 「あなたの主人の赤ちゃんは、朝、玄関のそばにいますね。 私が明日、その赤ちゃんを連れて逃げます。 あなたはすぐに私を追いかけて、赤ちゃんを助けなさい。 そうすれば、ご主人はあなたを肉屋に売らないでしょう」 猿は何度も「ありがとう」と言って、家に帰りました。",
+      "en": "The monkey hurried to the forest and told his story to the boar. The boar thought for a while and said this: \"Your master's baby is near the porch in the morning, right? Tomorrow, I will run away taking that baby. You must chase me immediately and save the baby. If you do that, your master will probably not sell you to the butcher.\" The monkey said \"Thank you\" many times and returned home."
+    },
+    {
+      "ja": "次の日の朝、妻が家の仕事をしている時、赤ちゃんは玄関のそばで遊んでいました。 突然、イノシシがやって来て、赤ちゃんを連れて逃げました。 妻はびっくりして、大きな声で叫びました。 夫も起きてきましたが、どうすることもできません。 その時、猿が一生懸命走ってイノシシを追いかけました。 そして、猿は赤ちゃんを無事に両親のところへ連れて帰りました。",
+      "en": "The next morning, while the wife was doing housework, the baby was playing near the porch. Suddenly, the boar came and ran away taking the baby. The wife was surprised and screamed with a loud voice. The husband also woke up, but could do nothing. At that time, the monkey ran with all his might and chased the boar. Then, the monkey safely brought the baby back to the parents."
+    },
+    {
+      "ja": "夫と妻は、赤ちゃんを助けてくれた猿を見て、とても感動しました。 妻は「もし猿がいなかったら、私たちは子供をなくしていましたよ」と言いました。 夫も「そうだね。この猿を殺してはいけない」と言いました。 肉屋が来た時、夫は肉屋を帰しました。 それから、猿は死ぬまでこの家で大切に育てられ、平和に暮らしました。",
+      "en": "The husband and wife were very moved seeing the monkey who had saved the baby. The wife said, \"If the monkey had not been here, we would have lost our child.\" The husband also said, \"That's right. We must not kill this monkey.\" When the butcher came, the husband sent the butcher away. After that, the monkey was carefully raised in this house until he died, and lived in peace."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "男はどうして猿を売ろうとしましたか？",
+      "options": [
+        "猿がご飯を食べすぎたから",
+        "猿が逃げようとしたから",
+        "猿が年を取って上手に踊れなかったから",
+        "猿が赤ちゃんをいじめたから"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "イノシシは猿にどんな作戦（計画）を教えましたか？",
+      "options": [
+        "イノシシが男を殺す作戦",
+        "イノシシが赤ちゃんを連れて逃げて、猿が助ける作戦",
+        "一緒に遠くの山へ逃げる作戦",
+        "肉屋を海に落とす作戦"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "最後に猿はどうなりましたか？",
+      "options": [
+        "肉屋に売られました",
+        "家で大切に育てられました",
+        "イノシシと一緒に森で暮らしました",
+        "新しい赤ちゃんになりました"
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

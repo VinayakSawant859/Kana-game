@@ -1,0 +1,44 @@
+{
+  "id": "n5-waking-up-early",
+  "title": "早起き",
+  "titleRomaji": "Hayaoki",
+  "titleEn": "Waking Up Early",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": ["morning", "routine", "daily"],
+  "paragraphs": [
+    {
+      "ja": "毎朝、田中さんは六時に起きます。窓を開けて、外を見ます。空は青くて、天気がとてもいいです。",
+      "en": "Every morning, Mr. Tanaka wakes up at six o'clock. He opens the window and looks outside. The sky is blue, and the weather is very nice."
+    },
+    {
+      "ja": "田中さんは顔を洗って、白いシャツを着ます。それから、台所でお茶を飲んで、パンを食べます。朝ごはんはいつもおいしいです。",
+      "en": "Mr. Tanaka washes his face and puts on a white shirt. After that, he drinks tea and eats bread in the kitchen. Breakfast is always delicious."
+    },
+    {
+      "ja": "七時に公園へ散歩に行きます。公園には花がたくさんあります。田中さんは静かな道をゆっくり歩きます。",
+      "en": "At seven o'clock, he goes for a walk to the park. There are many flowers in the park. Mr. Tanaka walks slowly along the quiet path."
+    },
+    {
+      "ja": "朝の時間は気持ちがいいです。八時に元気に会社へ行きます。",
+      "en": "The morning time feels good. At eight o'clock, he energetically heads to work."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "田中さんは何時に起きますか？",
+      "options": ["五時", "六時", "七時", "八時"],
+      "answerIndex": 1
+    },
+    {
+      "question": "田中さんは朝ごはんに何を食べましたか？",
+      "options": ["ごはん", "魚", "パン", "りんご"],
+      "answerIndex": 2
+    },
+    {
+      "question": "田中さんは七時にどこへ行きますか？",
+      "options": ["会社", "駅", "スーパー", "公園"],
+      "answerIndex": 3
+    }
+  ]
+}

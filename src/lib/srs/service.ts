@@ -255,3 +255,25 @@ export async function ingestVocabularySession(
     }))
   );
 }
+
+export async function addVocabularyToSrs(input: {
+  word: string;
+  reading?: string;
+  meaning: string;
+  level?: string;
+}): Promise<string> {
+  const cleanWord = input.word.trim();
+  const id = `vocab:${cleanWord}`;
+  await upsertPracticeItems([
+    {
+      id,
+      type: "vocab",
+      level: input.level,
+      prompt: cleanWord,
+      answer: input.meaning.trim(),
+      reading: input.reading?.trim(),
+      missed: true,
+    },
+  ]);
+  return id;
+}

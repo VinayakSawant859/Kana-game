@@ -1,0 +1,68 @@
+{
+  "id": "n5-urashima-taro",
+  "title": "浦島太郎",
+  "titleRomaji": "Urashima Taro",
+  "titleEn": "Urashima Taro, the Fisher Lad",
+  "level": "N5",
+  "category": "Fairy Tale",
+  "tags": [
+    "sea",
+    "turtle",
+    "magic",
+    "time"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、浦島太郎という親切な男の人がいました。海で毎日、魚を捕まえていました。ある日、子供たちが海辺で一匹の亀をいじめていました。太郎は亀をかわいそうに思って、お金を払って亀を助けました。そして、亀を海へ帰しました。",
+      "en": "Long, long ago, there was a kind fisherman named Urashima Taro. Every day, he caught fish in the sea. One day, children were teasing a tortoise on the beach. Taro felt sorry for the tortoise, so he paid money to save it. Then, he returned the tortoise to the sea."
+    },
+    {
+      "ja": "次の日、太郎が海にいると、昨日の亀が来ました。亀は「助けてくれて、ありがとうございます。海の中にある竜宮城へ行きましょう」と言いました。太郎は亀の背中に乗りました。亀は海の中を泳いで、大きくてきれいな竜宮城へ行きました。",
+      "en": "The next day, when Taro was at the sea, yesterday's tortoise came. The tortoise said, \"Thank you for saving me. Let's go to the Dragon King's Palace under the sea.\" Taro rode on the tortoise's back. The tortoise swam inside the sea and went to the big and beautiful Palace."
+    },
+    {
+      "ja": "竜宮城には、とてもきれいなお姫様がいました。お姫様は「太郎さん、亀を助けてくれてありがとうございます」と言いました。美味しい魚の料理がたくさんありました。太郎は毎日お姫様と一緒に楽しく遊びました。太郎は三日ぐらい竜宮城にいました。",
+      "en": "At the Palace, there was a very beautiful princess. The princess said, \"Taro, thank you for saving the tortoise.\" There was a lot of delicious fish food. Taro played happily with the princess every day. Taro stayed at the Palace for about three days."
+    },
+    {
+      "ja": "しかし、太郎はうちのお父さんとお母さんに会いたくなりました。「私はうちに帰ります」と太郎は言いました。お姫様は悲しそうに、一つの箱を渡しました。「これはお土産の箱です。でも、絶対に開けないでください」と言いました。太郎は「はい」と言って、また亀に乗って村へ帰りました。",
+      "en": "However, Taro started to miss his father and mother at home. \"I will return home,\" Taro said. The princess looked sad and handed him a box. \"This is a souvenir box. But please never open it,\" she said. Taro said \"Yes,\" and rode the tortoise back to his village."
+    },
+    {
+      "ja": "しかし、村はすっかり変わっていました。太郎の家も、両親もいませんでした。三百年が過ぎていたのです。太郎はとても悲しくて、お姫様の箱を開けました。中から紫の煙が出ました。太郎は突然、おじいさんになりました。",
+      "en": "However, the village had completely changed. Taro's house and his parents were gone. Three hundred years had passed. Taro was very sad and opened the princess's box. Purple smoke came out from inside. Taro suddenly became an old man."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "太郎は何を助けましたか？",
+      "options": [
+        "魚",
+        "犬",
+        "亀",
+        "鳥"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "太郎は竜宮城にどのくらい（どれぐらい）いましたか？",
+      "options": [
+        "三日ぐらい",
+        "一週間ぐらい",
+        "一ヶ月ぐらい",
+        "三年ぐらい"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "箱を開けた後、太郎はどうなりましたか？",
+      "options": [
+        "子供になりました",
+        "お金持ちになりました",
+        "おじいさんになりました",
+        "王様になりました"
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

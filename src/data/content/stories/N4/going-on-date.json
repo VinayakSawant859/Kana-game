@@ -1,0 +1,59 @@
+{
+  "id": "n4-first-date",
+  "title": "初めてのデート",
+  "titleRomaji": "Hajimete no dēto",
+  "titleEn": "First Date",
+  "level": "N4",
+  "category": "Everyday Life",
+  "tags": ["date", "romance", "cafe", "weekend"],
+  "paragraphs": [
+    {
+      "ja": "先週の日曜日の午後、木村さんは彼女と初めてデートをしました。一時半に駅の改札口の前で待ち合わせをしました。",
+      "en": "Last Sunday afternoon, Mr. Kimura went on his first date with his girlfriend. They met up in front of the station's ticket gate at 1:30."
+    },
+    {
+      "ja": "彼女がきれいなワンピースを着て現れたので、木村さんは少し緊張してしまいました。二人は歩いて近くの有名なカフェへ行きました。",
+      "en": "Because she appeared wearing a beautiful dress, Mr. Kimura got a little nervous. The two walked to a famous nearby cafe."
+    },
+    {
+      "ja": "店の中は静かで、甘いケーキのいい匂いがしていました。木村さんはコーヒーとチーズケーキを頼んで、彼女は紅茶を頼みました。二人は好きな音楽や将来の夢について楽しく話しました。",
+      "en": "Inside the shop, it was quiet and there was a nice smell of sweet cake. Mr. Kimura ordered coffee and cheesecake, and she ordered black tea. The two talked happily about their favorite music and future dreams."
+    },
+    {
+      "ja": "その後、夕方の公園をゆっくり散歩しました。木村さんは「今日は本当に楽しかったです」と言って、彼女を駅まで送りました。素晴らしい思い出になりました。",
+      "en": "After that, they took a leisurely walk in the park in the evening. Mr. Kimura said, \"Today was truly fun,\" and walked her to the station. It became a wonderful memory."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "二人は何時にどこで待ち合わせをしましたか？",
+      "options": [
+        "一時にカフェの前",
+        "一時半に駅の改札口の前",
+        "二時に公園の入口",
+        "二時半に映画館の前"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "カフェで木村さんは何を頼みましたか？",
+      "options": [
+        "紅茶とクッキー",
+        "ジュースとパン",
+        "コーヒーとチーズケーキ",
+        "お茶とお弁当"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "カフェを出た後、二人は何をしましたか？",
+      "options": [
+        "映画を見に行きました",
+        "公園を散歩しました",
+        "買い物に行きました",
+        "すぐに電車に乗りました"
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

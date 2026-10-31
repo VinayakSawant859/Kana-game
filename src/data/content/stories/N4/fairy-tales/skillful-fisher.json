@@ -1,0 +1,64 @@
+{
+  "id": "n4-happy-hunter-skillful-fisher",
+  "title": "山幸彦と海幸彦",
+  "titleRomaji": "Yamasachihiko to Umisachihiko",
+  "titleEn": "The Happy Hunter and the Skillful Fisher",
+  "level": "N4",
+  "category": "Legend",
+  "tags": [
+    "mythology",
+    "sea",
+    "magic",
+    "brothers"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、山で動物を捕まえるのが上手な「山幸彦（やまさちひこ）」と、海で魚を釣るのが上手な「海幸彦（うみさちひこ）」という兄弟がいました。 ある日、二人は仕事の道具を交換することにしました。 しかし、弟の山幸彦は魚の釣り方がわかりませんでした。 彼は一日中海にいましたが、魚は一匹も釣れず、兄の大切な釣り針を海に落としてしまいました。 兄はとても怒って、山幸彦を許しませんでした。",
+      "en": "Long, long ago, there were brothers: \"Yamasachihiko\" (Happy Hunter), who was good at catching animals in the mountains, and \"Umisachihiko\" (Skillful Fisher), who was good at catching fish in the sea. One day, the two decided to exchange their work tools. However, the younger brother Yamasachihiko did not know how to fish. He was at the sea all day, but he could not catch a single fish, and dropped his older brother's precious fishing hook into the sea. The older brother got very angry and did not forgive Yamasachihiko."
+    },
+    {
+      "ja": "山幸彦が海辺で困っていると、親切なおじいさんが来て、「海の中の竜宮（りゅうぐう）へ行きなさい」と教えました。 山幸彦はおじいさんが作った船に乗って、海の王様の城へ行きました。 城の門のそばで、彼は美しい二人の姫に会いました。 海の王様は山幸彦を歓迎して、城でごちそうを出しました。",
+      "en": "When Yamasachihiko was troubled on the beach, a kind old man came and taught him, \"Go to the Dragon Palace under the sea.\" Yamasachihiko rode the boat made by the old man and went to the Sea King's castle. Near the castle gate, he met two beautiful princesses. The Sea King welcomed Yamasachihiko and served a feast at the castle."
+    },
+    {
+      "ja": "王様が海の魚たちを集めて聞くと、鯛（たい）の喉（のど）に釣り針が刺さっていることがわかりました。 彼らは無事に釣り針を見つけることができました。 山幸彦は海の城がとても楽しくて、そこに三年も住んでいました。 しかし、彼は自分の国と兄のことを思い出して、家に帰ることにしました。",
+      "en": "When the king gathered the sea fishes and asked them, they found out that the fishing hook was stuck in the throat of a red bream (Tai). They were able to find the fishing hook safely. Yamasachihiko found the sea castle very enjoyable and lived there for as many as three years. However, he remembered his own country and his older brother, and decided to return home."
+    },
+    {
+      "ja": "帰る時、王様は山幸彦に、海の水を集めたり引かせたりできる二つの不思議な宝石をあげました。 山幸彦は大きなワニの背中に乗って、自分の国へ帰りました。 兄はまだ怒っていて、山幸彦を殺そうとしました。 しかし、山幸彦は王様にもらった宝石を使って、兄に勝ちました。 兄は謝って、それから二人は平和に暮らしました。",
+      "en": "When returning, the king gave Yamasachihiko two mysterious jewels that could make the sea water gather and recede. Yamasachihiko rode on the back of a large crocodile and returned to his own country. The older brother was still angry and tried to kill Yamasachihiko. However, Yamasachihiko used the jewels he received from the king and won against his brother. The older brother apologized, and from then on the two lived in peace."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "山幸彦はどうして海辺で困っていましたか？",
+      "options": [
+        "兄の大切な釣り針をなくしたから",
+        "魚をたくさん釣ったから",
+        "船が壊れたから",
+        "道に迷ったから"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "誰の喉（のど）に釣り針が刺さっていましたか？",
+      "options": [
+        "タコ",
+        "大きなワニ",
+        "海の王様",
+        "鯛（たい）"
+      ],
+      "answerIndex": 3
+    },
+    {
+      "question": "山幸彦はどうやって兄に勝ちましたか？",
+      "options": [
+        "剣で戦いました",
+        "海の王様にもらった宝石を使いました",
+        "おじいさんに助けてもらいました",
+        "ワニが兄を食べました"
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

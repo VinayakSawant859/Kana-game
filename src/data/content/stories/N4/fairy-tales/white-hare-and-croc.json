@@ -1,0 +1,64 @@
+{
+  "id": "n4-white-hare-and-crocodiles",
+  "title": "因幡の白兎",
+  "titleRomaji": "Inaba no Shirato",
+  "titleEn": "The White Hare and the Crocodiles",
+  "level": "N4",
+  "category": "Fairy Tale",
+  "tags": [
+    "hare",
+    "crocodiles",
+    "trick",
+    "mythology"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、隠岐の島（おきのしま）に一羽の白い兎（うさぎ）が住んでいました。兎は海の向こうにある因幡（いなば）の国へ行きたいと思っていましたが、渡る方法がありませんでした。そこで、海にいるワニたちをだまそうと考えました。兎はワニたちに「数（かず）を比べよう。私が背中を踏んで数えるから、島から因幡まで並んでくれ」と言いました。",
+      "en": "Long, long ago, a white hare lived on Oki Island. The hare wanted to go to the land of Inaba across the sea, but there was no way to cross. So, he thought of tricking the crocodiles in the sea. The hare said to the crocodiles, \"Let's compare our numbers. Since I will step on your backs and count, line up from the island to Inaba.\""
+    },
+    {
+      "ja": "ワニたちは何も知らずに並び、兎はその背中をピョンピョンと跳びながら数を数えて渡っていきました。しかし、最後のワニの所へ着いた時、兎は嬉しさのあまり「騙されたな！」と言ってしまいました。怒ったワニたちは兎の毛を全部むしり取り、浜辺に放置しました。兎は全身が痛くて、泣いていました。",
+      "en": "The crocodiles lined up without knowing anything, and the hare crossed over while jumping and counting on their backs. However, when he reached the last crocodile, the hare, out of pure joy, said, \"You've been tricked!\" The angry crocodiles plucked all of the hare's fur off and left him stranded on the beach. The hare was in pain all over his body and was crying."
+    },
+    {
+      "ja": "そこへ、大国主命（おおくにぬしのみこと）という心優しい神様が通りかかりました。神様は泣いている兎を見て、「どうしたのか」と優しく尋ねました。兎が事情を話すと、神様は「あの池に行って真水で体を洗い、その辺りに生えているガマの花粉の上に転がりなさい」と教えてくれました。",
+      "en": "A kind-hearted god named Okuninushi-no-Mikoto happened to pass by. The god saw the crying hare and gently asked, \"What's the matter?\" When the hare explained the circumstances, the god instructed, \"Go to that pond, wash your body with fresh water, and roll over on the pollen of the bulrush (gama) flowers growing around there.\""
+    },
+    {
+      "ja": "兎が言われた通りにすると、驚いたことに傷が治り、柔らかい白い毛が元通りに生えてきました。元気になった兎は、助けてくれたお礼に「優しいあなたこそが、あの美しいお姫様と結婚するでしょう」と予言しました。その予言の通り、神様は美しいお姫様と結ばれ、幸せに暮らしました。",
+      "en": "When the hare did as he was told, to his surprise, his wounds healed and his soft white fur grew back just as before. Having recovered, the hare prophesied as thanks to the one who saved him, \"You, with your kindness, are the one who will marry that beautiful princess.\" Just as the prophecy foretold, the god married the beautiful princess and lived happily."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "兎はどうやって海の向こうへ渡りましたか？",
+      "options": [
+        "大きな船に乗りました",
+        "ワニの背中を踏んで渡りました",
+        "おじいさんの船に乗りました",
+        "自力で泳ぎました"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "ワニに毛をむしり取られた兎に、優しい神様は何をするように教えましたか？",
+      "options": [
+        "海の水で体を洗うこと",
+        "薬を飲んで眠ること",
+        "真水で体を洗い、ガマの花粉の上に転がること",
+        "美味しいおにぎりを食べること"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "話を助けてもらった兎は、神様に何と言いましたか？",
+      "options": [
+        "美しいお姫様と結婚するだろう",
+        "もう二度と嘘をつかない",
+        "もっと魚を捕まえてほしい",
+        "一緒に因幡の国へ行こう"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

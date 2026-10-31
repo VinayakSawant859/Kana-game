@@ -1,0 +1,64 @@
+{
+  "id": "n5-the-man-who-did-not-wish-to-die",
+  "title": "死にたくない男",
+  "titleRomaji": "Shinitakunai Otoko",
+  "titleEn": "The Man Who Did Not Wish to Die",
+  "level": "N5",
+  "category": "Fairy Tale",
+  "tags": [
+    "dream",
+    "life",
+    "magic",
+    "lesson"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、千太郎（せんたろう）という男の人がいました。 彼は「死ぬのは怖いです。ずっと生きたいです」と言って、神様にお願いしました。 神様は彼に紙の鳥をあげました。 千太郎が鳥に乗ると、鳥は空を飛んで「死なない国」へ行きました。",
+      "en": "Long, long ago, there was a man named Sentaro. He said, \"I am afraid to die. I want to live forever,\" and prayed to a god. The god gave him a paper bird. When Sentaro rode on the bird, the bird flew in the sky and went to the 'Country of Perpetual Life.'"
+    },
+    {
+      "ja": "その国の人たちは、病気になりません。 しかし、みんな「死にたいです。毎日つまらないです」と言いました。 三百年の後、千太郎もつまらなくなりました。 「私の国へ帰りたいです」と言って、また紙の鳥に乗りました。",
+      "en": "The people of that country do not get sick. However, everyone said, \"We want to die. Every day is boring.\" After three hundred years, Sentaro also became bored. He said, \"I want to return to my country,\" and rode the paper bird again."
+    },
+    {
+      "ja": "しかし、海の上で鳥が水に落ちました。 大きな魚が来て、千太郎を食べようとしました。 「助けて！」と大きな声で言った時、千太郎は起きました。 それは長い夢でした。",
+      "en": "However, over the sea, the bird fell into the water. A big fish came and tried to eat Sentaro. When he said \"Help!\" with a loud voice, Sentaro woke up. It was a long dream."
+    },
+    {
+      "ja": "神様が来て、「家へ帰って、毎日よく働いてください」と言いました。 千太郎は「はい」と言って、家に帰りました。 そして、毎日まじめに仕事をしました。",
+      "en": "The god came and said, \"Go home and work hard every day.\" Sentaro said \"Yes\" and returned home. And he did his job seriously every day."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "千太郎は何に乗って空を飛びましたか？",
+      "options": [
+        "白い馬",
+        "紙の鳥",
+        "古い船",
+        "大きな魚"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "「死なない国」の人たちはどう思っていましたか？",
+      "options": [
+        "ずっと生きたい",
+        "毎日楽しい",
+        "死にたい",
+        "よく働きたい"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "大きな魚が来た時、千太郎はどうなりましたか？",
+      "options": [
+        "魚を食べました",
+        "起きました",
+        "魚と話しました",
+        "海を泳ぎました"
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

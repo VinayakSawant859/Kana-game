@@ -1,0 +1,76 @@
+{
+  "id": "n5-my-lord-bag-of-rice",
+  "title": "米俵の殿様",
+  "titleRomaji": "Komedawara no Tonosama",
+  "titleEn": "My Lord Bag of Rice",
+  "level": "N5",
+  "category": "Fairy Tale",
+  "tags": [
+    "hero",
+    "magic",
+    "dragon",
+    "animals"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、日本に秀郷というとても強い男の人がいました。 彼は毎日、弓と矢を持って歩きました。 ある日、彼は大きな湖の橋に行きました。 橋の上に、とても大きな龍が寝ていました。 龍の口から火と煙が出ていました。 しかし、秀郷は全然怖がりませんでした。 彼は龍の体を踏んで、前へ歩きました。",
+      "en": "Long, long ago, there was a very strong man named Hidesato in Japan. Every day, he walked carrying his bow and arrows. One day, he went to a bridge over a large lake. On the bridge, a very big dragon was sleeping. Fire and smoke were coming out of the dragon's mouth. However, Hidesato was not afraid at all. He stepped on the dragon's body and walked forward."
+    },
+    {
+      "ja": "すると、龍はきれいな服を着た男の人になりました。 彼は「私はこの湖の王です。 あなたは本当に強い人ですね。どうか私を助けてください」と言いました。 「山の大きなムカデが、毎晩私の家族を食べに来ます。私たちはとても怖いです。お願いです、ムカデを殺してください」と言いました。",
+      "en": "Then, the dragon became a man wearing beautiful clothes. He said, \"I am the king of this lake. You are a truly strong man. Please help me.\" He said, \"A big centipede from the mountain comes every night to eat my family. We are very scared. Please, kill the centipede.\""
+    },
+    {
+      "ja": "秀郷は「いいですよ。私がムカデを殺します」と言って、王のきれいな家に行きました。 夜中に、大きなムカデが山から来ました。 ムカデの目は、二つの大きな火のように赤くて明るかったです。",
+      "en": "Hidesato said, \"All right. I will kill the centipede,\" and went to the king's beautiful house. In the middle of the night, the big centipede came from the mountain. The centipede's eyes were red and bright like two large fires."
+    },
+    {
+      "ja": "秀郷は弓と矢を持ちました。 最初の矢は、ムカデに当たりましたが、ムカデは死にませんでした。 二つ目の矢も当たりましたが、だめでした。 秀郷は最後の矢に自分の唾をつけて、強く放ちました。",
+      "en": "Hidesato took his bow and arrows. The first arrow hit the centipede, but the centipede did not die. The second arrow also hit, but it was no good. Hidesato put his own saliva on the last arrow and shot it strongly."
+    },
+    {
+      "ja": "その矢はムカデの頭の真ん中に当たりました。 ついに、ムカデは死にました。 湖の王と家族はとても喜びました。 王は秀郷のために、魚などのたくさんのおいしい食べ物と、おいしいお酒を出しました。",
+      "en": "That arrow hit right in the middle of the centipede's head. Finally, the centipede died. The king of the lake and his family were very happy. The king served a lot of delicious food, such as fish, and delicious wine for Hidesato."
+    },
+    {
+      "ja": "次の日、秀郷は家に帰ることにしました。 湖の王は彼に米俵などの五つのプレゼントをあげました。 その米俵は魔法の米俵でした。 毎日、家族みんなで米をたくさん食べても、米は絶対に少なくなりませんでした。",
+      "en": "The next day, Hidesato decided to return home. The king of the lake gave him five presents, including a bag of rice. That bag of rice was a magic bag of rice. Even if the whole family ate a lot of rice every day, the rice never ever decreased."
+    },
+    {
+      "ja": "秀郷は、毎日おいしい米を食べました。そして、服や料理の道具ももらいましたから、彼はとてもお金持ちになりました。 みんなは彼を「米俵の殿様」と呼びました。",
+      "en": "Hidesato ate delicious rice every day. And because he also received clothes and cooking tools, he became a very rich man. Everyone called him \"My Lord Bag of Rice\"."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "秀郷は橋の上で何の上を歩きましたか？",
+      "options": [
+        "大きな犬",
+        "大きな龍",
+        "大きなお金",
+        "大きなムカデ"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "湖の王はどうして困っていましたか？",
+      "options": [
+        "食べ物がなかったから",
+        "道がわからなかったから",
+        "大きなムカデが来たから",
+        "橋が壊れたから"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "湖の王がくれた米俵はどうなりましたか？",
+      "options": [
+        "すぐに米がなくなりました",
+        "毎日食べても、少なくなりませんでした",
+        "魚になりました",
+        "誰かが盗みました"
+      ],
+      "answerIndex": 1
+    }
+  ]
+}

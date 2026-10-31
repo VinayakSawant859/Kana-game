@@ -1,0 +1,336 @@
+import lexiconData from "./content/stories/lexicon.json";
+
+// N5 Everyday Life
+import n5AirportMarket from "./content/stories/N5/market.json";
+import n5Library from "./content/stories/N5/library.json";
+import n5MeetingFriend from "./content/stories/N5/meeting-friend.json";
+import n5PlayingWithFriends from "./content/stories/N5/playing-with-friends.json";
+import n5Restaurant from "./content/stories/N5/restaurant.json";
+import n5School from "./content/stories/N5/school.json";
+import n5StudyingLate from "./content/stories/N5/studying-late.json";
+import n5Supermarket from "./content/stories/N5/supermarket.json";
+import n5Theatre from "./content/stories/N5/theatre.json";
+import n5WakingUp from "./content/stories/N5/waking-up.json";
+
+// N5 Fairy Tales
+import n5FarmerAndBadger from "./content/stories/N5/fairy-tales/farmer-and-badger.json";
+import n5Kintaro from "./content/stories/N5/fairy-tales/kintaro.json";
+import n5Matsuyama from "./content/stories/N5/fairy-tales/matsuyama.json";
+import n5MoonChild from "./content/stories/N5/fairy-tales/moon-child.json";
+import n5MyLordBagOfRice from "./content/stories/N5/fairy-tales/n5-my-lord-bag-of-rice.json";
+import n5PrincessHase from "./content/stories/N5/fairy-tales/princess-hase.json";
+import n5Shinansha from "./content/stories/N5/fairy-tales/shinansha.json";
+import n5TongueCutSparrow from "./content/stories/N5/fairy-tales/tongue-cut-sparrow.json";
+import n5UrashimaTaro from "./content/stories/N5/fairy-tales/urashima-taro.json";
+import n5WishToDie from "./content/stories/N5/fairy-tales/wish-to-die.json";
+
+// N4 Everyday Life
+import n4Airport from "./content/stories/N4/airport.json";
+import n4Bank from "./content/stories/N4/bank.json";
+import n4BaseballStadium from "./content/stories/N4/baseball-stadium.json";
+import n4FamilyVacation from "./content/stories/N4/family-vacation.json";
+import n4GoingOnDate from "./content/stories/N4/going-on-date.json";
+import n4Hanabi from "./content/stories/N4/hanabi.json";
+import n4PoliceStation from "./content/stories/N4/police-station.json";
+import n4Shinkansen from "./content/stories/N4/shinkansen.json";
+import n4University from "./content/stories/N4/university.json";
+import n4Zoo from "./content/stories/N4/zoo.json";
+
+// N4 Fairy Tales
+import n4Adachigahara from "./content/stories/N4/fairy-tales/adachigahara.json";
+import n4EmpressJokwa from "./content/stories/N4/fairy-tales/empress-jokwa.json";
+import n4FishAndMonkey from "./content/stories/N4/fairy-tales/fish-and-monkey.json";
+import n4LostWen from "./content/stories/N4/fairy-tales/lost-wen.json";
+import n4Momotaro from "./content/stories/N4/fairy-tales/momotaro.json";
+import n4MonkeyAndCrab from "./content/stories/N4/fairy-tales/monkey-and-crab.json";
+import n4MonkeyBoar from "./content/stories/N4/fairy-tales/monkey-boar.json";
+import n4Roshomon from "./content/stories/N4/fairy-tales/roshomon.json";
+import n4SkillfulFisher from "./content/stories/N4/fairy-tales/skillful-fisher.json";
+import n4WhiteHareAndCroc from "./content/stories/N4/fairy-tales/white-hare-and-croc.json";
+import n4WitheredTrees from "./content/stories/N4/fairy-tales/withered-trees.json";
+import n4YamatoTake from "./content/stories/N4/fairy-tales/yamato-take.json";
+
+export interface StoryToken {
+  surface: string;
+  reading?: string;
+  meaning?: string;
+  baseForm?: string;
+  level?: string;
+}
+
+export interface StoryParagraph {
+  ja: string;      // Japanese sentence/paragraph
+  en: string;      // English translation
+  tokens?: {       // Optional pre-parsed tokens for ruby
+    surface: string;
+    reading?: string;
+    meaning?: string;
+    baseForm?: string;
+    level?: string;
+  }[];
+}
+
+export interface StoryQuiz {
+  question: string;
+  options: string[];
+  answerIndex: number;
+}
+
+export type StoryLevel = "N5" | "N4" | "N3" | "N2" | "N1";
+export type StoryCategory = "Everyday Life" | "Fairy Tales" | "News";
+
+export interface StoryRecord {
+  id: string;
+  slug: string;
+  title: string;
+  titleRomaji: string;
+  titleEn: string;
+  level: StoryLevel;
+  category: StoryCategory;
+  tags: string[];
+  paragraphs: StoryParagraph[];
+  quiz: StoryQuiz[];
+}
+
+interface LexiconEntry {
+  reading: string;
+  meaning: string;
+  baseForm?: string;
+  level?: string;
+}
+
+const lexicon = lexiconData as Record<string, LexiconEntry>;
+
+const KANJI_REGEX = /[\u4e00-\u9faf\u3400-\u4dbf]/;
+
+export function hasKanji(text: string): boolean {
+  return KANJI_REGEX.test(text);
+}
+
+const wordSegmenter =
+  typeof Intl !== "undefined" && "Segmenter" in Intl
+    ? new Intl.Segmenter("ja", { granularity: "word" })
+    : null;
+
+export function stripCitations(text: string): string {
+  return text
+    .replace(/\s*\[cite:\s*[\d,\s]+\]/g, "")
+    .replace(/\s+([.,!?])/g, "$1")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
+export function tokenizeJapaneseParagraph(ja: string): StoryToken[] {
+  const cleaned = stripCitations(ja).replace(/（[ぁ-んァ-ンー]+）/g, "");
+  if (!wordSegmenter) {
+    return [{ surface: cleaned }];
+  }
+
+  const tokens: StoryToken[] = [];
+  for (const part of wordSegmenter.segment(cleaned)) {
+    const surface = part.segment;
+    if (!part.isWordLike) {
+      tokens.push({ surface });
+      continue;
+    }
+
+    const entry = lexicon[surface];
+    if (entry) {
+      tokens.push({
+        surface,
+        ...(hasKanji(surface) && entry.reading && entry.reading !== surface
+          ? { reading: entry.reading }
+          : {}),
+        meaning: entry.meaning,
+        baseForm: entry.baseForm ?? surface,
+        level: entry.level,
+      });
+    } else {
+      tokens.push({ surface });
+    }
+  }
+  return tokens;
+}
+
+export function lookupWordMetadata(surface: string): LexiconEntry | undefined {
+  return lexicon[surface];
+}
+
+function normalizeCategory(rawCategory: string, isFairyTaleDir: boolean): StoryCategory {
+  if (isFairyTaleDir) return "Fairy Tales";
+  const lower = rawCategory.trim().toLowerCase();
+  if (lower === "fairy tale" || lower === "fairy tales" || lower === "legend") {
+    return "Fairy Tales";
+  }
+  if (lower === "news") {
+    return "News";
+  }
+  return "Everyday Life";
+}
+
+function normalizeLevel(rawLevel: string): StoryLevel {
+  const upper = rawLevel.trim().toUpperCase();
+  if (upper === "N5" || upper === "N4" || upper === "N3" || upper === "N2" || upper === "N1") {
+    return upper;
+  }
+  return "N5";
+}
+
+interface RawStoryJson {
+  id: string;
+  title: string;
+  titleRomaji: string;
+  titleEn: string;
+  level: string;
+  category: string;
+  tags?: string[];
+  paragraphs: Array<{
+    ja: string;
+    en: string;
+    tokens?: StoryToken[];
+  }>;
+  quiz: StoryQuiz[];
+}
+
+interface RawManifestItem {
+  slug: string;
+  isFairyTale?: boolean;
+  raw: RawStoryJson;
+}
+
+const rawManifest: RawManifestItem[] = [
+  // N5 Everyday Life
+  { slug: "school", raw: n5School },
+  { slug: "waking-up", raw: n5WakingUp },
+  { slug: "restaurant", raw: n5Restaurant },
+  { slug: "library", raw: n5Library },
+  { slug: "supermarket", raw: n5Supermarket },
+  { slug: "market", raw: n5AirportMarket },
+  { slug: "meeting-friend", raw: n5MeetingFriend },
+  { slug: "playing-with-friends", raw: n5PlayingWithFriends },
+  { slug: "studying-late", raw: n5StudyingLate },
+  { slug: "theatre", raw: n5Theatre },
+
+  // N5 Fairy Tales
+  { slug: "urashima-taro", isFairyTale: true, raw: n5UrashimaTaro },
+  { slug: "kintaro", isFairyTale: true, raw: n5Kintaro },
+  { slug: "tongue-cut-sparrow", isFairyTale: true, raw: n5TongueCutSparrow },
+  { slug: "moon-child", isFairyTale: true, raw: n5MoonChild },
+  { slug: "n5-my-lord-bag-of-rice", isFairyTale: true, raw: n5MyLordBagOfRice },
+  { slug: "princess-hase", isFairyTale: true, raw: n5PrincessHase },
+  { slug: "farmer-and-badger", isFairyTale: true, raw: n5FarmerAndBadger },
+  { slug: "shinansha", isFairyTale: true, raw: n5Shinansha },
+  { slug: "matsuyama", isFairyTale: true, raw: n5Matsuyama },
+  { slug: "wish-to-die", isFairyTale: true, raw: n5WishToDie },
+
+  // N4 Everyday Life
+  { slug: "university", raw: n4University },
+  { slug: "bank", raw: n4Bank },
+  { slug: "airport", raw: n4Airport },
+  { slug: "shinkansen", raw: n4Shinkansen },
+  { slug: "family-vacation", raw: n4FamilyVacation },
+  { slug: "baseball-stadium", raw: n4BaseballStadium },
+  { slug: "going-on-date", raw: n4GoingOnDate },
+  { slug: "hanabi", raw: n4Hanabi },
+  { slug: "police-station", raw: n4PoliceStation },
+  { slug: "zoo", raw: n4Zoo },
+
+  // N4 Fairy Tales
+  { slug: "momotaro", isFairyTale: true, raw: n4Momotaro },
+  { slug: "monkey-and-crab", isFairyTale: true, raw: n4MonkeyAndCrab },
+  { slug: "white-hare-and-croc", isFairyTale: true, raw: n4WhiteHareAndCroc },
+  { slug: "withered-trees", isFairyTale: true, raw: n4WitheredTrees },
+  { slug: "lost-wen", isFairyTale: true, raw: n4LostWen },
+  { slug: "skillful-fisher", isFairyTale: true, raw: n4SkillfulFisher },
+  { slug: "yamato-take", isFairyTale: true, raw: n4YamatoTake },
+  { slug: "roshomon", isFairyTale: true, raw: n4Roshomon },
+  { slug: "adachigahara", isFairyTale: true, raw: n4Adachigahara },
+  { slug: "empress-jokwa", isFairyTale: true, raw: n4EmpressJokwa },
+  { slug: "fish-and-monkey", isFairyTale: true, raw: n4FishAndMonkey },
+  { slug: "monkey-boar", isFairyTale: true, raw: n4MonkeyBoar },
+];
+
+let cachedStories: StoryRecord[] | null = null;
+
+function buildAllStories(): StoryRecord[] {
+  if (cachedStories) return cachedStories;
+
+  cachedStories = rawManifest.map(({ slug, isFairyTale = false, raw }) => {
+    const category = normalizeCategory(raw.category, isFairyTale);
+    const level = normalizeLevel(raw.level);
+    const paragraphs: StoryParagraph[] = raw.paragraphs.map((p) => {
+      const cleanJa = stripCitations(p.ja);
+      const cleanEn = stripCitations(p.en);
+      return {
+        ja: cleanJa,
+        en: cleanEn,
+        tokens: p.tokens && p.tokens.length > 0 ? p.tokens : tokenizeJapaneseParagraph(cleanJa),
+      };
+    });
+
+    return {
+      id: raw.id,
+      slug,
+      title: raw.title,
+      titleRomaji: raw.titleRomaji,
+      titleEn: raw.titleEn,
+      level,
+      category,
+      tags: Array.isArray(raw.tags) ? raw.tags : [],
+      paragraphs,
+      quiz: Array.isArray(raw.quiz) ? raw.quiz : [],
+    };
+  });
+
+  return cachedStories;
+}
+
+export function getAllStories(): StoryRecord[] {
+  return buildAllStories();
+}
+
+export function getStoriesByLevel(level: string): StoryRecord[] {
+  const normalized = level.trim().toUpperCase();
+  if (normalized === "ALL") return buildAllStories();
+  return buildAllStories().filter((story) => story.level === normalized);
+}
+
+export function getStoryBySlug(
+  level: string,
+  categoryOrSlug: string,
+  slug?: string
+): StoryRecord | undefined {
+  const normalizedLevel = level.trim().toUpperCase();
+  const targetSlug = (slug ?? categoryOrSlug).trim().toLowerCase();
+
+  return buildAllStories().find((story) => {
+    if (story.level !== normalizedLevel) return false;
+    return (
+      story.slug.toLowerCase() === targetSlug ||
+      story.id.toLowerCase() === targetSlug
+    );
+  });
+}
+
+export function estimateReadingTimeMinutes(story: StoryRecord): number {
+  const totalChars = story.paragraphs.reduce((sum, p) => sum + p.ja.length, 0);
+  return Math.max(1, Math.round(totalChars / 180));
+}
+
+export const COMPLETED_STORIES_STORAGE_KEY = "stories-completed:v1";
+
+export function getCompletedStoryIds(): Set<string> {
+  if (typeof window === "undefined") return new Set();
+  try {
+    const raw = window.localStorage.getItem(COMPLETED_STORIES_STORAGE_KEY);
+    if (!raw) return new Set();
+    const parsed = JSON.parse(raw) as unknown;
+    if (Array.isArray(parsed)) {
+      return new Set(parsed.filter((item): item is string => typeof item === "string"));
+    }
+  } catch {
+    // Ignore storage read errors
+  }
+  return new Set();
+}
+

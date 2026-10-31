@@ -1,0 +1,64 @@
+{
+  "id": "n5-kintaro-golden-boy",
+  "title": "金太郎",
+  "titleRomaji": "Kintarō",
+  "titleEn": "Kintaro, the Golden Boy",
+  "level": "N5",
+  "category": "Legend",
+  "tags": [
+    "hero",
+    "animals",
+    "samurai",
+    "strength"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、山に金太郎という男の子がいました。 金太郎はとても強い子供でした。 毎日、山で動物たちと楽しく遊びました。 熊や鹿や猿やうさぎは、みんな金太郎のいい友達でした。",
+      "en": "Long, long ago, there was a boy named Kintaro in the mountain. Kintaro was a very strong child. Every day, he played happily with the animals in the mountain. The bear, the deer, the monkey, and the hare were all Kintaro's good friends."
+    },
+    {
+      "ja": "ある日、金太郎と動物たちは広い所で相撲をしました。 熊が一番大きい動物でしたが、金太郎は熊よりもずっと強かったです。 金太郎は勝った動物においしい食べ物をあげました。 動物たちはみんな金太郎が大好きでした。",
+      "en": "One day, Kintaro and the animals did sumo wrestling in a wide place. The bear was the biggest animal, but Kintaro was much stronger than the bear. Kintaro gave delicious food to the winning animals. The animals all loved Kintaro very much."
+    },
+    {
+      "ja": "みんなで川に行きました。 橋がありませんでしたから、動物たちは渡ることができなくて困りました。 金太郎は川のそばの大きな木を押しました。 木は倒れて、橋になりました。 動物たちは「金太郎は本当に強いですね」と言って、橋を渡りました。",
+      "en": "They all went to a river. Because there was no bridge, the animals were troubled as they could not cross. Kintaro pushed a big tree near the river. The tree fell and became a bridge. The animals said, \"Kintaro is truly strong, isn't he,\" and crossed the bridge."
+    },
+    {
+      "ja": "その時、一人の男の人が金太郎を見ました。 その人は偉いお侍さんでした。 彼は「あなたはとても強いですね。一緒に町へ来て、侍になりませんか」と言いました。 金太郎は喜んで「はい」と答えました。 金太郎はお母さんと動物たちに「さようなら」と言って、町へ行きました。 そして、一番強くて有名な侍になりました。",
+      "en": "At that time, a man saw Kintaro. That person was a great samurai. He said, \"You are very strong. Won't you come to the town together and become a samurai?\" Kintaro happily answered, \"Yes.\" Kintaro said \"Goodbye\" to his mother and the animals, and went to the town. And he became the strongest and most famous samurai."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "金太郎の友達はだれですか？",
+      "options": [
+        "海の魚",
+        "山の動物",
+        "町の子供",
+        "悪い鬼"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "川に何がありませんでしたか？",
+      "options": [
+        "水",
+        "木",
+        "橋",
+        "石"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "金太郎は町へ行って何になりましたか？",
+      "options": [
+        "木こり",
+        "王様",
+        "侍",
+        "先生"
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

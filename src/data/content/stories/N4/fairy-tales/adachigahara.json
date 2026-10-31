@@ -1,0 +1,64 @@
+{
+  "id": "n4-goblin-of-adachigahara",
+  "title": "安達ヶ原の鬼",
+  "titleRomaji": "Adachigahara no Oni",
+  "titleEn": "The Goblin of Adachigahara",
+  "level": "N4",
+  "category": "Fairy Tale",
+  "tags": [
+    "goblin",
+    "priest",
+    "horror",
+    "escape"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、安達ヶ原（あだちがはら）という広い野原に、人を食べる恐ろしい鬼が住んでいると言われていました。 ある秋の夕方、一人の旅の坊さんが道に迷ってしまいました。 坊さんはとても疲れて、お腹が空いていました。 遠くに小さな家の明かりが見えたので、坊さんは急いでその家に向かいました。 家の中には一人のおばあさんがいて、糸を紡いで（つむいで）いました。 坊さんは「道に迷って困っています。今夜、ここに泊めてくれませんか」と頼みました。",
+      "en": "Long, long ago, it was said that a terrifying goblin that ate people lived in a wide plain called Adachigahara. One autumn evening, a traveling priest lost his way. The priest was very tired and hungry. Because he saw the light of a small house in the distance, the priest hurried toward that house. Inside the house was an old woman, spinning thread. The priest asked, \"I am troubled having lost my way. Won't you let me stay here tonight?\""
+    },
+    {
+      "ja": "おばあさんは「こんな汚い家ですが、どうぞ入ってください」と言って、坊さんに温かい食事を運びました。 坊さんは親切なおばあさんに会えて、本当に運がいいと思いました。 しばらくすると、火が消えそうになりました。 おばあさんは「薪（まき）を拾ってきますから、ここで待っていてください。 でも、絶対に奥の部屋を見てはいけませんよ」と約束させて、外へ出かけました。",
+      "en": "The old woman said, \"It is a dirty house, but please come in,\" and brought the priest a warm meal. The priest thought he was truly lucky to have met a kind old woman. After a while, the fire was about to go out. The old woman made him promise, \"I will go gather firewood, so please wait here. But you must absolutely not look into the back room,\" and went outside."
+    },
+    {
+      "ja": "坊さんは一人で待っていましたが、奥の部屋に何があるか気になって仕方がありませんでした。 「少しだけなら見てもいいだろう」と思って、坊さんは奥の部屋の戸を静かに開けました。 部屋の中を見ると、たくさんの人の骨が山のように積まれていて、血の匂いがしました。 坊さんは「あのおばあさんが鬼だったんだ！」と気がついて、震えながら急いで家から逃げ出しました。",
+      "en": "The priest waited alone, but he couldn't help being curious about what was in the back room. Thinking \"If it's just a little, it should be fine to look,\" the priest quietly opened the door to the back room. When he looked inside the room, many human bones were piled up like a mountain, and it smelled of blood. The priest realized, \"That old woman was the goblin!\" and while trembling, hurriedly escaped from the house."
+    },
+    {
+      "ja": "坊さんが一生懸命走っていると、後ろから「待て！どうして部屋を見たんだ！」という恐ろしい声が聞こえました。 鬼になったおばあさんが、ものすごい速さで追いかけてきました。 坊さんは捕まりそうになりましたが、神様に祈りながら走りました。 ついに朝になり、太陽が昇ると、鬼は消えてしまいました。 坊さんは無事に助かりました。",
+      "en": "As the priest was running with all his might, he heard a terrifying voice from behind saying, \"Wait! Why did you look in the room!\" The old woman, who had turned into a demon, chased after him at a tremendous speed. The priest was almost caught, but he ran while praying to God. Finally it became morning, and when the sun rose, the goblin disappeared. The priest was safely saved."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "坊さんはどうして家に行きましたか？",
+      "options": [
+        "おばあさんに会いたかったから",
+        "道に迷って泊まりたかったから",
+        "鬼を殺したかったから",
+        "薪を拾いたかったから"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "おばあさんは出かける前に、坊さんに何と言いましたか？",
+      "options": [
+        "絶対に外に出てはいけません",
+        "早く寝なさい",
+        "絶対に奥の部屋を見てはいけません",
+        "たくさんご飯を食べなさい"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "question": "太陽が昇った後、どうなりましたか？",
+      "options": [
+        "鬼は消えました",
+        "鬼は坊さんを捕まえました",
+        "坊さんは鬼になりました",
+        "おばあさんが泣きながら帰ってきました"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "n5-supermarket-trip",
+  "title": "スーパーでの買い物",
+  "titleRomaji": "Sūpā de no kaimono",
+  "titleEn": "Shopping at the Supermarket",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": ["food", "shopping", "daily"],
+  "paragraphs": [
+    {
+      "ja": "日曜日、田中さんは午前にスーパーへ行きました。車で十分かかりました。",
+      "en": "On Sunday, Mr. Tanaka went to the supermarket in the morning. It took ten minutes by car."
+    },
+    {
+      "ja": "スーパーの中にはたくさんの食べ物がありました。田中さんは大きいりんごを三つと、白いパンを買いました。",
+      "en": "There was a lot of food inside the supermarket. Mr. Tanaka bought three big apples and white bread."
+    },
+    {
+      "ja": "それから、おいしい魚と肉も見ました。肉は少し高かったですが、魚は安かったです。田中さんは魚を二つ買いました。",
+      "en": "Then, he also looked at delicious fish and meat. The meat was a little expensive, but the fish was cheap. Mr. Tanaka bought two fish."
+    },
+    {
+      "ja": "全部で千二百円でした。田中さんはお金を払って、家に帰りました。十二時においしい昼ごはんを食べました。",
+      "en": "In total, it was 1,200 yen. Mr. Tanaka paid the money and returned home. At twelve o'clock, he ate a delicious lunch."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "田中さんは何でスーパーへ行きましたか？",
+      "options": ["バス", "電車", "車", "自転車"],
+      "answerIndex": 2
+    },
+    {
+      "question": "田中さんはスーパーで何を買いませんでしたか？",
+      "options": ["りんご", "パン", "魚", "肉"],
+      "answerIndex": 3
+    },
+    {
+      "question": "買い物は全部でいくらでしたか？",
+      "options": ["千円", "千二百円", "二千円", "二千二百円"],
+      "answerIndex": 1
+    }
+  ]
+}

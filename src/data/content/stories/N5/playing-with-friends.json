@@ -1,0 +1,44 @@
+{
+  "id": "n5-playing-with-friends",
+  "title": "友だちと遊ぶ",
+  "titleRomaji": "Tomodachi to asobu",
+  "titleEn": "Playing with Friends",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": ["friends", "park", "sports", "weekend"],
+  "paragraphs": [
+    {
+      "ja": "日曜日、天気がとてもよかったですから、山田さんは友だちと広い公園へ行きました。",
+      "en": "On Sunday, because the weather was very nice, Mr. Yamada went to a large park with his friends."
+    },
+    {
+      "ja": "みんなで午後一時から三時までサッカーをしました。たくさん走って、少し疲れました。",
+      "en": "Everyone played soccer from 1:00 PM to 3:00 PM. They ran a lot and got a little tired."
+    },
+    {
+      "ja": "それから、大きい木の下に座って、冷たい水を飲みました。色々な話をして、たくさん笑いました。",
+      "en": "After that, they sat under a big tree and drank cold water. They talked about various things and laughed a lot."
+    },
+    {
+      "ja": "五時に「また遊びましょう」と言って、歩いて家に帰りました。とても楽しい一日でした。",
+      "en": "At five o'clock, they said, \"Let's play again,\" and walked back home. It was a very fun day."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "みんなで公園で何をしましたか？",
+      "options": ["テニス", "サッカー", "野球", "水泳"],
+      "answerIndex": 1
+    },
+    {
+      "question": "木の下で何を飲みましたか？",
+      "options": ["お茶", "ジュース", "コーヒー", "冷たい水"],
+      "answerIndex": 3
+    },
+    {
+      "question": "山田さんはどうやって家に帰りましたか？",
+      "options": ["歩いて", "自転車で", "バスで", "電車で"],
+      "answerIndex": 0
+    }
+  ]
+}

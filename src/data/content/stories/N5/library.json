@@ -1,0 +1,44 @@
+{
+  "id": "n5-going-to-library",
+  "title": "図書館へ行く",
+  "titleRomaji": "Toshokan e iku",
+  "titleEn": "Going to the Library",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": ["library", "study", "books", "daily"],
+  "paragraphs": [
+    {
+      "ja": "土曜日の午後、山田さんは自転車で図書館へ行きました。家から十分くらいかかりました。",
+      "en": "On Saturday afternoon, Mr. Yamada went to the library by bicycle. It took about ten minutes from his house."
+    },
+    {
+      "ja": "図書館の中はとても静かでした。山田さんは日本の歴史の本を二冊探しました。",
+      "en": "Inside the library was very quiet. Mr. Yamada looked for two books on Japanese history."
+    },
+    {
+      "ja": "窓の近くの席に座って、三時までゆっくり読みました。それから、本を借りました。",
+      "en": "He sat at a seat near the window and read leisurely until three o'clock. After that, he borrowed the books."
+    },
+    {
+      "ja": "「ありがとうございました」と言って、元気に家へ帰りました。楽しかったです。",
+      "en": "He said, \"Thank you very much,\" and returned home in high spirits. It was fun."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "山田さんはどうやって図書館へ行きましたか？",
+      "options": ["歩いて", "バスで", "自転車で", "電車で"],
+      "answerIndex": 2
+    },
+    {
+      "question": "山田さんは何の本を探しましたか？",
+      "options": ["料理の本", "日本の歴史の本", "英語の本", "旅行の本"],
+      "answerIndex": 1
+    },
+    {
+      "question": "山田さんは何時まで本を読みましたか？",
+      "options": ["一時まで", "二時まで", "三時まで", "四時まで"],
+      "answerIndex": 2
+    }
+  ]
+}

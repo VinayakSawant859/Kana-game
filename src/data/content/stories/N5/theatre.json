@@ -1,0 +1,44 @@
+{
+  "id": "n5-at-movie-theatre",
+  "title": "映画館で映画を見る",
+  "titleRomaji": "Eigakan de eiga o miru",
+  "titleEn": "Watching a Movie at the Cinema",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": ["movie", "weekend", "entertainment", "daily"],
+  "paragraphs": [
+    {
+      "ja": "日曜日の午後、田中さんは電車に乗って町の映画館へ行きました。",
+      "en": "On Sunday afternoon, Mr. Tanaka took the train to the movie theatre in town."
+    },
+    {
+      "ja": "映画館の前にはたくさんの人がいました。田中さんは千五百円で切符を買いました。",
+      "en": "There were many people in front of the theatre. Mr. Tanaka bought a ticket for 1,500 yen."
+    },
+    {
+      "ja": "それから、売店で甘いジュースを買って、二時の映画を見ました。映画はとてもおもしろかったです。",
+      "en": "Then, he bought sweet juice at the shop and watched the two o'clock movie. The movie was very interesting."
+    },
+    {
+      "ja": "四時に映画館を出て、本屋へ寄ってから歩いて家に帰りました。",
+      "en": "He left the theatre at four o'clock, dropped by a bookstore, and then walked home."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "田中さんはどうやって映画館へ行きましたか？",
+      "options": ["バスで", "電車で", "車で", "自転車で"],
+      "answerIndex": 1
+    },
+    {
+      "question": "切符はいくらでしたか？",
+      "options": ["千円", "千二百円", "千五百円", "二千円"],
+      "answerIndex": 2
+    },
+    {
+      "question": "映画館を出た後、田中さんはどこへ行きましたか？",
+      "options": ["喫茶店", "公園", "本屋", "駅"],
+      "answerIndex": 2
+    }
+  ]
+}

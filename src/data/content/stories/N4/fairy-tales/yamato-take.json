@@ -1,0 +1,64 @@
+{
+  "id": "n4-story-of-prince-yamato-take",
+  "title": "日本武尊の物語",
+  "titleRomaji": "Yamato Takeru no Monogatari",
+  "titleEn": "The Story of Prince Yamato Take",
+  "level": "N4",
+  "category": "Legend",
+  "tags": [
+    "hero",
+    "samurai",
+    "magic",
+    "adventure"
+  ],
+  "paragraphs": [
+    {
+      "ja": "昔々、天皇の息子である「ヤマトタケル」というとても強い若い王子がいました。ある日、天皇は彼に、国で悪いことをしている悪者や反乱軍を倒すように命令しました。ヤマトタケルは喜んで出発し、知恵と強い力を使って、次々と敵を倒していきました。",
+      "en": "Long, long ago, there was a very strong young prince named \"Yamato Takeru\" who was the Emperor's son. One day, the Emperor ordered him to defeat the bad guys and rebel forces doing evil things in the country. Yamato Takeru gladly set out, and using his wisdom and great strength, defeated the enemies one after another."
+    },
+    {
+      "ja": "その後、彼は東の地方の反乱軍を倒すために出発しました。途中で、駿河（するが）の国の悪い知事に騙されて、広い野原の真ん中で罠にかけられました。知事は野原に火をつけて、王子を焼き殺そうとしました。周りは炎に囲まれ、絶体絶命のピンチでした。",
+      "en": "After that, he set out to defeat the rebel forces in the eastern provinces. Along the way, he was deceived by the wicked governor of Suruga and caught in a trap in the middle of a wide plain. The governor set fire to the field, trying to burn the prince to death. Surrounded by flames, it was a desperate crisis."
+    },
+    {
+      "ja": "しかし、ヤマトタケルには叔母からもらった特別な「草薙（くさなぎ）の剣」がありました。彼はその剣で周りの草を急いで切り払い、火を消すための道具を使って自分の周りの火を消しました。不思議なことに風向きも変わり、彼は無事にその罠から脱出することができました。",
+      "en": "However, Yamato Takeru had a special \"Kusanagi Sword\" given to him by his aunt. With that sword, he hurriedly cut down the surrounding grass, and using tools to make fire, put out the fire around him. Mysteriously, the wind direction also changed, and he was able to escape safely from that trap."
+    },
+    {
+      "ja": "その後も彼は多くの困難を乗り越えて、国中に平和をもたらしました。彼の妻であるオトタチバナヒメは、海の神様の怒りを鎮めるために自分の命を犠牲にして王子を救いました。ヤマトタケルは妻の愛と犠牲を一生忘れませんでした。彼の勇敢な冒険と伝説は、今でも人々に語り継がれています。",
+      "en": "After that, he overcame many difficulties and brought peace to the country. His wife, Princess Ototachibana, sacrificed her own life to calm the anger of the Sea God and saved the prince. Yamato Takeru never forgot his wife's love and sacrifice for the rest of his life. His brave adventures and legends continue to be told to people even today."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "駿河の国で、ヤマトタケルはどうなりましたか？",
+      "options": [
+        "悪い知事に騙されて野原で火に囲まれた",
+        "海で大きな嵐に巻き込まれた",
+        "動物たちと一緒に相撲をした",
+        "川で釣り針をなくした"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "question": "ヤマトタケルが危機から脱出できたのは、何のおかげですか？",
+      "options": [
+        "おじいさんにもらった不思議な船",
+        "叔母からもらった特別な剣と道具",
+        "海の王様にもらった二つの宝石",
+        "山で出会った賢いイノシシ"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "オトタチバナヒメはどうして命を落としましたか？",
+      "options": [
+        "病気になってしまったから",
+        "悪い母親にいじめられたから",
+        "海の神様の怒りを鎮めて王子を救うため",
+        "山で大きな蛇と戦ったから"
+      ],
+      "answerIndex": 2
+    }
+  ]
+}

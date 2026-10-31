@@ -1,0 +1,44 @@
+{
+  "id": "n5-local-market",
+  "title": "市場での買い物",
+  "titleRomaji": "Ichiba de no kaimono",
+  "titleEn": "Shopping at the Local Market",
+  "level": "N5",
+  "category": "Everyday Life",
+  "tags": ["market", "shopping", "food", "daily"],
+  "paragraphs": [
+    {
+      "ja": "土曜日の朝、田中さんは歩いて近くの市場へ行きました。八時でしたから、市場にはたくさんの人がいました。",
+      "en": "On Saturday morning, Mr. Tanaka walked to the nearby market. Because it was eight o'clock, there were many people at the market."
+    },
+    {
+      "ja": "野菜の店で赤くて大きいトマトを三つ買いました。それから、魚の店へ行きました。",
+      "en": "At the vegetable shop, he bought three big, red tomatoes. After that, he went to the fish shop."
+    },
+    {
+      "ja": "新鮮な魚がたくさんありました。魚を二匹買って、千円を払いました。",
+      "en": "There was a lot of fresh fish. He bought two fish and paid 1,000 yen."
+    },
+    {
+      "ja": "店の人に「ありがとうございました」と元気にあいさつをして、歩いて家に帰りました。",
+      "en": "He energetically said, \"Thank you very much\" to the shopkeeper and walked back home."
+    }
+  ],
+  "quiz": [
+    {
+      "question": "田中さんはどうやって市場へ行きましたか？",
+      "options": ["車で", "歩いて", "自転車で", "バスで"],
+      "answerIndex": 1
+    },
+    {
+      "question": "田中さんはトマトをいくつ買いましたか？",
+      "options": ["一つ", "二つ", "三つ", "四つ"],
+      "answerIndex": 2
+    },
+    {
+      "question": "魚屋でいくら払いましたか？",
+      "options": ["五百円", "八百円", "千円", "千二百円"],
+      "answerIndex": 2
+    }
+  ]
+}
