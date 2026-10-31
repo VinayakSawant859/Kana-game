@@ -25,6 +25,7 @@ import {
   lookupWordMetadata,
   type StoryToken,
 } from "@/data/stories";
+import { StoryCover } from "@/components/story-cover";
 import { addVocabularyToSrs } from "@/lib/srs/service";
 
 export default function StoryReadingRoomPage() {
@@ -359,53 +360,66 @@ function StoryReadingRoomContent() {
       {/* Main Content */}
       <div className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-6 py-8">
         {/* Story Title Banner */}
-        <section className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[var(--card-shadow)] md:p-8">
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="rounded-full bg-[var(--primary)] px-3 py-0.5 text-xs font-bold text-[var(--primary-ink)]">
-                {story.level}
-              </span>
-              <span className="rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-3 py-0.5 text-xs font-semibold text-[var(--muted)]">
-                {story.category}
-              </span>
-              <span className="inline-flex items-center gap-1 text-xs text-[var(--muted)]">
-                <Clock className="size-3.5" />
-                {readMinutes} min read
-              </span>
+        <section className="flex flex-col justify-between gap-6 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[var(--card-shadow)] md:flex-row md:items-center md:p-8">
+          <div className="flex-1">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="rounded-full bg-[var(--primary)] px-3 py-0.5 text-xs font-bold text-[var(--primary-ink)]">
+                  {story.level}
+                </span>
+                <span className="rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-3 py-0.5 text-xs font-semibold text-[var(--muted)]">
+                  {story.category}
+                </span>
+                <span className="inline-flex items-center gap-1 text-xs text-[var(--muted)]">
+                  <Clock className="size-3.5" />
+                  {readMinutes} min read
+                </span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                {isCompleted && (
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--success)]/35 bg-[var(--success-soft)] px-3 py-1 text-xs font-semibold text-[var(--success)]">
+                    <CheckCircle2 className="size-3.5" />
+                    Completed
+                  </span>
+                )}
+                <button
+                  type="button"
+                  onClick={() => setShowEnglish((v) => !v)}
+                  className="rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-3.5 py-1 text-xs font-semibold text-[var(--ink)] transition hover:border-[var(--primary)]"
+                >
+                  {showEnglish ? "Hide English" : "Show English"}
+                </button>
+              </div>
             </div>
 
-            <div className="flex items-center gap-2">
-              {isCompleted && (
-                <span className="inline-flex items-center gap-1.5 rounded-full border border-[var(--success)]/35 bg-[var(--success-soft)] px-3 py-1 text-xs font-semibold text-[var(--success)]">
-                  <CheckCircle2 className="size-3.5" />
-                  Completed
-                </span>
-              )}
-              <button
-                type="button"
-                onClick={() => setShowEnglish((v) => !v)}
-                className="rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-3.5 py-1 text-xs font-semibold text-[var(--ink)] transition hover:border-[var(--primary)]"
-              >
-                {showEnglish ? "Hide English" : "Show English"}
-              </button>
-            </div>
+            <h1
+              lang="ja"
+              className="font-japanese mt-4 text-3xl font-semibold tracking-tight text-[var(--ink)] md:text-4xl"
+            >
+              {story.title}
+            </h1>
+            <p className="mt-1 text-sm font-medium text-[var(--muted)]">{story.titleRomaji}</p>
+            <p className="mt-1 text-base font-medium text-[var(--ink)]">{story.titleEn}</p>
+            <p className="mt-3 text-xs text-[var(--muted)]">
+              Tip: Tap any word in the passage to inspect its reading, definition, and save it to your{" "}
+              <Link href="/review" className="font-semibold text-[var(--primary)] underline">
+                FSRS Review Hub
+              </Link>
+              .
+            </p>
           </div>
 
-          <h1
-            lang="ja"
-            className="font-japanese mt-4 text-3xl font-semibold tracking-tight text-[var(--ink)] md:text-4xl"
-          >
-            {story.title}
-          </h1>
-          <p className="mt-1 text-sm font-medium text-[var(--muted)]">{story.titleRomaji}</p>
-          <p className="mt-1 text-base font-medium text-[var(--ink)]">{story.titleEn}</p>
-          <p className="mt-3 text-xs text-[var(--muted)]">
-            Tip: Tap any word in the passage to inspect its reading, definition, and save it to your{" "}
-            <Link href="/review" className="font-semibold text-[var(--primary)] underline">
-              FSRS Review Hub
-            </Link>
-            .
-          </p>
+          <div className="relative h-40 w-full shrink-0 overflow-hidden rounded-xl border border-[var(--line)] bg-[var(--paper-tint)] md:h-44 md:w-64">
+            <StoryCover
+              key={story.slug}
+              src={story.coverImage}
+              placeholder={story.coverPlaceholder}
+              alt={`${story.title} illustration`}
+              imageClassName="object-contain p-3"
+              loading="eager"
+            />
+          </div>
         </section>
 
         {/* Reading Room Paper Sheet & Tap-to-SRS Inspector */}

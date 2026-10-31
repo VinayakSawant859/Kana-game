@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="桃太郎">
+  <defs>
+    <linearGradient id="bg-momotaro" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1f2"/>
+      <stop offset="100%" stop-color="#fecdd3"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="24" fill="url(#bg-momotaro)"/>
+  <rect x="18" y="18" width="564" height="364" rx="18" fill="none" stroke="#e11d48" stroke-opacity=".22" stroke-width="2"/>
+  <path d="M300 75C245 75 205 125 205 180C205 245 265 280 300 295C335 280 395 245 395 180C395 125 355 75 300 75Z" fill="#e11d48" fill-opacity=".12"/>
+  <circle cx="300" cy="175" r="82" fill="#fff" fill-opacity=".86" stroke="#e11d48" stroke-width="3" stroke-opacity=".35"/>
+  <circle cx="300" cy="175" r="72" fill="none" stroke="#e11d48" stroke-width="1.2" stroke-dasharray="4 4" stroke-opacity=".4"/>
+  <text x="300" y="203" text-anchor="middle" font-family="serif" font-size="80" font-weight="700" fill="#e11d48">桃</text>
+  <g transform="translate(495 42)">
+    <rect width="54" height="54" rx="10" fill="#dc2626" fill-opacity=".9"/>
+    <rect x="4" y="4" width="46" height="46" rx="7" fill="none" stroke="#fff" stroke-width="1.5" stroke-opacity=".8"/>
+    <text x="27" y="34" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="800" fill="#fff">N4</text>
+  </g>
+  <rect x="90" y="284" width="420" height="72" rx="14" fill="#fff" fill-opacity=".88" stroke="#e11d48" stroke-opacity=".2" stroke-width="1.5"/>
+  <text x="300" y="317" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#1e293b">桃太郎</text>
+  <text x="300" y="342" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="500" fill="#64748b">Momotaro, or the Story of the Son …</text>
+</svg>

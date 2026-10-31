@@ -12,6 +12,7 @@ import {
   type StoryCategory,
   type StoryRecord,
 } from "@/data/stories";
+import { StoryCover } from "@/components/story-cover";
 
 void COMPLETED_STORIES_STORAGE_KEY;
 
@@ -146,56 +147,68 @@ export default function StoriesHubPage() {
               <Link
                 key={story.id}
                 href={`/stories/${story.level}/${story.slug}`}
-                className="group flex flex-col justify-between rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-6 shadow-[var(--card-shadow)] transition hover:-translate-y-0.5 hover:border-[var(--primary)]/60"
+                className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-[var(--line)] bg-[var(--surface)] shadow-[var(--card-shadow)] transition hover:-translate-y-0.5 hover:border-[var(--primary)]/60"
               >
                 <div>
-                  <div className="flex items-center justify-between gap-2">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="inline-flex items-center rounded-full bg-[var(--primary)] px-2.5 py-0.5 text-xs font-bold text-[var(--primary-ink)]">
-                        {story.level}
-                      </span>
-                      <span className="inline-flex items-center rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-2.5 py-0.5 text-xs font-medium text-[var(--muted)]">
-                        {story.category}
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      {isCompleted && (
-                        <span
-                          title="Completed"
-                          className="inline-flex items-center gap-1 rounded-full bg-[var(--success-soft)] px-2 py-0.5 text-[11px] font-semibold text-[var(--success)]"
-                        >
-                          <CheckCircle2 className="size-3" />
-                          Done
-                        </span>
-                      )}
-                      <span className="inline-flex items-center gap-1 text-xs text-[var(--muted)]">
-                        <Clock className="size-3.5" />
-                        {readMinutes} min read
-                      </span>
-                    </div>
+                  {/* Cover Art Frame */}
+                  <div className="relative h-44 w-full overflow-hidden border-b border-[var(--line)] bg-[var(--paper-tint)]">
+                    <StoryCover
+                      src={story.coverImage}
+                      placeholder={story.coverPlaceholder}
+                      alt={`${story.title} (${story.titleEn})`}
+                      className="transition duration-300 group-hover:scale-105"
+                    />
                   </div>
 
-                  <h2
-                    lang="ja"
-                    className="font-japanese mt-4 text-2xl font-semibold tracking-tight text-[var(--ink)] transition group-hover:text-[var(--primary)]"
-                  >
-                    {story.title}
-                  </h2>
-                  <p className="mt-1 text-xs font-medium text-[var(--muted)]">
-                    {story.titleRomaji}
-                  </p>
-                  <p className="mt-1.5 text-sm font-medium text-[var(--ink)]">
-                    {story.titleEn}
-                  </p>
-                  <p
-                    lang="ja"
-                    className="font-japanese mt-3 line-clamp-2 text-xs leading-relaxed text-[var(--muted)]"
-                  >
-                    {story.paragraphs[0]?.ja}
-                  </p>
+                  <div className="p-6 pb-0">
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="inline-flex items-center rounded-full bg-[var(--primary)] px-2.5 py-0.5 text-xs font-bold text-[var(--primary-ink)]">
+                          {story.level}
+                        </span>
+                        <span className="inline-flex items-center rounded-full border border-[var(--line)] bg-[var(--paper-tint)] px-2.5 py-0.5 text-xs font-medium text-[var(--muted)]">
+                          {story.category}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        {isCompleted && (
+                          <span
+                            title="Completed"
+                            className="inline-flex items-center gap-1 rounded-full bg-[var(--success-soft)] px-2 py-0.5 text-[11px] font-semibold text-[var(--success)]"
+                          >
+                            <CheckCircle2 className="size-3" />
+                            Done
+                          </span>
+                        )}
+                        <span className="inline-flex items-center gap-1 text-xs text-[var(--muted)]">
+                          <Clock className="size-3.5" />
+                          {readMinutes} min read
+                        </span>
+                      </div>
+                    </div>
+
+                    <h2
+                      lang="ja"
+                      className="font-japanese mt-4 text-2xl font-semibold tracking-tight text-[var(--ink)] transition group-hover:text-[var(--primary)]"
+                    >
+                      {story.title}
+                    </h2>
+                    <p className="mt-1 text-xs font-medium text-[var(--muted)]">
+                      {story.titleRomaji}
+                    </p>
+                    <p className="mt-1.5 text-sm font-medium text-[var(--ink)]">
+                      {story.titleEn}
+                    </p>
+                    <p
+                      lang="ja"
+                      className="font-japanese mt-3 line-clamp-2 text-xs leading-relaxed text-[var(--muted)]"
+                    >
+                      {story.paragraphs[0]?.ja}
+                    </p>
+                  </div>
                 </div>
 
-                <div className="mt-5 flex items-center justify-between border-t border-[var(--line)] pt-3.5 text-xs font-semibold text-[var(--primary)]">
+                <div className="mx-6 mb-6 mt-5 flex items-center justify-between border-t border-[var(--line)] pt-3.5 text-xs font-semibold text-[var(--primary)]">
                   <span>Read story</span>
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                 </div>

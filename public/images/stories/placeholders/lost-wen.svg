@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="こぶとり爺さん">
+  <defs>
+    <linearGradient id="bg-lost-wen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f3ff"/>
+      <stop offset="100%" stop-color="#ddd6fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="24" fill="url(#bg-lost-wen)"/>
+  <rect x="18" y="18" width="564" height="364" rx="18" fill="none" stroke="#7c3aed" stroke-opacity=".22" stroke-width="2"/>
+  <circle cx="470" cy="95" r="46" fill="#7c3aed" fill-opacity=".22"/>
+  <path d="M60 110H150M90 130H180" stroke="#7c3aed" stroke-width="5" stroke-opacity=".22" stroke-linecap="round"/>
+  <circle cx="300" cy="175" r="82" fill="#fff" fill-opacity=".86" stroke="#7c3aed" stroke-width="3" stroke-opacity=".35"/>
+  <circle cx="300" cy="175" r="72" fill="none" stroke="#7c3aed" stroke-width="1.2" stroke-dasharray="4 4" stroke-opacity=".4"/>
+  <text x="300" y="203" text-anchor="middle" font-family="serif" font-size="80" font-weight="700" fill="#7c3aed">踊</text>
+  <g transform="translate(495 42)">
+    <rect width="54" height="54" rx="10" fill="#dc2626" fill-opacity=".9"/>
+    <rect x="4" y="4" width="46" height="46" rx="7" fill="none" stroke="#fff" stroke-width="1.5" stroke-opacity=".8"/>
+    <text x="27" y="34" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="800" fill="#fff">N4</text>
+  </g>
+  <rect x="90" y="284" width="420" height="72" rx="14" fill="#fff" fill-opacity=".88" stroke="#7c3aed" stroke-opacity=".2" stroke-width="1.5"/>
+  <text x="300" y="317" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="#1e293b">こぶとり爺さん</text>
+  <text x="300" y="342" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="500" fill="#64748b">How an Old Man Lost His Wen</text>
+</svg>

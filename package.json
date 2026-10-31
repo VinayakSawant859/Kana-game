@@ -11,6 +11,7 @@
         "start": "next start",
         "lint": "eslint",
         "build:kanji-data": "tsx scripts/build-kanji-data.ts",
+        "build:story-placeholders": "tsx scripts/build-story-placeholders.ts",
         "test": "vitest run"
     },
     "dependencies": {
