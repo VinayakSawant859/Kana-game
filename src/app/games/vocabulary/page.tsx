@@ -5,7 +5,14 @@ import { useRouter } from "next/navigation";
 import { ArrowRight, RotateCcw } from "lucide-react";
 import { GameLayout } from "@/lib/game-core/layout";
 import { saveGameSession } from "@/lib/game-core/storage";
-import { availableVocabularyGrades, filterVocabulary, loadVocabularyData, type VocabularyData, type VocabularyLevel, vocabularyLevels } from "@/data/vocabulary";
+import {
+  availableVocabularyGrades,
+  filterVocabulary,
+  loadVocabularyData,
+  type VocabularyData,
+  type VocabularyLevel,
+  vocabularyLevels,
+} from "@/data/vocabulary";
 import { createVocabularySession, type VocabularySessionSize } from "@/lib/game/vocabulary";
 
 const gradeNames: Record<number, string> = {
@@ -42,11 +49,19 @@ export default function VocabularySetupPage() {
   /* eslint-disable react-hooks/set-state-in-effect */
   useEffect(() => {
     try {
-      const saved = JSON.parse(localStorage.getItem("vocabulary-last-setup") || "null") as
-        Partial<SavedSetup> | null;
+      const saved = JSON.parse(
+        localStorage.getItem("vocabulary-last-setup") || "null"
+      ) as Partial<SavedSetup> | null;
       if (saved) {
-        if (Array.isArray(saved.levels) && saved.levels.every(isVocabularyLevel)) setLevels(saved.levels);
-        if (Array.isArray(saved.grades) && saved.grades.every((grade) => typeof grade === "number")) setGrades(saved.grades);
+        if (Array.isArray(saved.levels) && saved.levels.every(isVocabularyLevel)) {
+          setLevels(saved.levels);
+        }
+        if (
+          Array.isArray(saved.grades) &&
+          saved.grades.every((grade) => typeof grade === "number")
+        ) {
+          setGrades(saved.grades);
+        }
         if (isSessionSize(saved.size)) setSize(saved.size);
       }
     } catch (loadError) {
@@ -67,47 +82,58 @@ export default function VocabularySetupPage() {
       setData(null);
       setLoading(false);
       setError("");
-      return () => { active = false; };
+      return () => {
+        active = false;
+      };
     }
 
     setLoading(true);
     setData(null);
     setError("");
-    loadVocabularyData(levels).then((loaded) => {
-      if (active) setData(loaded);
-    }).catch((loadError: unknown) => {
-      if (!active) return;
-      console.error("Could not load OpenJLPT vocabulary data.", loadError);
-      setError("Vocabulary data could not be loaded. Check your connection and try again.");
-    }).finally(() => {
-      if (active) setLoading(false);
-    });
-    return () => { active = false; };
+    loadVocabularyData(levels)
+      .then((loaded) => {
+        if (active) setData(loaded);
+      })
+      .catch((loadError: unknown) => {
+        if (!active) return;
+        console.error("Could not load OpenJLPT vocabulary data.", loadError);
+        setError("Vocabulary data could not be loaded. Check your connection and try again.");
+      })
+      .finally(() => {
+        if (active) setLoading(false);
+      });
+    return () => {
+      active = false;
+    };
   }, [levels, reloadKey]);
   /* eslint-enable react-hooks/set-state-in-effect */
 
-  const eligible = useMemo(() => data
-    ? filterVocabulary(data.records, { levels, grades }, data.kanjiByCharacter)
-    : [], [data, grades, levels]);
-  const gradeOptions = useMemo(() => data
-    ? availableVocabularyGrades(data.kanjiByCharacter)
-    : [], [data]);
+  const eligible = useMemo(
+    () => (data ? filterVocabulary(data.records, { levels, grades }, data.kanjiByCharacter) : []),
+    [data, grades, levels]
+  );
+  const gradeOptions = useMemo(
+    () => (data ? availableVocabularyGrades(data.kanjiByCharacter) : []),
+    [data]
+  );
   const gradeCounts = useMemo(() => {
     if (!data) return new Map<number, number>();
-    return new Map(gradeOptions.map((grade) => [
-      grade,
-      filterVocabulary(data.records, { levels, grades: [grade] }, data.kanjiByCharacter).length,
-    ]));
+    return new Map(
+      gradeOptions.map((grade) => [
+        grade,
+        filterVocabulary(data.records, { levels, grades: [grade] }, data.kanjiByCharacter).length,
+      ])
+    );
   }, [data, gradeOptions, levels]);
 
   const questionCount = size === "all" ? eligible.length : size;
   const canStart = Boolean(
     ready &&
-    !loading &&
-    levels.length &&
-    eligible.length >= questionCount &&
-    questionCount > 0 &&
-    !starting
+      !loading &&
+      levels.length &&
+      eligible.length >= questionCount &&
+      questionCount > 0 &&
+      !starting
   );
 
   function toggleLevel(level: VocabularyLevel) {
@@ -144,137 +170,189 @@ export default function VocabularySetupPage() {
   }
 
   if (!ready) {
-    return <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">Preparing setup...</main>;
+    return (
+      <main className="grid min-h-dvh place-items-center bg-[var(--bg)] text-[var(--muted)]">
+        Preparing setup...
+      </main>
+    );
   }
 
   return (
     <GameLayout label="VOCABULARY" glyph="語">
-      <section className="mx-auto grid w-full max-w-6xl flex-1 gap-5 px-5 pb-8 sm:px-8 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-start">
-        <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7">
-          <div className="mb-7 flex items-end justify-between gap-4">
-            <div>
-              <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">Meaning mode</p>
-              <h1 className="text-2xl font-bold sm:text-3xl">Vocabulary setup</h1>
-            </div>
-            <button
-              type="button"
-              onClick={() => { setLevels(["N5"]); setGrades([]); setSize(10); }}
-              className="flex items-center gap-2 rounded-md px-2 py-2 text-sm font-semibold text-[var(--muted)] transition-colors hover:bg-[var(--sakura-light)] hover:text-[var(--primary-fg)]"
-            >
-              <RotateCcw size={15} /> Reset
-            </button>
-          </div>
-
-          <div className="space-y-7">
-            <fieldset>
-              <legend className="mb-3 text-sm font-bold">JLPT levels</legend>
-              <div className="flex flex-wrap gap-2">
-                {vocabularyLevels.map((level) => (
-                  <button
-                    key={level}
-                    type="button"
-                    aria-pressed={levels.includes(level)}
-                    onClick={() => toggleLevel(level)}
-                    className={`rounded-full border px-4 py-2 text-sm font-bold ${levels.includes(level)
-                      ? "border-[var(--primary)] bg-[var(--primary)] text-white"
-                      : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)]"}`}
-                  >
-                    {level}
-                  </button>
-                ))}
+      <section className="mx-auto flex w-full max-w-6xl flex-1 items-center justify-center px-5 py-6 sm:px-8">
+        <div className="grid w-full gap-5 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
+          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface)] p-5 shadow-[0_18px_50px_rgba(188,0,45,0.055)] sm:p-7">
+            <div className="mb-7 flex items-end justify-between gap-4">
+              <div>
+                <p className="mb-1 text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">
+                  Meaning mode
+                </p>
+                <h1 className="text-2xl font-bold sm:text-3xl">Vocabulary setup</h1>
               </div>
-            </fieldset>
+              <button
+                type="button"
+                onClick={() => {
+                  setLevels(["N5"]);
+                  setGrades([]);
+                  setSize(10);
+                }}
+                className="flex min-h-11 items-center gap-2 rounded-md px-3 py-2 text-sm font-semibold text-[var(--muted)] transition-colors hover:bg-[var(--sakura-light)] hover:text-[var(--primary-fg)]"
+              >
+                <RotateCcw size={15} /> Reset
+              </button>
+            </div>
 
-            {gradeOptions.length > 0 && (
+            <div className="space-y-7">
               <fieldset>
-                <div className="mb-3 flex items-center justify-between gap-3">
-                  <legend className="text-sm font-bold">Kanji school grades</legend>
-                  <div className="flex gap-2 text-xs font-bold">
-                    <button type="button" onClick={() => setGrades(gradeOptions)} className="text-[var(--primary-fg)]">Select all</button>
-                    <button type="button" onClick={() => setGrades([])} className="text-[var(--muted)]">Clear</button>
-                  </div>
+                <legend className="mb-3 text-sm font-bold">JLPT levels</legend>
+                <div className="flex flex-wrap gap-2">
+                  {vocabularyLevels.map((level) => (
+                    <button
+                      key={level}
+                      type="button"
+                      aria-pressed={levels.includes(level)}
+                      onClick={() => toggleLevel(level)}
+                      className={`min-h-11 rounded-full border px-4 py-2 text-sm font-bold transition-colors ${
+                        levels.includes(level)
+                          ? "border-[var(--primary)] bg-[var(--primary)] text-white"
+                          : "border-[var(--line)] bg-[var(--surface)] text-[var(--muted)] hover:border-[var(--sakura)]"
+                      }`}
+                    >
+                      {level}
+                    </button>
+                  ))}
                 </div>
+              </fieldset>
+
+              {gradeOptions.length > 0 && (
+                <fieldset>
+                  <div className="mb-3 flex items-center justify-between gap-3">
+                    <legend className="text-sm font-bold">Kanji school grades</legend>
+                    <div className="flex gap-2 text-xs font-bold">
+                      <button
+                        type="button"
+                        onClick={() => setGrades(gradeOptions)}
+                        className="rounded px-2 py-1 text-[var(--primary-fg)]"
+                      >
+                        Select all
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setGrades([])}
+                        className="rounded px-2 py-1 text-[var(--muted)]"
+                      >
+                        Clear
+                      </button>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+                    {gradeOptions.map((grade) => {
+                      const count = gradeCounts.get(grade) ?? 0;
+                      const selected = grades.includes(grade);
+                      return (
+                        <button
+                          key={grade}
+                          type="button"
+                          disabled={!count}
+                          aria-pressed={selected}
+                          onClick={() => toggleGrade(grade)}
+                          className={`rounded-md border px-3 py-3 text-left text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                            selected
+                              ? "border-[var(--primary)] bg-[var(--sakura-light)]"
+                              : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)]"
+                          }`}
+                        >
+                          <span className="block">{gradeNames[grade] ?? `Grade ${grade}`}</span>
+                          <span className="mt-1 block text-xs font-normal text-[var(--muted)]">
+                            {count} words
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                  <p className="mt-2 text-xs text-[var(--muted)]">
+                    A word matches when at least one kanji in it belongs to a selected grade.
+                  </p>
+                </fieldset>
+              )}
+
+              <fieldset>
+                <legend className="mb-3 text-sm font-bold">Session length</legend>
                 <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-                  {gradeOptions.map((grade) => {
-                    const count = gradeCounts.get(grade) ?? 0;
-                    const selected = grades.includes(grade);
+                  {([10, 20, 30, "all"] as const).map((option) => {
+                    const disabled =
+                      option === "all" ? eligible.length === 0 : eligible.length < option;
                     return (
                       <button
-                        key={grade}
+                        key={option}
                         type="button"
-                        disabled={!count}
-                        aria-pressed={selected}
-                        onClick={() => toggleGrade(grade)}
-                        className={`rounded-md border px-3 py-3 text-left text-sm font-bold disabled:cursor-not-allowed disabled:opacity-40 ${selected
-                          ? "border-[var(--primary)] bg-[var(--sakura-light)]"
-                          : "border-[var(--line)] bg-[var(--surface)]"}`}
+                        disabled={disabled}
+                        aria-pressed={size === option}
+                        onClick={() => setSize(option)}
+                        className={`rounded-md border px-3 py-3 text-sm font-bold transition-colors disabled:cursor-not-allowed disabled:opacity-40 ${
+                          size === option
+                            ? "border-[var(--primary)] bg-[var(--sakura-light)]"
+                            : "border-[var(--line)] bg-[var(--surface)] hover:border-[var(--sakura)]"
+                        }`}
                       >
-                        <span className="block">{gradeNames[grade] ?? `Grade ${grade}`}</span>
-                        <span className="mt-1 block text-xs font-normal text-[var(--muted)]">{count} words</span>
+                        {option === "all" ? "All available" : option}
                       </button>
                     );
                   })}
                 </div>
-                <p className="mt-2 text-xs text-[var(--muted)]">
-                  A word matches when at least one kanji in it belongs to a selected grade.
-                </p>
               </fieldset>
+            </div>
+          </div>
+
+          <aside className="rounded-lg border border-[var(--primary-hover)] bg-[var(--primary)] p-5 text-white sm:p-7 lg:sticky lg:bottom-6">
+            <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/80">
+              Your selection
+            </p>
+            <div className="my-5 flex items-end justify-between border-b border-white/30 pb-5">
+              <span className="font-japanese text-5xl leading-none">
+                {loading ? "…" : eligible.length}
+              </span>
+              <span className="pb-1 text-sm text-white/80">eligible words</span>
+            </div>
+            <p className="mb-5 flex items-center justify-between text-sm text-white/80">
+              <span>Questions</span>
+              <strong className="text-white">{loading ? "…" : questionCount}</strong>
+            </p>
+            {!levels.length && <p className="mb-3 text-sm">Select at least one JLPT level.</p>}
+            {levels.length > 0 && !loading && eligible.length < questionCount && (
+              <p className="mb-3 text-sm">
+                Choose a smaller session length or widen your selection.
+              </p>
             )}
-
-            <fieldset>
-              <legend className="mb-3 text-sm font-bold">Session length</legend>
-              <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-                {([10, 20, 30, "all"] as const).map((option) => {
-                  const disabled = option === "all" ? eligible.length === 0 : eligible.length < option;
-                  return (
-                    <button
-                      key={option}
-                      type="button"
-                      disabled={disabled}
-                      aria-pressed={size === option}
-                      onClick={() => setSize(option)}
-                      className={`rounded-md border px-3 py-3 text-sm font-bold disabled:cursor-not-allowed disabled:opacity-40 ${size === option
-                        ? "border-[var(--primary)] bg-[var(--sakura-light)]"
-                        : "border-[var(--line)] bg-[var(--surface)]"}`}
-                    >
-                      {option === "all" ? "All available" : option}
-                    </button>
-                  );
-                })}
-              </div>
-            </fieldset>
-          </div>
-        </div>
-
-        <aside className="rounded-lg border border-[var(--primary-hover)] bg-[var(--primary)] p-5 text-white sm:p-7 lg:sticky lg:top-6">
-          <p className="text-xs font-bold uppercase tracking-[0.16em] text-white/80">Your selection</p>
-          <div className="my-5 flex items-end justify-between border-b border-white/30 pb-5">
-            <span className="font-japanese text-5xl leading-none">{loading ? "…" : eligible.length}</span>
-            <span className="pb-1 text-sm text-white/80">eligible words</span>
-          </div>
-          <p className="mb-5 text-sm text-white/80">
-            Questions: <strong className="text-white">{loading ? "…" : questionCount}</strong>
-          </p>
-          {!levels.length && <p className="mb-3 text-sm">Select at least one JLPT level.</p>}
-          {levels.length > 0 && !loading && eligible.length < questionCount && (
-            <p className="mb-3 text-sm">Choose a smaller session length or widen your selection.</p>
-          )}
-          {loading && <p role="status" className="mb-3 text-sm">Loading vocabulary…</p>}
-          {error && <p role="alert" className="mb-3 text-sm font-semibold">{error}</p>}
-          {error.includes("Vocabulary data could not be loaded") && (
-            <button type="button" onClick={() => setReloadKey((value) => value + 1)} className="mb-3 text-sm font-bold underline">
-              Retry loading
+            {loading && (
+              <p role="status" className="mb-3 text-sm">
+                Loading vocabulary…
+              </p>
+            )}
+            {error && (
+              <p role="alert" className="mb-3 text-sm font-semibold">
+                {error}
+              </p>
+            )}
+            {error.includes("Vocabulary data could not be loaded") && (
+              <button
+                type="button"
+                onClick={() => setReloadKey((value) => value + 1)}
+                className="mb-3 text-sm font-bold underline"
+              >
+                Retry loading
+              </button>
+            )}
+            <button
+              type="button"
+              disabled={!canStart}
+              onClick={start}
+              className="flex h-12 w-full items-center justify-center gap-2 rounded-md bg-[var(--surface)] text-sm font-bold text-[var(--primary)] disabled:cursor-not-allowed disabled:opacity-45"
+            >
+              {starting ? "Starting…" : "Start"} <ArrowRight size={17} />
             </button>
-          )}
-          <button
-            type="button"
-            disabled={!canStart}
-            onClick={start}
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-md bg-[var(--surface)] text-sm font-bold text-[var(--primary)] disabled:cursor-not-allowed disabled:opacity-45"
-          >
-            {starting ? "Starting…" : "Start"} <ArrowRight size={17} />
-          </button>
-        </aside>
+          </aside>
+        </div>
       </section>
     </GameLayout>
   );

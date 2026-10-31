@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { act, cleanup, fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import VocabularyPlayPage from "./[sessionId]/page";
@@ -11,6 +11,10 @@ vi.mock("next/navigation", () => ({
 }));
 
 describe("vocabulary question interaction", () => {
+  afterEach(() => {
+    cleanup();
+  });
+
   beforeEach(() => {
     cleanup();
     vi.clearAllMocks();

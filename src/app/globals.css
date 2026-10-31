@@ -83,22 +83,32 @@ h1, h2, h3, button, input, label, legend, .font-kana { font-family: var(--font-u
 .font-japanese { font-family: var(--font-japanese), "Noto Serif JP", serif; }
 .font-kanji { font-family: var(--font-kana), "Yu Mincho", "Noto Serif JP", var(--font-mincho), "Hiragino Mincho ProN", var(--font-japanese), serif; }
 
+.kana-card-shell,
 .kanji-card-shell {
-  width: clamp(250px, 34vw, 390px);
+  position: relative;
+  width: clamp(280px, 28vw, 420px);
+  min-height: clamp(360px, 50dvh, 520px);
+  aspect-ratio: 3 / 4;
+  flex-shrink: 0;
+  transform-origin: center;
   will-change: transform, opacity;
 }
+
 .kanji-card {
   animation-fill-mode: both;
   will-change: transform, opacity;
 }
+
+.kana-card-glyph,
 .kanji-card-glyph {
   position: relative;
   z-index: 1;
   font-family: var(--font-kana), "Yu Mincho", "Noto Serif JP", var(--font-mincho), "Hiragino Mincho ProN", var(--font-japanese), serif;
-  font-size: clamp(9rem, 24vw, 13rem);
+  font-size: clamp(4.5rem, 9vw, 8rem);
   line-height: 1;
   filter: drop-shadow(.4px .5px 0 rgba(35,26,28,.12));
 }
+
 .kanji-leave { animation: kanji-leave 360ms ease-out both; }
 @keyframes kanji-leave { to { transform: translate3d(-110px, 0, 0) scale(.92); opacity: 0; } }
 
@@ -111,15 +121,6 @@ h1, h2, h3, button, input, label, legend, .font-kana { font-family: var(--font-u
 .primary-button { background: var(--primary); color: #fff; }
 .primary-button:hover { background: var(--primary-hover); }
 .secondary-button { border-color: var(--sakura); background: var(--sakura-light); color: var(--ink); }
-
-.kana-card-shell {
-  position: relative;
-  width: clamp(260px, 34vw, 390px);
-  max-height: 55dvh;
-  aspect-ratio: 3 / 4;
-  transform-origin: center;
-  will-change: transform, opacity;
-}
 
 .kana-card-stack { position: absolute; inset: 0; pointer-events: none; }
 .kana-card-stack .paper-layer { position: absolute; inset: 0; border-radius: 5px; background: var(--paper); border: 1px solid var(--line); box-shadow: 0 10px 24px rgba(70, 35, 44, .08); will-change: transform; }
@@ -160,15 +161,6 @@ h1, h2, h3, button, input, label, legend, .font-kana { font-family: var(--font-u
   inset: 7px;
   border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
   border-radius: 4px;
-}
-
-.kana-card-glyph {
-  position: relative;
-  z-index: 1;
-  font-family: var(--font-kana), var(--font-japanese), serif;
-  font-size: clamp(8rem, 20vw, 11rem);
-  line-height: 1;
-  filter: drop-shadow(.4px .5px 0 rgba(35,26,28,.12));
 }
 
 .hanko { position: absolute; z-index: 2; right: 9%; bottom: 7%; grid: size 46px; place-items: center; border: 2px solid var(--primary); color: var(--primary); font-family: var(--font-japanese), sans-serif; font-size: 13px; line-height: 1; transform: rotate(-4deg); }
@@ -216,8 +208,17 @@ html[data-theme="dark"] .kana-card {
 .result-badge { display:inline-flex; width:max-content; max-width:100%; align-items:center; font-size:12px; font-weight:800; }
 .result-table { border:1px solid var(--line); border-radius:6px; }
 @media (max-width:640px) { .result-table { max-height:50vh; } .result-grid { column-gap:8px; min-width:620px; } }
-@media (max-width: 1023px) { .kana-card-shell { width: clamp(220px, min(62vw, 44dvh), 350px); } .kanji-card-shell { width: clamp(220px, min(62vw, 44dvh), 350px); } }
-@media (max-height: 700px) { .kana-card-shell { width: min(220px, 54vw, 38dvh); } .kana-card-glyph { font-size: clamp(6rem, 18vw, 8rem); } .answer-field, .answer-input { height: 50px; } }
+@media (max-height: 740px) {
+  .kana-card-shell,
+  .kanji-card-shell {
+    width: clamp(230px, 24vw, 320px);
+    min-height: clamp(300px, 42dvh, 420px);
+  }
+  .answer-field,
+  .answer-input {
+    height: 52px;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 1ms !important;

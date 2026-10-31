@@ -6,10 +6,11 @@ import { Moon, Sun } from "lucide-react";
 export function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
   useEffect(() => {
-    const timer = window.setTimeout(() => {
+    /* eslint-disable react-hooks/set-state-in-effect */
+    if (typeof document !== "undefined") {
       setTheme(document.documentElement.dataset.theme === "dark" ? "dark" : "light");
-    }, 0);
-    return () => window.clearTimeout(timer);
+    }
+    /* eslint-enable react-hooks/set-state-in-effect */
   }, []);
 
   function toggleTheme() {

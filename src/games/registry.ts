@@ -50,6 +50,7 @@ export const games: GameEntry[] = [
     description: "Adaptive spaced-repetition reviews tailored to your memory curve.",
     href: "/review",
     badge: "復",
-    status: "soon",
+    status: "live",
+    ctaLabel: "Open reviews",
   },
 ];
